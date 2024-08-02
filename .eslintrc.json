@@ -1,18 +1,99 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "plugins": ["@typescript-eslint", "prettier"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "rules": {
-    "prettier/prettier": "error",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/explicit-function-return-type": "off"
-  }
+  "ignorePatterns": ["**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "@typescript-eslint/switch-exhaustiveness-check": "error",
+        "no-restricted-globals": ["error", "fdescribe", "xdescribe", "fit", "xit"],
+        "no-restricted-syntax": ["error", "IfStatement > ExpressionStatement"],
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": ["enumMember", "typeLike"],
+            "format": ["PascalCase"],
+            "custom": {
+              "regex": "(My|my)(?=[A-Z]\\w*)",
+              "match": false
+            }
+          },
+          {
+            "selector": ["parameter"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": ["variable", "function", "method", "classProperty", "typeProperty"],
+            "format": ["camelCase"],
+            "custom": {
+              "regex": "(My|my)(?=[A-Z]\\w*)",
+              "match": false
+            }
+          },
+          {
+            "selector": ["variable"],
+            "format": ["UPPER_CASE", "camelCase"],
+            "modifiers": ["global"],
+            "custom": {
+              "regex": "(My|my)(?=[A-Z]\\w*)",
+              "match": false
+            }
+          },
+          {
+            "selector": ["variable"],
+            "types": ["function"],
+            "format": ["camelCase"]
+          },
+          {
+            "selector": "interface",
+            "custom": {
+              "regex": "[Ii](?=[A-Z]\\w*)",
+              "match": false
+            },
+            "format": ["PascalCase"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.http-spec.ts", "*.spec.ts", "*.unit.ts", "*.int.ts", "*.mock.ts"],
+      "rules": {
+        "no-underscore-dangle": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["eslint:recommended"],
+      "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
 }
