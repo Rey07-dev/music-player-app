@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: #ccc 0 0 5px;
+  padding: 5px 30px 5px 20px;
+}
+
+nav input {
+  width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: none;
+}
+
+nav button {
+  padding: 5px 10px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.profileWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+  gap: 5px;
+  width: 40px;
+  height: 30px;
+}
