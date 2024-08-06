@@ -1,0 +1,18 @@
+.theme-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 21px;
+  padding-top: 2px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: #222222b9;
+  color: #ffffff;
+}
+
+.light{
+  background: #ffffff;
+}

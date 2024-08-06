@@ -1,0 +1,13 @@
+<button
+  (click)="toggleTheme()"
+  class="theme-toggle"
+  aria-label="Toggle Theme"
+  [ngClass]="isDarkTheme ? 'white' : ''"
+  a
+>
+  @if (isDarkTheme) {
+    <i class="fas fa-sun" aria-label="Light Mode" matTooltip="Light Mode"></i>
+  } @else {
+    <i class="fas fa-moon" aria-label="Dark Mode" matTooltip="Dark Mode"></i>
+  }
+</button>
