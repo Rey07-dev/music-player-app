@@ -8,6 +8,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MusicCardComponent } from './components/music-card/music-card.component';
 import { CardComponent } from './components/card/card.component';
+import { MusicMenuComponent } from './components/music-menu/music-menu.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CardComponent } from './components/card/card.component';
     PlayControlsComponent,
     ThemeToggleComponent,
     MusicCardComponent,
-    CardComponent
+    CardComponent,
+    MusicMenuComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,9 @@ import { CardComponent } from './components/card/card.component';
     PlayControlsComponent,
     ThemeToggleComponent,
     MusicCardComponent,
-    CardComponent
+    CardComponent,
+    MusicMenuComponent,
+
   ],
 })
 export class SharedModule {}
