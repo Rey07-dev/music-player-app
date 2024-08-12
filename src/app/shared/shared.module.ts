@@ -16,6 +16,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule } from "@angular/router";
 import { AppRoutes } from "../app.routes";
+import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppRoutes } from "../app.routes";
     CardComponent,
     MusicMenuComponent,
     ControlIconComponent,
+    HomeCarouselComponent,
   ],
   imports: [
     CommonModule,
@@ -49,6 +51,7 @@ import { AppRoutes } from "../app.routes";
     CardComponent,
     MusicMenuComponent,
     ControlIconComponent,
+    HomeCarouselComponent
   ],
 })
 export class SharedModule {}
