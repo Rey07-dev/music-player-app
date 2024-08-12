@@ -1,0 +1,17 @@
+<div class="musicList">
+  <h2>{{ title }}</h2>
+  <div class="musicListP">
+    <p *ngFor="let item of musicList; let i = index">
+      <span
+        [routerLink]="[item.link]"
+        routerLinkActive="active-link"
+        #rla="routerLinkActive"
+        [routerLinkActiveOptions]="{exact: true}"
+        class="musicListUlSpan"
+      >
+        <i [class]="item.icon" [attr.aria-label]="item.label"></i>
+        {{ item.name }}
+      </span>
+    </p>
+  </div>
+</div>
