@@ -9,6 +9,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MusicCardComponent } from './components/music-card/music-card.component';
 import { CardComponent } from './components/card/card.component';
 import { MusicMenuComponent } from './components/music-menu/music-menu.component';
+import { ControlIconComponent } from './components/control-icon/control-icon.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MusicMenuComponent } from './components/music-menu/music-menu.component
     ThemeToggleComponent,
     MusicCardComponent,
     CardComponent,
-    MusicMenuComponent
+    MusicMenuComponent,
+    ControlIconComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,7 @@ import { MusicMenuComponent } from './components/music-menu/music-menu.component
     MusicCardComponent,
     CardComponent,
     MusicMenuComponent,
-
+    ControlIconComponent
   ],
 })
 export class SharedModule {}
