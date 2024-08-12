@@ -1,0 +1,12 @@
+<div class="loading" *ngIf="loading()">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="error" *ngIf="error()">Error</div>
+<div class="albums">
+  <ng-container>
+    <div class="music-card" *ngFor="let item of albums()">
+      <app-music-card [musicData]="item" />
+    </div>
+  </ng-container>
+
+</div>
