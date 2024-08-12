@@ -1,15 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 /* Light Theme */
 .light-theme {
-  --background-color: #ffffff;
+  --background-color: #ffffff00;
   --text-color: #000000;
+  --height-content: 80vh;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --hover-color: rgba(12, 7, 7, 0.39);
+  --play-color: rgba(45, 82, 247, 5)
 }
 
 /* Dark Theme */
 .dark-theme {
   --background-color: #000000;
-  --text-color: #ffffff;
-  border: #cccccc98 1px solid;
+  --text-color: #ffffff93;
+  --height-content: 80vh;
+  --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.281);
+  --hover-color: rgba(255, 255, 255, 0.562);
+  --play-color: white
 }
 
 /* Apply theme variables */
@@ -17,5 +24,6 @@ body {
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
+  box-shadow: var(--box-shadow);
   transition: background-color 0.3s, color 0.3s;
 }

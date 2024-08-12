@@ -1,1 +1,25 @@
-<p>card works!</p>
+<div
+  class="card"
+  (mouseover)="showPlayButton = true"
+  (mouseleave)="showPlayButton = false"
+  aria-label="Card"
+>
+  <img
+    [src]="placeholder"
+    alt="{{ songs.strTrack }} cover"
+    class="card-img"
+    aria-label="Cover"
+  />
+  <div class="card-content" aria-label="Content Area">
+    <p class="card-title" aria-label="Title">{{ songs.strTrack }}</p>
+  </div>
+  <!-- Play Button -->
+  <button
+    aria-label="Play Button"
+    *ngIf="showPlayButton"
+    class="play-button"
+    (click)="playSong(songs)"
+  >
+    <i class="fas fa-play" aria-label="Play"></i>
+  </button>
+</div>
