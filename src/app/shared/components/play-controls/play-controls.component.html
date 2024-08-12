@@ -1,1 +1,59 @@
-<p>play-controls works!</p>
+<div class="music-player-controls">
+  <div class="track-info">
+    <!-- <p>Title: {{ tracks[currentTrackIndex].strTrack }}</p>
+    <p>Artist: {{ tracks[currentTrackIndex].strArtist }}</p>
+    <p>Album: {{ tracks[currentTrackIndex].strAlbum }}</p> -->
+  </div>
+  <div class="controlsWrap">
+    <div class="controls">
+      <app-control-icon
+        iconClass="fas fa-backward"
+        ariaLabel="Previous"
+        (iconClick)="previous()"
+        (keyPress)="onKeyPress($event)"
+        (keyDown)="onKeyDown($event)"
+        (keyUp)="onKeyUp($event)"
+      ></app-control-icon>
+
+      <app-control-icon
+        iconClass="fas fa-play"
+        ariaLabel="Play"
+        *ngIf="!isPlaying"
+        (iconClick)="play()"
+        (keyPress)="onKeyPress($event)"
+        (keyDown)="onKeyDown($event)"
+        (keyUp)="onKeyUp($event)"
+      ></app-control-icon>
+
+      <app-control-icon
+        iconClass="fas fa-pause"
+        ariaLabel="Pause"
+        *ngIf="isPlaying"
+        (iconClick)="pause()"
+        (keyPress)="onKeyPress($event)"
+        (keyDown)="onKeyDown($event)"
+        (keyUp)="onKeyUp($event)"
+      ></app-control-icon>
+
+      <app-control-icon
+        iconClass="fas fa-forward"
+        ariaLabel="Next"
+        (iconClick)="next()"
+        (keyPress)="onKeyPress($event)"
+        (keyDown)="onKeyDown($event)"
+        (keyUp)="onKeyUp($event)"
+      ></app-control-icon>
+    </div>
+
+    <div class="seek-bar">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        [value]="( audio.duration) * 100"
+        (input)="seek($event)"
+        aria-label="Seek Bar"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.sideWrap {
+  display: flex;
+  height: var(--height-content);
+  overflow-y: auto;
+  padding-left: 10px;
+  overflow-y: auto;
+}
+
+

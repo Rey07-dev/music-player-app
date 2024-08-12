@@ -6,6 +6,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { MusicCardComponent } from './components/music-card/music-card.component';
+import { CardComponent } from './components/card/card.component';
+import { MusicMenuComponent } from './components/music-menu/music-menu.component';
+import { ControlIconComponent } from './components/control-icon/control-icon.component';
 
 
 @NgModule({
@@ -13,7 +17,11 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
     NavbarComponent,
     SidebarComponent,
     PlayControlsComponent,
-    ThemeToggleComponent
+    ThemeToggleComponent,
+    MusicCardComponent,
+    CardComponent,
+    MusicMenuComponent,
+    ControlIconComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +32,12 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
   exports: [
     NavbarComponent,
     SidebarComponent,
-    PlayControlsComponent
+    PlayControlsComponent,
+    ThemeToggleComponent,
+    MusicCardComponent,
+    CardComponent,
+    MusicMenuComponent,
+    ControlIconComponent
   ],
 })
 export class SharedModule {}

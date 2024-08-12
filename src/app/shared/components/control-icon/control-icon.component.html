@@ -1,0 +1,10 @@
+<i
+  *ngIf="showIcon"
+  [class]="iconClass"
+  [attr.aria-label]="ariaLabel"
+  (click)="onIconClick()"
+  (keydown)="onKeyDown($event)"
+  (keyup)="onKeyUp($event)"
+  (keypress)="onKeyPress($event)"
+  [matTooltip]="ariaLabel"
+></i>

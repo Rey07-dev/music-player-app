@@ -1,0 +1,60 @@
+export interface Tracks {
+  track: Track[]
+}
+
+export interface Track {
+  idTrack: string
+  idAlbum: string
+  idArtist: string
+  idLyric: string
+  idIMVDB: null
+  strTrack: string
+  strAlbum: string
+  strArtist: string
+  strArtistAlternate: null
+  intCD: null
+  intDuration: string
+  strGenre: string
+  strMood: null
+  strStyle: null
+  strTheme: null
+  strDescriptionEN: null
+  strDescriptionDE: null
+  strDescriptionFR: null
+  strDescriptionCN: null
+  strDescriptionIT: null
+  strDescriptionJP: null
+  strDescriptionRU: null
+  strDescriptionES: null
+  strDescriptionPT: null
+  strDescriptionSE: null
+  strDescriptionNL: null
+  strDescriptionHU: null
+  strDescriptionNO: null
+  strDescriptionIL: null
+  strDescriptionPL: null
+  strTrackThumb: null
+  strTrack3DCase: null
+  strTrackLyrics: null
+  strMusicVid: null
+  strMusicVidDirector: null
+  strMusicVidCompnull: null
+  strMusicVidScreen1: null
+  strMusicVidScreen2: null
+  strMusicVidScreen3: null
+  intMusicVidViews: null
+  intMusicVidLikes: null
+  intMusicVidDislikes: null
+  intMusicVidFavorites: null
+  intMusicVidComments: null
+  intTrackNumber: string
+  intLoved: string
+  intScore: null
+  intScoreVotes: null
+  intTotalListeners: null
+  intTotalPlays: null
+  strMusicBrainzID: string
+  strMusicBrainzAlbumID: string
+  strMusicBrainzArtistID: string
+  strLocked: string
+}

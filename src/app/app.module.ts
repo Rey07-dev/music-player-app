@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { HomeComponent } from './pages/home/home.component';
 import { AppComponent } from './app.component';
@@ -10,6 +10,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatButtonModule } from '@angular/material/button';
 import { themeReducer } from './store/theme/theme.reducer';
 import { SharedModule } from './shared/shared.module';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -22,6 +24,8 @@ import { SharedModule } from './shared/shared.module';
     StoreModule.forRoot({ theme: themeReducer }),
     SharedModule,
     MatButtonModule,
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    EffectsModule.forRoot([]),
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

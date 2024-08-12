@@ -1,0 +1,38 @@
+.musicList h2 {
+  font-weight: 700;
+}
+
+.musicListP {
+  padding-left: 18px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.musicListUlSpan{
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.active-link {
+  color: #0642e6;
+}
+
+.musicListUlSpan:hover {
+  color: #0642e6;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .musicList h2 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .musicListUl {
+    font-size: 15px;
+    padding: 0;
+    margin-left: 5px;
+  }
+}
