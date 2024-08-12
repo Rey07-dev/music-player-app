@@ -1,1 +1,9 @@
-<p>home works!</p>
+<app-home-carousel />
+
+<div class="homeMusic">
+  <ng-container *ngFor="let item of tracks">
+    <div class="music-card">
+      <app-card [songs]="item" />
+    </div>
+  </ng-container>
+</div>
