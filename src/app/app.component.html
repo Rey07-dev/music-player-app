@@ -1,12 +1,14 @@
 <div class="mainWrapper">
-  <navbar />
+  <div id="navbar">
+    <navbar id="navbar" />
+  </div>
   <div class="container">
-    <div class="sidebar">
-      <app-sidebar />
-    </div>
+    <app-sidebar id="sidebar" />
     <div class="mainContent">
       <router-outlet></router-outlet>
     </div>
   </div>
-  <app-play-controls />
+  <div id="play">
+    <app-play-controls id="play" aria-label="player controls" />
+  </div>
 </div>
