@@ -1,0 +1,97 @@
+.music-player-controls {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.track-info {
+  margin-left: 20px;
+}
+
+.track-info h3 {
+  margin: 0;
+  display: flex;
+  font-size: 1.5em;
+}
+
+.track-info p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+
+.controlsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  padding: 15px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: #00e5ff;
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.track-duration {
+  display: flex;
+  align-items: center;
+}
+
+.track-duration input {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.seek-bar {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.seek-bar span {
+  color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .track-info {
+    font-size: small;
+  }
+
+  .track-info h3, .track-info p {
+    margin: 0;
+    font-size: small;
+  }
+
+  .seek-bar input {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .volume {
+    display: none;
+  }
+
+}
