@@ -8,11 +8,12 @@ import {
   selectTrack,
   trackEnded,
 } from "./playMusic.actions";
+import { SpotifyTrack } from "../../core/models/interfaces/spotify";
 
 export interface PlayMusicState {
-  track: Track | null;
+  track: SpotifyTrack | null;
   isPlaying: boolean;
-  queue: Track[];
+  queue: SpotifyTrack[];
 }
 
 export const initialPlayMusicState: PlayMusicState = {
@@ -23,23 +24,23 @@ export const initialPlayMusicState: PlayMusicState = {
 
 export const playMusicReducer = createReducer(
   initialPlayMusicState,
-  on(selectTrack, (state, { track }) => ({
+  on(selectTrack, (state, { track }) => (
+    console.log('track',track, state),
+    {
     ...state,
-    currentTrack: track,
+    track: track,
     queue: state.queue.includes(track) ? state.queue : [...state.queue, track],
     isPlaying: true,
   })),
-  on(playTrack, (state) => ({
-    ...state,
-    isPlaying: true,
-  })),
+  on(playTrack, (state) => ({ ...state,isPlaying: true })),
   on(pauseTrack, (state) => ({ ...state, isPlaying: false })),
   on(nextTrack, (state) => {
     const index = state.queue.indexOf(state.track!);
     const nextTrack = state.queue[index + 1] || state.queue[0];
     return {
       ...state,
-      currentTrack: nextTrack,
+      track: nextTrack,
+      queue: state.queue,
       isPlaying: true,
     };
   }),
@@ -49,7 +50,8 @@ export const playMusicReducer = createReducer(
       state.queue[index - 1] || state.queue[state.queue.length - 1];
     return {
       ...state,
-      currentTrack: previousTrack,
+      track: previousTrack,
+      queue: state.queue,
       isPlaying: true,
     };
   }),
@@ -58,7 +60,8 @@ export const playMusicReducer = createReducer(
     const nextTrack = state.queue[currentTrack + 1] || state.queue[0];
     return {
       ...state,
-      currentTrack: nextTrack,
+      track: nextTrack,
+      queue: state.queue,
       isPlaying: true,
     };
   })

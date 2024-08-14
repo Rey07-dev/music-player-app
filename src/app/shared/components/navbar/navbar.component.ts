@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { ThemeState } from '../../../core/models/interfaces/types';
+import { SpotifyState } from '../../../store/spotify/spotify.reducer';
+import { authenticate } from '../../../store/spotify/spotify.actions';
 
 @Component({
   selector: 'navbar',
@@ -10,8 +12,9 @@ import { ThemeState } from '../../../core/models/interfaces/types';
 })
 export class NavbarComponent {
   isDarkTheme$: Observable<boolean>;
+  isDrop: boolean = false;
 
-  constructor(private store: Store<{ theme: ThemeState }>) {
+  constructor(private store: Store<{ theme: ThemeState ,spotify: SpotifyState }>,) {
     this.isDarkTheme$ = this.store.pipe(select(state => state.theme.isDarkTheme));
   }
 
@@ -21,5 +24,15 @@ export class NavbarComponent {
       document.body.classList.remove('dark-theme', 'light-theme');
       document.body.classList.add(themeClass);
     });
+  }
+
+  token$ = this.store.select(state => state.spotify.token);
+
+  toggleProfile() {
+    this.isDrop = !this.isDrop;
+  }
+
+  login() {
+    this.store.dispatch(authenticate());
   }
 }

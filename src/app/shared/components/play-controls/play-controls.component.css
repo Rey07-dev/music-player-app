@@ -5,6 +5,7 @@
 }
 
 .track-info {
+  /* left: 0; */
   margin-left: 20px;
 }
 
@@ -15,10 +16,13 @@
 }
 
 .track-info p {
-  margin: 0;
+  margin: 5px 0;
   font-size: 1.2em;
 }
 
+.title{
+  font-weight: 500;
+}
 
 .controlsWrap {
   display: flex;

@@ -1,8 +1,12 @@
 <div class="music-player-controls">
   <div class="track-info">
-    <!-- <p>Title: {{ tracks[currentTrackIndex].strTrack }}</p>
-    <p>Artist: {{ tracks[currentTrackIndex].strArtist }}</p>
-    <p>Album: {{ tracks[currentTrackIndex].strAlbum }}</p> -->
+    <p>
+      <span class="title">Title: </span>{{ trackDetails()?.name || 'Astro' }}
+    </p>
+    <p *ngFor="let item of trackDetails()?.artists">
+      <span class="title">Artist: </span>{{ item.name || 'Rey' }}
+    </p>
+    <!-- <p><span>Album: </span> {{ trackDetails()?. }}</p> -->
   </div>
   <div class="controlsWrap">
     <div class="controls">
@@ -18,7 +22,7 @@
       <app-control-icon
         iconClass="fas fa-play"
         ariaLabel="Play"
-        *ngIf="!isPlaying"
+        *ngIf="isPlaying$"
         (iconClick)="play()"
         (keyPress)="onKeyPress($event)"
         (keyDown)="onKeyDown($event)"
@@ -28,7 +32,7 @@
       <app-control-icon
         iconClass="fas fa-pause"
         ariaLabel="Pause"
-        *ngIf="isPlaying"
+        *ngIf="isPlaying$"
         (iconClick)="pause()"
         (keyPress)="onKeyPress($event)"
         (keyDown)="onKeyDown($event)"
@@ -50,9 +54,8 @@
         type="range"
         min="0"
         max="100"
-        [value]="( audio.duration) * 100"
+        [value]="(audio.currentTime / audio.duration) * 100"
         (input)="seek($event)"
-        aria-label="Seek Bar"
       />
     </div>
   </div>

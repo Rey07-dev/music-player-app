@@ -10,8 +10,12 @@
 
   <div class="profileWrapper">
     <app-theme-toggle></app-theme-toggle>
-    <div class="profile">
+    <div class="profile" (click)="toggleProfile()">
       <i class="fas fa-user"></i>
+    </div>
+    <div *ngIf="isDrop" class="profileContent">
+      <p>Profile</p>
+      <p>Logout</p>
     </div>
   </div>
 </nav>

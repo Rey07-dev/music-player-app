@@ -17,6 +17,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule } from "@angular/router";
 import { AppRoutes } from "../app.routes";
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeCarouselComponent } from './components/home-carousel/home-carousel.
     MusicMenuComponent,
     ControlIconComponent,
     HomeCarouselComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,

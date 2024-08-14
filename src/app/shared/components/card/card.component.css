@@ -25,6 +25,17 @@
   left: 0;
   width: 100%;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 20px;
+}
+
+.card-content p {
+  margin: 0;
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-title {
@@ -47,7 +58,6 @@
   cursor: pointer;
   display: none;
   color: var(--play-color);
-
 }
 
 .card:hover .play-button {

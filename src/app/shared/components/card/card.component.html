@@ -5,13 +5,13 @@
   aria-label="Card"
 >
   <img
-    [src]="placeholder"
-    alt="{{ songs.strTrack }} cover"
+    [src]="songs.images[0].url"
+    alt="{{ songs.name }} cover"
     class="card-img"
     aria-label="Cover"
   />
   <div class="card-content" aria-label="Content Area">
-    <p class="card-title" aria-label="Title">{{ songs.strTrack }}</p>
+    <p class="card-title" aria-label="Title">{{ songs.name }}</p>
   </div>
   <!-- Play Button -->
   <button

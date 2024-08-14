@@ -24,6 +24,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { playMusicReducer } from './store/play-track/playMusic.reducer';
+import { SpotifyEffects } from './store/spotify/spotify.effects';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
+import { PlayMusicEffects } from './store/play-track/playMusic.effects';
+
 
 const reducers = {
   theme: themeReducer,
@@ -43,14 +48,15 @@ const reducers = {
   ],
   imports: [
     BrowserModule,
+    MatDialogModule,
+    MatMenuModule,
     BrowserAnimationsModule,
     CommonModule,
     RouterOutlet,
     HttpClientModule,
     AsyncPipe,
     StoreModule.forRoot(reducers),
-    StoreModule.forFeature('albums', albumReducer),
-    EffectsModule.forRoot([AlbumEffects]),
+    EffectsModule.forRoot([AlbumEffects, SpotifyEffects, PlayMusicEffects]),
     SharedModule,
     MatButtonModule,
     MatProgressSpinnerModule,
