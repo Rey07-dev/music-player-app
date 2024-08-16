@@ -40,7 +40,6 @@ export class NavbarComponent {
   }
 
   logout() {
-    localStorage.removeItem('spotify_token');
     this.authService.logout();
     this.isDrop = false;
   }
