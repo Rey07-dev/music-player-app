@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Router } from "@angular/router";
-import { catchError, of, switchMap, throwError } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -14,6 +13,7 @@ export class AuthService {
   private clientSecret = environment.CLIENT_SECRET;
   private authEndpoint = environment.authEndpoint;
   private tokenEndpoint = environment.spotify_Token;
+  private accessToken: string | null = null;
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -44,6 +44,7 @@ export class AuthService {
       })
       .subscribe({
         next: (response: any) => {
+          this.setAccessToken(response.access_token);
           localStorage.setItem("spotify_token", response.access_token);
           localStorage.setItem("spotify_refresh_token", response.refresh_token);
           localStorage.setItem("spotify_token_expiration", response.expires_in);
@@ -55,48 +56,27 @@ export class AuthService {
       });
   }
 
-  refreshToken() {
-    const refreshToken = localStorage.getItem("spotify_refresh_token");
+  getToken() {
+    return this.accessToken;
+  }
 
-    if (!refreshToken) {
-      this.logout();
-      return throwError(() => new Error("No refresh token available"));
-    }
+  setAccessToken(token: string) {
+    this.accessToken = token;
+  }
 
-    const body = new HttpParams()
-      .set("grant_type", "refresh_token")
-      .set("refresh_token", refreshToken)
-      .set("client_id", this.clientId);
+  refreshAccessToken() {
+    const refreshToken = localStorage.getItem("spotify_refresh_token")!;
+    const body = new URLSearchParams();
+    body.set("grant_type", "refresh_token");
+    body.set("refresh_token", refreshToken);
+    body.set("client_id", this.clientId);
 
-    return this.http
-      .post<any>(this.tokenEndpoint, body.toString(), {
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Authorization:
-            "Bearer " + btoa(this.clientId + ":" + this.clientSecret),
-        },
-      })
-      .pipe(
-        switchMap((response) => {
-          const newAccessToken = response.access_token;
-          localStorage.setItem("spotify_token", newAccessToken);
-
-          if (response.refresh_token) {
-            localStorage.setItem(
-              "spotify_refresh_token",
-              response.refresh_token
-            );
-          } else {
-            console.warn("No new refresh token available");
-          }
-          return of(response);
-        }),
-        catchError((error) => {
-          console.error("Error Refreshing Token:", error);
-          this.logout();
-          return throwError(() => error);
-        })
-      );
+    return this.http.post<any>((this.tokenEndpoint, body.toString()), {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        Authorization: "Basic " + btoa(this.clientId + ":" + this.clientSecret),
+      },
+    });
   }
 
   isTokenExpired(): boolean {
@@ -113,6 +93,8 @@ export class AuthService {
 
   logout() {
     localStorage.removeItem("spotify_token");
+    localStorage.removeItem("spotify_refresh_token");
+    localStorage.removeItem("spotify_token_expiration");
     this.router.navigate(["/login"]);
   }
 }

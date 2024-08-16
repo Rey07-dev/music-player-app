@@ -10,7 +10,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { themeReducer } from "./store/theme/theme.reducer";
 import { SharedModule } from "./shared/shared.module";
 import { HttpClientModule, provideHttpClient, withInterceptors } from "@angular/common/http";
-import { apiInterceptor } from "./core/interceptors/api.interceptor";
 import { AlbumsComponent } from "./pages/albums/albums.component";
 import { FavoritesComponent } from "./pages/favorites/favorites.component";
 import { PlaylistsComponent } from "./pages/playlists/playlists.component";
@@ -28,6 +27,8 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatMenuModule } from "@angular/material/menu";
 import { PlayMusicEffects } from "./store/play-track/playMusic.effects";
 import { spotifyReducer } from "./store/spotify/spotify.reducer";
+import { authInterceptor } from "./core/interceptors/auth.interceptor";
+import { reauthenticationInterceptor } from "./core/interceptors/reauthenticate.interceptor";
 
 
 const reducers = {
@@ -66,7 +67,7 @@ const reducers = {
   ],
   providers: [
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([apiInterceptor])),
+    provideHttpClient(withInterceptors([authInterceptor, reauthenticationInterceptor])),
   ],
   bootstrap: [AppComponent],
   exports: [],
