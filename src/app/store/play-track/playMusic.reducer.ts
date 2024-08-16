@@ -1,5 +1,4 @@
 import { createReducer, on } from "@ngrx/store";
-import { Track } from "../../core/models/interfaces/music/tracks";
 import {
   nextTrack,
   pauseTrack,
@@ -8,60 +7,62 @@ import {
   selectTrack,
   trackEnded,
 } from "./playMusic.actions";
-import { SpotifyTrack } from "../../core/models/interfaces/spotify";
+import { IAlbumItem, PlayingSongState } from "../../core/models/interfaces/spotify";
 
 export interface PlayMusicState {
-  track: SpotifyTrack | null;
+  track: IAlbumItem | null;
   isPlaying: boolean;
-  queue: SpotifyTrack[];
+  detail: IAlbumItem | PlayingSongState | null;
+  queue: any[];
 }
 
 export const initialPlayMusicState: PlayMusicState = {
   track: null,
   isPlaying: false,
+  detail: null,
   queue: [],
 };
 
 export const playMusicReducer = createReducer(
   initialPlayMusicState,
-  on(selectTrack, (state, { track }) => (
-    console.log('track',track, state),
-    {
+  on(selectTrack, (state, { track }) => {
+    const trackExistsInQueue = state.queue.some((t) => t.id === track.id);
+    return{
     ...state,
     track: track,
-    queue: state.queue.includes(track) ? state.queue : [...state.queue, track],
+    detail: track ,
+    queue: trackExistsInQueue ? state.queue : [...state.queue, track],
     isPlaying: true,
-  })),
-  on(playTrack, (state) => ({ ...state,isPlaying: true })),
+  }}),
+  on(playTrack, (state) => ({ ...state, isPlaying: true })),
   on(pauseTrack, (state) => ({ ...state, isPlaying: false })),
   on(nextTrack, (state) => {
-    const index = state.queue.indexOf(state.track!);
-    const nextTrack = state.queue[index + 1] || state.queue[0];
+    if (!state.track || !state.queue.length) return state;
+    const currentTrackIndex = state.queue.findIndex((t) => t.id === state.track!.id);
+    const nextTrack = state.queue[(currentTrackIndex + 1) % state.queue.length];
     return {
       ...state,
       track: nextTrack,
-      queue: state.queue,
       isPlaying: true,
     };
   }),
   on(previousTrack, (state) => {
-    const index = state.queue.indexOf(state.track!);
-    const previousTrack =
-      state.queue[index - 1] || state.queue[state.queue.length - 1];
+    if (!state.track || !state.queue.length) return state;
+    const currentTrackIndex = state.queue.findIndex((t) => t.id === state.track!.id);
+    const previousTrack = state.queue[(currentTrackIndex - 1 + state.queue.length) % state.queue.length];
     return {
       ...state,
       track: previousTrack,
-      queue: state.queue,
       isPlaying: true,
     };
   }),
   on(trackEnded, (state) => {
-    const currentTrack = state.queue.indexOf(state.track!);
-    const nextTrack = state.queue[currentTrack + 1] || state.queue[0];
+    if (!state.track || !state.queue.length) return state;
+    const currentTrackIndex = state.queue.findIndex((t) => t.id === state.track!.id);
+    const nextTrack = state.queue[(currentTrackIndex + 1) % state.queue.length];
     return {
       ...state,
       track: nextTrack,
-      queue: state.queue,
       isPlaying: true,
     };
   })
