@@ -4,7 +4,8 @@ import { AuthService } from '../../../core/models/services/spotify/auth.service'
 
 @Component({
   selector: 'app-callback',
-  template: '<p>Loading...</p>',
+  styleUrls: ['./login.component.css'],
+  template: '<p class="loading"><mat-spinner></mat-spinner> Loading...</p>',
 })
 export class CallbackComponent implements OnInit {
   constructor(private route: ActivatedRoute, private authService: AuthService) {}
@@ -14,6 +15,8 @@ export class CallbackComponent implements OnInit {
       const code = params['code'];
       if (code) {
         this.authService.handleAuthCallback(code);
+      } else {
+        console.error('No authorization code found in the URL');
       }
     });
   }

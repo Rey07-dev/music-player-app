@@ -1,3 +1,4 @@
+import { AuthService } from './../../../core/models/services/spotify/auth.service';
 import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -14,7 +15,9 @@ export class NavbarComponent {
   isDarkTheme$: Observable<boolean>;
   isDrop: boolean = false;
 
-  constructor(private store: Store<{ theme: ThemeState ,spotify: SpotifyState }>,) {
+  constructor(private store: Store<{ theme: ThemeState ,spotify: SpotifyState }>,
+    private authService: AuthService
+  ) {
     this.isDarkTheme$ = this.store.pipe(select(state => state.theme.isDarkTheme));
   }
 
@@ -34,5 +37,11 @@ export class NavbarComponent {
 
   login() {
     this.store.dispatch(authenticate());
+  }
+
+  logout() {
+    localStorage.removeItem('spotify_token');
+    this.authService.logout();
+    this.isDrop = false;
   }
 }

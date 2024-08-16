@@ -8,4 +8,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'music-player-app';
+
+  ngOnDestroy(): void {
+    localStorage.removeItem('device_id')
+  }
 }
