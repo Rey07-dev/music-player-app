@@ -1,62 +1,39 @@
 <div class="music-player-controls">
   <div class="track-info">
     <p>
-      <span class="title">Title: </span>{{ trackDetails()?.name || 'Astro' }}
+      <span class="title">Title: </span>{{ trackDetail?.track_window?.current_track?.name }}
     </p>
-    <p *ngFor="let item of trackDetails()?.artists">
-      <span class="title">Artist: </span>{{ item.name || 'Rey' }}
+    <p >
+      <span class="title">Artist: </span>{{ artistName }}
     </p>
-    <!-- <p><span>Album: </span> {{ trackDetails()?. }}</p> -->
   </div>
+
   <div class="controlsWrap">
     <div class="controls">
       <app-control-icon
         iconClass="fas fa-backward"
         ariaLabel="Previous"
         (iconClick)="previous()"
-        (keyPress)="onKeyPress($event)"
-        (keyDown)="onKeyDown($event)"
-        (keyUp)="onKeyUp($event)"
       ></app-control-icon>
 
       <app-control-icon
         iconClass="fas fa-play"
         ariaLabel="Play"
-        *ngIf="isPlaying$"
         (iconClick)="play()"
-        (keyPress)="onKeyPress($event)"
-        (keyDown)="onKeyDown($event)"
-        (keyUp)="onKeyUp($event)"
       ></app-control-icon>
 
       <app-control-icon
         iconClass="fas fa-pause"
         ariaLabel="Pause"
-        *ngIf="isPlaying$"
         (iconClick)="pause()"
-        (keyPress)="onKeyPress($event)"
-        (keyDown)="onKeyDown($event)"
-        (keyUp)="onKeyUp($event)"
       ></app-control-icon>
 
       <app-control-icon
         iconClass="fas fa-forward"
         ariaLabel="Next"
         (iconClick)="next()"
-        (keyPress)="onKeyPress($event)"
-        (keyDown)="onKeyDown($event)"
-        (keyUp)="onKeyUp($event)"
       ></app-control-icon>
     </div>
 
-    <div class="seek-bar">
-      <input
-        type="range"
-        min="0"
-        max="100"
-        [value]="(audio.currentTime / audio.duration) * 100"
-        (input)="seek($event)"
-      />
-    </div>
   </div>
 </div>

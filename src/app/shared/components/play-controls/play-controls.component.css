@@ -1,11 +1,10 @@
 .music-player-controls {
   display: flex;
-  height: 100%;
+  height: auto;
   justify-content: space-between;
 }
 
 .track-info {
-  /* left: 0; */
   margin-left: 20px;
 }
 
@@ -30,7 +29,7 @@
   justify-content: center;
   flex-direction: column;
   width: 200px;
-  padding: 15px;
+  padding: 20px 15px;
 }
 
 .controls {

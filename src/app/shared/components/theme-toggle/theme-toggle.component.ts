@@ -15,14 +15,12 @@ export class ThemeToggleComponent {
 
   constructor(private store: Store<{ theme: ThemeState }>) {
     this.isDarkTheme$ = this.store.pipe(select(state => {
-      console.log(state.theme.isDarkTheme,'isDarkTheme');
       return state.theme.isDarkTheme
     }));
   }
 
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
-    console.log('toggleTheme', this.isDarkTheme$);
     this.store.dispatch(toggleTheme());
   }
 }
