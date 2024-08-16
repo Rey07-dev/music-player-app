@@ -24,25 +24,4 @@ export class SpotifyEffects {
       })
     )
   );
-
-  handleRedirectCallback$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType('[Router] NavigationEnd'),
-      switchMap(() => {
-        const hash = window.location.hash.substring(1).split('&').reduce((acc, item) => {
-          const parts = item.split('=');
-          acc[parts[0]] = decodeURIComponent(parts[1]);
-          return acc;
-        }, {} as any);
-
-        if (hash.access_token) {
-          return of(authenticateSuccess({ token: hash.access_token }));
-        } else {
-          return of(authenticateFailure({ error: 'Failed to authenticate' }));
-        }
-      })
-    )
-  );
-
-
 }
