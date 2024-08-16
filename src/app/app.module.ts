@@ -9,7 +9,11 @@ import { provideAnimationsAsync } from "@angular/platform-browser/animations/asy
 import { MatButtonModule } from "@angular/material/button";
 import { themeReducer } from "./store/theme/theme.reducer";
 import { SharedModule } from "./shared/shared.module";
-import { HttpClientModule, provideHttpClient, withInterceptors } from "@angular/common/http";
+import {
+  HttpClientModule,
+  provideHttpClient,
+  withInterceptors,
+} from "@angular/common/http";
 import { AlbumsComponent } from "./pages/albums/albums.component";
 import { FavoritesComponent } from "./pages/favorites/favorites.component";
 import { PlaylistsComponent } from "./pages/playlists/playlists.component";
@@ -29,7 +33,7 @@ import { PlayMusicEffects } from "./store/play-track/playMusic.effects";
 import { spotifyReducer } from "./store/spotify/spotify.reducer";
 import { authInterceptor } from "./core/interceptors/auth.interceptor";
 import { reauthenticationInterceptor } from "./core/interceptors/reauthenticate.interceptor";
-
+import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
 
 const reducers = {
   theme: themeReducer,
@@ -58,7 +62,7 @@ const reducers = {
     HttpClientModule,
     AsyncPipe,
     StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([AlbumEffects,  PlayMusicEffects]),
+    EffectsModule.forRoot([AlbumEffects, PlayMusicEffects]),
     SharedModule,
     MatButtonModule,
     MatProgressSpinnerModule,
@@ -67,7 +71,13 @@ const reducers = {
   ],
   providers: [
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([authInterceptor, reauthenticationInterceptor])),
+    provideHttpClient(
+      withInterceptors([
+        authInterceptor,
+        reauthenticationInterceptor,
+        spotifyPlayerInterceptor,
+      ])
+    ),
   ],
   bootstrap: [AppComponent],
   exports: [],

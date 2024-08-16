@@ -4,8 +4,7 @@ import { AuthService } from "../models/services/spotify/auth.service";
 
 export function authInterceptor (request: HttpRequest<any>, next: HttpHandlerFn) {
 
-  const authService = inject(AuthService);
-  const token = authService.getToken();
+  const token = localStorage.getItem("spotify_token");
   if (token) {
     request = request.clone({
       setHeaders: {

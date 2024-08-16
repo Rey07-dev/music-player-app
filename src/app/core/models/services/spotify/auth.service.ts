@@ -13,7 +13,6 @@ export class AuthService {
   private clientSecret = environment.CLIENT_SECRET;
   private authEndpoint = environment.authEndpoint;
   private tokenEndpoint = environment.spotify_Token;
-  private accessToken: string | null = null;
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -44,7 +43,6 @@ export class AuthService {
       })
       .subscribe({
         next: (response: any) => {
-          this.setAccessToken(response.access_token);
           localStorage.setItem("spotify_token", response.access_token);
           localStorage.setItem("spotify_refresh_token", response.refresh_token);
           localStorage.setItem("spotify_token_expiration", response.expires_in);
@@ -54,14 +52,6 @@ export class AuthService {
           console.error(err);
         },
       });
-  }
-
-  getToken() {
-    return this.accessToken;
-  }
-
-  setAccessToken(token: string) {
-    this.accessToken = token;
   }
 
   refreshAccessToken() {

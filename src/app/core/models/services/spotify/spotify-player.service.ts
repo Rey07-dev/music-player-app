@@ -1,3 +1,4 @@
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { PlayingSongState } from "../../interfaces/spotify";
 import { Store } from "@ngrx/store";
@@ -19,7 +20,10 @@ export class SpotifyPlayerService {
   device_id!: string;
   public isPaused: boolean = true;
 
-  constructor(private store: Store<{ playingSong: PlayingSongState }>) {
+  constructor(
+    private store: Store<{ playingSong: PlayingSongState }>,
+    private http: HttpClient
+  ) {
     this.loadSpotifySDK();
   }
 
@@ -80,7 +84,6 @@ export class SpotifyPlayerService {
       return;
     }
 
-    const token = localStorage.getItem("spotify_token");
     const playData = {
       context_uri: uri,
       uris: playlists,
@@ -92,63 +95,40 @@ export class SpotifyPlayerService {
     const deviceId = this.device_id
       ? this.device_id
       : localStorage.getItem("device_id");
-    fetch(
-      `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`,
-      {
-        method: "PUT",
-        body: JSON.stringify(playData),
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
+    this.http.put(url, playData).subscribe({
+      next: () => console.log("Player playing"),
+      error: (err) => console.error(err),
+    });
   }
 
   pause() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
-    fetch(
-      `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`,
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    const url = `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`;
+
+    this.http.put(url, {}).subscribe({
+      next: () => console.log("Player paused"),
+      error: (err) => console.error(err),
+    });
   }
 
   next() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
+    const url = `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`;
 
-    fetch(
-      `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    this.http.put(url, {}).subscribe({
+      next: () => console.log("Player next"),
+      error: (err) => console.error(err),
+    });
   }
 
   previous() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
+    const url = `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`;
 
-    fetch(
-      `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    this.http.put(url, {}).subscribe({
+      next: () => console.log("Player previous"),
+      error: (err) => console.error(err),
+    });
   }
 }

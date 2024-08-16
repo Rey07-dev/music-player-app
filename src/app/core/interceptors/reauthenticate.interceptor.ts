@@ -9,7 +9,8 @@ export function reauthenticationInterceptor(
 ) {
   const authService = inject(AuthService);
 
-  const access_token = authService.getToken();
+  const access_token = localStorage.getItem("spotify_token");
+  console.log('access_token', access_token)
   if (access_token) {
     request = addAuthorizationHeader(request, access_token);
   }
@@ -18,8 +19,9 @@ export function reauthenticationInterceptor(
       if (error.status === 401) {
         return authService.refreshAccessToken().pipe(
           switchMap((response) => {
-            if (response && response.access_token) {
-              authService.setAccessToken(response.access_token); //this updates the access token
+            if (response) {
+              console.log('new access token', response.access_token)
+              localStorage.setItem("spotify_token", response.access_token); //this updates the access token
               request = addAuthorizationHeader(request, response.access_token); //this adds the new access token to the request
               return next(request);
             } else {
