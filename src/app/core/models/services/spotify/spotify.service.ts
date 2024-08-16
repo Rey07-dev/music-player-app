@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { environment } from '../../../../../environments/environment';
 import { SpotifyAlbums } from '../../interfaces/spotify';
 
@@ -20,17 +19,13 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  getNewReleases(): Observable<any> {
-    // return this.http.get(this.url, { headers: this.headers });
+  getNewReleases() {
+    // return this.http.get<SpotifyAlbums>(this.url, { headers: this.headers });
     return this.http.get<SpotifyAlbums>(this.jsonURL);
   }
 
   getTrack() {
-
-    // return this.http.get<SpotifyAlbums>(this.tracksURL, { headers: this.headers });
+    return this.http.get<SpotifyAlbums>(this.tracksURL, { headers: this.headers });
   }
 
-  // getAlbums(): Observable<any> {
-  //   return this.http.get<any>(`${environment.apiBaseUrl}album.php?u=1`, { headers: this.headers });
-  // }
 }
