@@ -18,6 +18,7 @@ import { RouterModule } from "@angular/router";
 import { AppRoutes } from "../app.routes";
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 import { LoginComponent } from './components/login/login.component';
+import { CallbackComponent } from "./components/login/callback.component";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { LoginComponent } from './components/login/login.component';
     ControlIconComponent,
     HomeCarouselComponent,
     LoginComponent,
+    CallbackComponent
   ],
   imports: [
     CommonModule,
@@ -53,7 +55,8 @@ import { LoginComponent } from './components/login/login.component';
     CardComponent,
     MusicMenuComponent,
     ControlIconComponent,
-    HomeCarouselComponent
+    HomeCarouselComponent,
+    LoginComponent
   ],
 })
 export class SharedModule {}
