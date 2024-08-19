@@ -1,0 +1,53 @@
+<div class="albumWrap" routerLinkActive="/albums">
+  <div class="banner">
+    <img
+      [src]="albumImg"
+      [alt]="album?.name"
+      [attr.aria-label]="'album ' + album?.name + ' cover'"
+    />
+  </div>
+  <div class="tracks">
+    <h3>Currently Playing</h3>
+    <div
+      class="currentTrack"
+      (mouseover)="showPlayButton = true"
+      (mouseleave)="showPlayButton = false"
+      onfocus=""
+    >
+      <div class="cover">
+        <img [src]="playImg" [alt]="currentPlay?.name" />
+        <div class="info">
+          <p>
+            {{ currentPlay?.name }}
+            <span>{{ getArtistNames(currentPlay) }}</span>
+          </p>
+        </div>
+      </div>
+      <p>{{ duration(currentPlay) }}</p>
+      <button
+        aria-label="Play Button"
+        *ngIf="showPlayButton"
+        class="play-button"
+        (click)="playSong(currentPlay)"
+      >
+        <i class="fas fa-play" aria-label="Play"></i>
+      </button>
+    </div>
+    <h4>Up Next</h4>
+    <div
+      class="currentTrack"
+      *ngFor="let track of tracks?.track_window?.next_tracks"
+    >
+      <div class="cover">
+        <img [src]="track.album.images[2].url" [alt]="track.name" />
+        <div class="info">
+          <p>
+            {{ track.name }}
+            <span>{{ track.artists[0].name }}</span>
+          </p>
+        </div>
+      </div>
+      <p>{{ duration(track) }}</p>
+    </div>
+  </div>
+</div>

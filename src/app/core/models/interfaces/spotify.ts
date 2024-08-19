@@ -127,15 +127,15 @@ export type PlayingSongState = {
   playback_quality: string;
   playback_speed: number;
 
-  context: {
-    uri: string;
-    metadata: {};
-  };
-
   track_window: {
     current_track: TrackInfo;
     next_tracks: Array<TrackInfo>;
     previous_tracks: Array<TrackInfo>;
+  };
+
+  context: {
+    uri: string;
+    metadata: {};
   };
 
   restrictions: PlaybackRestrictions;

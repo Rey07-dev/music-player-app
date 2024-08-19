@@ -23,5 +23,11 @@ export const albumReducer = createReducer(
     error: null,
     albums: null,
     loading: true
+  })),
+  on(albumActions.getAlbum, (state,{albumList}) => ({
+    ...state,
+    error: null,
+    album: albumList,
+    loading: false
   }))
 );

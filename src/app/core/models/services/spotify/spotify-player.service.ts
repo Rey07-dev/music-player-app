@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { PlayingSongState } from "../../interfaces/spotify";
-import { Store } from "@ngrx/store";
+import { IAlbumItem, PlayingSongState } from "../../interfaces/spotify";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
 
@@ -21,7 +20,6 @@ export class SpotifyPlayerService {
   public isPaused: boolean = true;
 
   constructor(
-    private store: Store<{ playingSong: PlayingSongState }>,
     private http: HttpClient
   ) {
     this.loadSpotifySDK();
@@ -66,7 +64,6 @@ export class SpotifyPlayerService {
         if (!state) {
           return;
         }
-        this.isPaused = state.paused;
         localStorage.setItem("player_state", JSON.stringify(state));
       });
 
@@ -78,26 +75,28 @@ export class SpotifyPlayerService {
     }
   }
 
+  getStoredData(keyName: string) {
+    return localStorage.getItem(keyName) ? JSON.parse(localStorage.getItem(keyName)!) : null;
+  }
+
   play(uri: string, playlists?: string[]) {
     if (!this.player) {
       console.error("Player not initialized");
       return;
     }
-
-    const playData = {
-      context_uri: uri,
-      uris: playlists,
-      offset: {
-        position: 0,
-      },
-      position_ms: 0,
-    };
     const deviceId = this.device_id
       ? this.device_id
       : localStorage.getItem("device_id");
     const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
+    const resume: PlayingSongState = this.getStoredData("player_state");
+    const checkId: IAlbumItem = localStorage.getItem("album") ? JSON.parse(localStorage.getItem("album")!) : null;
+    const playData =  {
+          context_uri: uri,
+          uris: playlists,
+          offset: { position: 0 },
+          position_ms: 0,
+        };
     this.http.put(url, playData).subscribe({
-      next: () => console.log("Player playing"),
       error: (err) => console.error(err),
     });
   }
@@ -107,7 +106,6 @@ export class SpotifyPlayerService {
     const url = `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`;
 
     this.http.put(url, {}).subscribe({
-      next: () => console.log("Player paused"),
       error: (err) => console.error(err),
     });
   }
@@ -116,8 +114,7 @@ export class SpotifyPlayerService {
     const deviceId = this.device_id || localStorage.getItem("device_id");
     const url = `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`;
 
-    this.http.put(url, {}).subscribe({
-      next: () => console.log("Player next"),
+    this.http.post(url, {}).subscribe({
       error: (err) => console.error(err),
     });
   }
@@ -126,8 +123,7 @@ export class SpotifyPlayerService {
     const deviceId = this.device_id || localStorage.getItem("device_id");
     const url = `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`;
 
-    this.http.put(url, {}).subscribe({
-      next: () => console.log("Player previous"),
+    this.http.post(url, {}).subscribe({
       error: (err) => console.error(err),
     });
   }

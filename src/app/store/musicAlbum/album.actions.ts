@@ -1,6 +1,7 @@
 import { createAction, props } from '@ngrx/store';
 import { Album, AlbumList } from '../../core/models/interfaces/music/album';
 import { HttpErrorResponse } from '@angular/common/http';
+import { IAlbum, IAlbumItem } from '../../core/models/interfaces/spotify';
 
 export const albumRequestSuccess = createAction(
   '[HTTP] Album Request Success',
@@ -15,3 +16,7 @@ export const albumRequestStart= createAction(
   '[HTTP] Album Request Start',
 )
 
+export const getAlbum = createAction(
+  '[Album] Get Albums',
+  props<{ albumList: IAlbumItem }>()
+);

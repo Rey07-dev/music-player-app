@@ -8,7 +8,6 @@ import {
 import { inject } from '@angular/core';
 import { Observable, throwError } from "rxjs";
 import { catchError, switchMap } from "rxjs/operators";
-import { addAuthorizationHeader } from './reauthenticate.interceptor';
 
 export function spotifyPlayerInterceptor(
   req: HttpRequest<any>,
@@ -17,26 +16,31 @@ export function spotifyPlayerInterceptor(
   const token = localStorage.getItem("spotify_token");
   const authService = inject(AuthService);
 
-  if (token) {
-    req = addAuthorizationHeader(req, token);
-  }
+  let clonedRequest = req.clone({
+    headers: req.headers.set("Authorization", `Bearer ${token}`,),
+  });;
 
-  return next(req).pipe(
+  return next(clonedRequest).pipe(
     catchError((error: HttpErrorResponse) => {
       if (error.status === 401) {
-        authService.refreshAccessToken().pipe(
+        return authService.refreshAccessToken().pipe(
           switchMap((response) => {
-            if (response) {
-              localStorage.setItem("spotify_token", response.access_token);
-              req = addAuthorizationHeader(req, response.access_token);
-              handleUnauthorized(req, next, response.access_token);
-              return next(req);
-            }
-            return next(req);
+            const newToken = response.access_token;
+            localStorage.setItem('spotify_token', newToken);
+            const newRequest = req.clone({
+              headers: req.headers.set("Authorization", `Bearer ${newToken}`),
+            });
+            return next(newRequest);
+          }),
+          catchError((refreshError) => {
+            console.error('Refresh token failed', refreshError);
+            authService.logout();
+            return throwError(() => refreshError);
           })
-        )
+        );
+      } else {
+        return throwError(() => error);
       }
-      return throwError(() => new Error(error.message));
     })
   );
 }

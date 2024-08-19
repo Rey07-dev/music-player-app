@@ -1,10 +1,9 @@
 <div class="music-player-controls">
   <div class="track-info">
+    <img [src]="playImage" alt="{{artistName}} cover">
     <p>
-      <span class="title">Title: </span>{{ trackDetail?.track_window?.current_track?.name }}
-    </p>
-    <p >
-      <span class="title">Artist: </span>{{ artistName }}
+      <span class="title">Title: {{ trackDetail?.track_window?.current_track?.name }}</span>
+      <span class="title">Artist: {{ artistName }}</span>
     </p>
   </div>
 

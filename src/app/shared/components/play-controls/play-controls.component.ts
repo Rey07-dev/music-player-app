@@ -13,9 +13,10 @@ import { PlayingSongState } from "../../../core/models/interfaces/spotify";
 export class PlayControlsComponent {
 
   @ViewChild("audioPlayerRef") audioPlayerRef!: ElementRef<HTMLAudioElement>;
-  isPlaying = false;
+  isPlaying: boolean = false;
   trackDetail!: PlayingSongState | null;
   artistName: any;
+  playImage!: string;
 
   constructor(
     private spotifyPlayerService: SpotifyPlayerService,
@@ -27,6 +28,7 @@ export class PlayControlsComponent {
   ngOnInit(): void {
     setInterval(() => {
       this.trackDetail = this.trackInfo();
+      this.playImage = this.trackDetail?.track_window.current_track.album.images[2].url || '';
       this.artistName = this.trackDetail?.track_window.current_track.artists[0].name;
     }, 100);
   }
