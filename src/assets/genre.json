@@ -1,0 +1,4809 @@
+{
+  "content": {
+    "items": [
+      {
+        "content": {
+          "items": [],
+          "limit": 10,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 0
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5DAqZH9ZZx2p0HZnp6H",
+        "images": [],
+        "name": "Pop",
+        "rendering": "HEADER",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "The hottest tracks in the United States. Cover: Billie Eilish",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0kbJZpiYdZl"
+              },
+              "id": "37i9dQZF1DX0kbJZpiYdZl",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e6ad86e434f08c75cb5d12dc",
+                  "width": null
+                }
+              ],
+              "name": "Hot Hits USA",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzgxNjM0NCwwMDAwMDAwMGNlNDlmMTAxZjhkOTgyNGY4YjNlYmRlY2VmOGU4ODgx",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0kbJZpiYdZl"
+            },
+            {
+              "collaborative": false,
+              "description": "Who's now and next in pop. Cover: Mark Ambor",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWUa8ZRTfalHk"
+              },
+              "id": "37i9dQZF1DWUa8ZRTfalHk",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000295ae4942f9478ff121f26364",
+                  "width": null
+                }
+              ],
+              "name": "Pop Rising",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDJiNTA5MDVmNDdmMjc4YzlkNjU3ZWY0ZmQ4ZTdmZGFj",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWUa8ZRTfalHk"
+            },
+            {
+              "collaborative": false,
+              "description": "it started pretty slowly \ud83d\udc0c\ud83d\udc0c\ud83d\udc0c",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWvvyNmW9V9a"
+              },
+              "id": "37i9dQZF1DWWvvyNmW9V9a",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c645a42279cc52e1f8ab6f5e",
+                  "width": null
+                }
+              ],
+              "name": "teen beats",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMGQ3YTI1MjlhYjA5MDg1NzU4N2I0Zjk3ODRhNDgyMDkz",
+              "tracks": {
+                "total": 104
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWvvyNmW9V9a"
+            },
+            {
+              "collaborative": false,
+              "description": "Current favorites and exciting new music. Cover: Sabrina Carpenter",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcRXFNfZr7Tp"
+              },
+              "id": "37i9dQZF1DXcRXFNfZr7Tp",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c88478cd8b56d8afbddeff6a",
+                  "width": null
+                }
+              ],
+              "name": "just hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4NDEwMCwwMDAwMDAwMDU3NGIxYzQzNjdhMGE2MjcwMjFiYTJiZTQxNTU4YmM4",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcRXFNfZr7Tp"
+            },
+            {
+              "collaborative": false,
+              "description": "The hottest 50. Cover: Post Malone",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcBWIGoYBM5M"
+              },
+              "id": "37i9dQZF1DXcBWIGoYBM5M",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002997259ab71bbecfa630edc82",
+                  "width": null
+                }
+              ],
+              "name": "Today\u2019s Top Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDdiNGIzODk1OTgzNmNmMTVjM2Y3ZjVkZWM4N2JjMDk2",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+            },
+            {
+              "collaborative": false,
+              "description": "Celebrating the power of amazing female pop artists. ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3WvGXE8FqYX"
+              },
+              "id": "37i9dQZF1DX3WvGXE8FqYX",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002707daa8b8022864f75415060",
+                  "width": null
+                }
+              ],
+              "name": "Women of Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDJmMzhiNWVjY2E2MGFjMWI5ZDkwNTFkMmU1MzUyNGRk",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3WvGXE8FqYX"
+            },
+            {
+              "collaborative": false,
+              "description": "next gen pop Cover: Addison Rae",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXaPCIWxzZwR1"
+              },
+              "id": "37i9dQZF1DXaPCIWxzZwR1",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002d784a7f16c5f5142b8e014d3",
+                  "width": null
+                }
+              ],
+              "name": "Pop Sauce",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDY5OThiMGZjN2ZiY2U1YTYwYTA3YTk5YzYwNmMyZjJl",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXaPCIWxzZwR1"
+            },
+            {
+              "collaborative": false,
+              "description": "Didn't I make it obvious???? \ud83d\udcf8 Fordo",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXca8AyWK6Y7g"
+              },
+              "id": "37i9dQZF1DXca8AyWK6Y7g",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e504ed55fb6d00172fcf0306",
+                  "width": null
+                }
+              ],
+              "name": "young & free",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDAxMWNiMjFlMzQ3MTM0OTRhZmNmNTNjZGFkYmVlODA5",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXca8AyWK6Y7g"
+            },
+            {
+              "collaborative": false,
+              "description": "heartbreak feels good in a place like this. Cover: Gracie Abrams",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWSqBruwoIXkA"
+              },
+              "id": "37i9dQZF1DWSqBruwoIXkA",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002845cbcf1a2dc28df6898ca0e",
+                  "width": null
+                }
+              ],
+              "name": "sad hour",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDNkYjczMmRiNTIzMDhjMjdkZTkzYmU0OTQ2MDQ2Mzkz",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWSqBruwoIXkA"
+            },
+            {
+              "collaborative": false,
+              "description": "It's a main pop girl emergency \ud83c\udd98  Cover: ROSAL\u00cdA & LISA",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX7YE2tQ4q86h"
+              },
+              "id": "37i9dQZF1DX7YE2tQ4q86h",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024511203a62abf637fe846bc3",
+                  "width": null
+                }
+              ],
+              "name": "OBSESSED",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDk0OGQ0ZGIyMjAyYWQ4OTRkMzI0MjdlZjBhMTRkYjM4",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX7YE2tQ4q86h"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 35
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLx2bk4MeMEPd",
+        "images": [],
+        "name": "Popular Pop Playlists",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "Essential new pop tracks. Cover: Tinashe",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX11otjJ7crqp"
+              },
+              "id": "37i9dQZF1DX11otjJ7crqp",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000022c2c1fdddd8a242dca2cfa5a",
+                  "width": null
+                }
+              ],
+              "name": "New Pop Picks",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDM5NmRlYjlkMzMyNmNkOTZhZTVkMWE3YzgyYTY5MzE4",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX11otjJ7crqp"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/1HY2Jd0NmPuamShAr6KMms"
+                  },
+                  "id": "1HY2Jd0NmPuamShAr6KMms",
+                  "name": "Lady Gaga",
+                  "type": "artist",
+                  "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/0du5cEVh5yTK9QJze8zA0C"
+                  },
+                  "id": "0du5cEVh5yTK9QJze8zA0C",
+                  "name": "Bruno Mars",
+                  "type": "artist",
+                  "uri": "spotify:artist:0du5cEVh5yTK9QJze8zA0C"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/10FLjwfpbxLmW8c25Xyc2N"
+              },
+              "id": "10FLjwfpbxLmW8c25Xyc2N",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27382ea2e9e1858aa012c57cd45",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0282ea2e9e1858aa012c57cd45",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485182ea2e9e1858aa012c57cd45",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Die With A Smile",
+              "release_date": "2024-08-16",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:10FLjwfpbxLmW8c25Xyc2N"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/11p2E654TTU8e0nZWBR4AL"
+                  },
+                  "id": "11p2E654TTU8e0nZWBR4AL",
+                  "name": "Mark Ambor",
+                  "type": "artist",
+                  "uri": "spotify:artist:11p2E654TTU8e0nZWBR4AL"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/3Kb9vAa1RBNXEQltJpPxwE"
+              },
+              "id": "3Kb9vAa1RBNXEQltJpPxwE",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273da33127f62acdb0aca585e92",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02da33127f62acdb0aca585e92",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851da33127f62acdb0aca585e92",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Rockwood",
+              "release_date": "2024-08-16",
+              "release_date_precision": "day",
+              "total_tracks": 12,
+              "type": "album",
+              "uri": "spotify:album:3Kb9vAa1RBNXEQltJpPxwE"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/0NIIxcxNHmOoyBx03SfTCD"
+                  },
+                  "id": "0NIIxcxNHmOoyBx03SfTCD",
+                  "name": "Tinashe",
+                  "type": "artist",
+                  "uri": "spotify:artist:0NIIxcxNHmOoyBx03SfTCD"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/6lCHEpHcYgC24XO87InJjZ"
+              },
+              "id": "6lCHEpHcYgC24XO87InJjZ",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273af36c9a8757550661b6c15ec",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02af36c9a8757550661b6c15ec",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851af36c9a8757550661b6c15ec",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Quantum Baby",
+              "release_date": "2024-08-16",
+              "release_date_precision": "day",
+              "total_tracks": 8,
+              "type": "album",
+              "uri": "spotify:album:6lCHEpHcYgC24XO87InJjZ"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/7n2wHs1TKAczGzO7Dd2rGr"
+                  },
+                  "id": "7n2wHs1TKAczGzO7Dd2rGr",
+                  "name": "Shawn Mendes",
+                  "type": "artist",
+                  "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1Gjj4lJko9J5Xh3VDWziyE"
+              },
+              "id": "1Gjj4lJko9J5Xh3VDWziyE",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27380072bdea35d71c0008bf7ee",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0280072bdea35d71c0008bf7ee",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485180072bdea35d71c0008bf7ee",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Shawn",
+              "release_date": "2024-08-08",
+              "release_date_precision": "day",
+              "total_tracks": 2,
+              "type": "album",
+              "uri": "spotify:album:1Gjj4lJko9J5Xh3VDWziyE"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/6jJ0s89eD6GaHleKKya26X"
+                  },
+                  "id": "6jJ0s89eD6GaHleKKya26X",
+                  "name": "Katy Perry",
+                  "type": "artist",
+                  "uri": "spotify:artist:6jJ0s89eD6GaHleKKya26X"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/6UEGp3MQnsKoK9rwKcKBUo"
+              },
+              "id": "6UEGp3MQnsKoK9rwKcKBUo",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2732f9bc7ad2feeb0706b329edd",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e022f9bc7ad2feeb0706b329edd",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d000048512f9bc7ad2feeb0706b329edd",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "LIFETIMES",
+              "release_date": "2024-08-08",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:6UEGp3MQnsKoK9rwKcKBUo"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/5RTLRtXjbXI2lSXc6jxlAz"
+                  },
+                  "id": "5RTLRtXjbXI2lSXc6jxlAz",
+                  "name": "Ravyn Lenae",
+                  "type": "artist",
+                  "uri": "spotify:artist:5RTLRtXjbXI2lSXc6jxlAz"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1uE3dRPe3SrGdNhd1nWlSa"
+              },
+              "id": "1uE3dRPe3SrGdNhd1nWlSa",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273ef985ba96e76a9574cc68a30",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02ef985ba96e76a9574cc68a30",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851ef985ba96e76a9574cc68a30",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Bird's Eye",
+              "release_date": "2024-08-09",
+              "release_date_precision": "day",
+              "total_tracks": 11,
+              "type": "album",
+              "uri": "spotify:album:1uE3dRPe3SrGdNhd1nWlSa"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/3c0gDdb9lhnHGFtP4prQpn"
+                  },
+                  "id": "3c0gDdb9lhnHGFtP4prQpn",
+                  "name": "KATSEYE",
+                  "type": "artist",
+                  "uri": "spotify:artist:3c0gDdb9lhnHGFtP4prQpn"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/48t47MKCsynkPx3rRg7EWr"
+              },
+              "id": "48t47MKCsynkPx3rRg7EWr",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273ce45d47af980b6d16e43a9d0",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02ce45d47af980b6d16e43a9d0",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851ce45d47af980b6d16e43a9d0",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "SIS (Soft Is Strong)",
+              "release_date": "2024-08-16",
+              "release_date_precision": "day",
+              "total_tracks": 5,
+              "type": "album",
+              "uri": "spotify:album:48t47MKCsynkPx3rRg7EWr"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/25uiPmTg16RbhZWAqwLBy5"
+                  },
+                  "id": "25uiPmTg16RbhZWAqwLBy5",
+                  "name": "Charli xcx",
+                  "type": "artist",
+                  "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/6qqNVTkY8uBg9cP3Jd7DAH"
+                  },
+                  "id": "6qqNVTkY8uBg9cP3Jd7DAH",
+                  "name": "Billie Eilish",
+                  "type": "artist",
+                  "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/3ThlxfLSy4bfKzxWqmC7VN"
+              },
+              "id": "3ThlxfLSy4bfKzxWqmC7VN",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2738b8d8be49f9c4a44b0574144",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e028b8d8be49f9c4a44b0574144",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d000048518b8d8be49f9c4a44b0574144",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Guess featuring Billie Eilish",
+              "release_date": "2024-08-01",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:3ThlxfLSy4bfKzxWqmC7VN"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/37M5pPGs6V1fchFJSgCguX"
+                  },
+                  "id": "37M5pPGs6V1fchFJSgCguX",
+                  "name": "FINNEAS",
+                  "type": "artist",
+                  "uri": "spotify:artist:37M5pPGs6V1fchFJSgCguX"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/2nI6nzE1jBURI1jKNh22OL"
+              },
+              "id": "2nI6nzE1jBURI1jKNh22OL",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273a9dadcce09f473ef71ff3bcc",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02a9dadcce09f473ef71ff3bcc",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851a9dadcce09f473ef71ff3bcc",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "For Cryin' Out Loud!",
+              "release_date": "2024-08-08",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:2nI6nzE1jBURI1jKNh22OL"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 39
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLyjAcESOTeAo",
+        "images": [],
+        "name": "New Releases in Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "this ones for all my mean girls",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXbdNhlZLjJXz"
+              },
+              "id": "37i9dQZF1DXbdNhlZLjJXz",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e73dfdf206d6d354b764c88c",
+                  "width": null
+                }
+              ],
+              "name": "hot girl walk",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMjQzMTk5NCwwMDAwMDAwMDVkOTM3ZWEyNDljNjJlNzBlNDE5OWQyZmUzYmNlNjFk",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXbdNhlZLjJXz"
+            },
+            {
+              "collaborative": false,
+              "description": "demure whispers of \"are you sure?\"",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX8eMyhtzAuvp"
+              },
+              "id": "37i9dQZF1DX8eMyhtzAuvp",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000027a0af9fafdc378b8f840545e",
+                  "width": null
+                }
+              ],
+              "name": "august haze",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzU3ODc2MSwwMDAwMDAwMGJkYmJiMDlmNGM1N2M4YzQ2YzQwYzRmYjkxZmY1YTRk",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX8eMyhtzAuvp"
+            },
+            {
+              "collaborative": false,
+              "description": "The best of folk-infused pop and singer-songwriter. Cover: Jenna Raine",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWXJyjYpHunCf"
+              },
+              "id": "37i9dQZF1DWXJyjYpHunCf",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002058d2233187aa13335fb90c0",
+                  "width": null
+                }
+              ],
+              "name": "Folk Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDc1NGNmYzZjMWJhZjIxMmE0NjhhODE3MzA2Nzc1MTFh",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWXJyjYpHunCf"
+            },
+            {
+              "collaborative": false,
+              "description": "summer has landed",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX9nkam6FKfgM"
+              },
+              "id": "37i9dQZF1DX9nkam6FKfgM",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000029b27562296f3f6032edf98ab",
+                  "width": null
+                }
+              ],
+              "name": "Summer Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzEyNDQ0MSwwMDAwMDAwMDJjYzQzOTUyOThkZmEwM2YxOTVmZmUwMjhkZmU4YzEz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX9nkam6FKfgM"
+            },
+            {
+              "collaborative": false,
+              "description": "A playlist by Sabrina, to warm you up for the Short n'Sweet tour \ud83d\udc95\u2615\ud83d\udc95",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXchqrcYVfAQC"
+              },
+              "id": "37i9dQZF1DXchqrcYVfAQC",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000028e176b699824bba384309945",
+                  "width": null
+                }
+              ],
+              "name": "Sabrina on Tour",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODg5MTgzMiwwMDAwMDAwMDM1OWNmOGRiM2Y2NTUyYjBlZWM2MzUzYWM0YTMzNzYy",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXchqrcYVfAQC"
+            },
+            {
+              "collaborative": false,
+              "description": "The biggest songs of the 2020s. Cover: Doja Cat",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX2M1RktxUUHG"
+              },
+              "id": "37i9dQZF1DX2M1RktxUUHG",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002b43eac9f01f8b865662b5c29",
+                  "width": null
+                }
+              ],
+              "name": "All Out 2020s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMjk2MDE4MiwwMDAwMDAwMGUyMWZiZGNiMDVkYzA1NDAwNDA3OWRkMTRmYTdhODVi",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX2M1RktxUUHG"
+            },
+            {
+              "collaborative": false,
+              "description": "did your boots start working?",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWZ2MvCdrrhEq"
+              },
+              "id": "37i9dQZF1DWZ2MvCdrrhEq",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002019b044bcb057719160ea087",
+                  "width": null
+                }
+              ],
+              "name": "Line Dance \ud83e\udd20",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzIxNjY5MSwwMDAwMDAwMDM0NWJiODI2MDZmNjU2NzBmYjRjZmI5N2MzYzBiZjMy",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWZ2MvCdrrhEq"
+            },
+            {
+              "collaborative": false,
+              "description": "Bossa nova vibes for the hopeless romantic daydreamers. Cover: Laufey",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcUY9O5yRihK"
+              },
+              "id": "37i9dQZF1DXcUY9O5yRihK",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002b558436206ef075d4652194c",
+                  "width": null
+                }
+              ],
+              "name": "bossa pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDc5MDEyN2M4M2Q2ZjYyZjViMDAzYjU4OGVlOWFkNzQy",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcUY9O5yRihK"
+            },
+            {
+              "collaborative": false,
+              "description": "Turn up with the biggest party tracks of yesteryear.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX8ky12eWIvcW"
+              },
+              "id": "37i9dQZF1DX8ky12eWIvcW",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000025a3ddf7cd9b46e6b5709ea4d",
+                  "width": null
+                }
+              ],
+              "name": "Throwback Jams",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDgwNTAzMiwwMDAwMDAwMDk1MTI3NTg0MjE4YTVkNzZhYjA5MTBkZDY1YjA4OTAy",
+              "tracks": {
+                "total": 93
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX8ky12eWIvcW"
+            },
+            {
+              "collaborative": false,
+              "description": "ah la vie en rose!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4cizS4wQeF2"
+              },
+              "id": "37i9dQZF1DX4cizS4wQeF2",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000028dc291877cb0e11060448a46",
+                  "width": null
+                }
+              ],
+              "name": "Romcom",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTk0NDgyMiwwMDAwMDAwMGNmNzVkNmIxNmU0Y2I2OTAxMTg5ZDExZTczNjFmNjgy",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4cizS4wQeF2"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 18
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLBCbtiCKfDNE",
+        "images": [],
+        "name": "New pop playlists",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "summer has landed",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX9nkam6FKfgM"
+              },
+              "id": "37i9dQZF1DX9nkam6FKfgM",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000029b27562296f3f6032edf98ab",
+                  "width": null
+                }
+              ],
+              "name": "Summer Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzEyNDQ0MSwwMDAwMDAwMDJjYzQzOTUyOThkZmEwM2YxOTVmZmUwMjhkZmU4YzEz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX9nkam6FKfgM"
+            },
+            {
+              "collaborative": false,
+              "description": "All the hits you'll need to make your summer sizzle.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1gRalH1mWrP"
+              },
+              "id": "37i9dQZF1DX1gRalH1mWrP",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024fdcd4954713745550ba27b3",
+                  "width": null
+                }
+              ],
+              "name": "Summer Hits 2024",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDQ0OTFmNzY3ZjIxYWRjMjkwMjA4OGE5NGNlNzZiNTU3",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1gRalH1mWrP"
+            },
+            {
+              "collaborative": false,
+              "description": "Throwing it back with these summer classics ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXd1MXcE8WTXq"
+              },
+              "id": "37i9dQZF1DXd1MXcE8WTXq",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002dfc49fa2848e67ec194064dd",
+                  "width": null
+                }
+              ],
+              "name": "Summer Throwbacks",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA5ODMxNSwwMDAwMDAwMDBhYmM2YmZjMDgwMGE1OThjZTdjNTUxZGMzOGI1N2E2",
+              "tracks": {
+                "total": 80
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXd1MXcE8WTXq"
+            },
+            {
+              "collaborative": false,
+              "description": "For skating and grooving. ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWZXHVUlGM9Wp"
+              },
+              "id": "37i9dQZF1DWZXHVUlGM9Wp",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c3f0d003ddf8a4ac8298b8f1",
+                  "width": null
+                }
+              ],
+              "name": "The Roller Rink ",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA1NzI4MSwwMDAwMDAwMDM4MTFhNTUyMGVmZTNhOGM2MzVlNDRiZTM3ZjY1ZjE0",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWZXHVUlGM9Wp"
+            },
+            {
+              "collaborative": false,
+              "description": "The ocean, the sun, your friends, the music.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4Y4RhrZqHhr"
+              },
+              "id": "37i9dQZF1DX4Y4RhrZqHhr",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000023f2429537dcbe10282011246",
+                  "width": null
+                }
+              ],
+              "name": "Beach Party",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzY0ODc2MCwwMDAwMDAwMGExMGVkNDRmNDIxYTI0ZjM2MjEzOTQwYWRlNGYyMGRi",
+              "tracks": {
+                "total": 200
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4Y4RhrZqHhr"
+            },
+            {
+              "collaborative": false,
+              "description": "Songs from the last decade that will make you sing and dance all summer long!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXaTitkvoNNxt"
+              },
+              "id": "37i9dQZF1DXaTitkvoNNxt",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e6cfb3b666ea4f9fa7b3f08d",
+                  "width": null
+                }
+              ],
+              "name": "Summer Hits of the 10s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxNjc0MDk1NCwwMDAwMDAwMGU4YzExNzRkNjBjYzFkZWY1OWNlNTJiYjYyMTk5ZmVi",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXaTitkvoNNxt"
+            },
+            {
+              "collaborative": false,
+              "description": "The songs from the 2000s that will make you dance all summer long!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWTUoU0bd0p84"
+              },
+              "id": "37i9dQZF1DWTUoU0bd0p84",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002d158a2742d29b2a2b5386584",
+                  "width": null
+                }
+              ],
+              "name": "Summer Hits of the 00s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY4NjgzNDcxNiwwMDAwMDAwMGIyMjI1NmMyMzhlYWI4N2Y2YzQwZDhmYTM4OGNjZjE0",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWTUoU0bd0p84"
+            }
+          ],
+          "limit": 10,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 7
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLxfEA9kObnoc",
+        "images": [],
+        "name": "Summer Pop Sounds",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "All the songs from the new setlist for Taylor Swift | The Eras Tour.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0D996ZXujBy"
+              },
+              "id": "37i9dQZF1DX0D996ZXujBy",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000027763f39f192262f9cc088529",
+                  "width": null
+                }
+              ],
+              "name": "Taylor Swift | The Eras Tour Official Setlist",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMjQ4NDgwMCwwMDAwMDAwMDAwNzJlYjQ5MTlhZDcyZWFmMzY1MjUxNDY3MjQ4ZmM3",
+              "tracks": {
+                "total": 44
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0D996ZXujBy"
+            },
+            {
+              "collaborative": false,
+              "description": "The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX5KpP2LN299J"
+              },
+              "id": "37i9dQZF1DX5KpP2LN299J",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000252feef11af8c9d412769ec5a",
+                  "width": null
+                }
+              ],
+              "name": "This Is Taylor Swift",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMjQ4NDgwMCwwMDAwMDAwMGRlZGViN2U3OTEzYTRhMTc5ZmMwYTJmYWNkOGFkYjkw",
+              "tracks": {
+                "total": 180
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5KpP2LN299J"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/5H7ixXZfsNMGbIE5OBSpcb"
+              },
+              "id": "5H7ixXZfsNMGbIE5OBSpcb",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2738ecc33f195df6aa257c39eaa",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e028ecc33f195df6aa257c39eaa",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d000048518ecc33f195df6aa257c39eaa",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+              "release_date": "2024-04-19",
+              "release_date_precision": "day",
+              "total_tracks": 31,
+              "type": "album",
+              "uri": "spotify:album:5H7ixXZfsNMGbIE5OBSpcb"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1fnJ7k0bllNfL1kVdNVW1A"
+              },
+              "id": "1fnJ7k0bllNfL1kVdNVW1A",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273fa747621a53c8e2cc436dee0",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02fa747621a53c8e2cc436dee0",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851fa747621a53c8e2cc436dee0",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Midnights (The Til Dawn Edition)",
+              "release_date": "2023-05-26",
+              "release_date_precision": "day",
+              "total_tracks": 23,
+              "type": "album",
+              "uri": "spotify:album:1fnJ7k0bllNfL1kVdNVW1A"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/6AORtDjduMM3bupSWzbTSG"
+              },
+              "id": "6AORtDjduMM3bupSWzbTSG",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27390fd9741e1838115cd90b3b6",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0290fd9741e1838115cd90b3b6",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485190fd9741e1838115cd90b3b6",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "evermore (deluxe version)",
+              "release_date": "2021-01-07",
+              "release_date_precision": "day",
+              "total_tracks": 17,
+              "type": "album",
+              "uri": "spotify:album:6AORtDjduMM3bupSWzbTSG"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1pzvBxYgT6OVwJLtHkrdQK"
+              },
+              "id": "1pzvBxYgT6OVwJLtHkrdQK",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273c288028c2592f400dd0b9233",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02c288028c2592f400dd0b9233",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851c288028c2592f400dd0b9233",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "folklore (deluxe version)",
+              "release_date": "2020-08-18",
+              "release_date_precision": "day",
+              "total_tracks": 17,
+              "type": "album",
+              "uri": "spotify:album:1pzvBxYgT6OVwJLtHkrdQK"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1NAmidJlEaVgA3MpcPFYGq"
+              },
+              "id": "1NAmidJlEaVgA3MpcPFYGq",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273e787cffec20aa2a396a61647",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02e787cffec20aa2a396a61647",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851e787cffec20aa2a396a61647",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Lover",
+              "release_date": "2019-08-23",
+              "release_date_precision": "day",
+              "total_tracks": 18,
+              "type": "album",
+              "uri": "spotify:album:1NAmidJlEaVgA3MpcPFYGq"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/6DEjYFkNZh67HP7R9PSZvv"
+              },
+              "id": "6DEjYFkNZh67HP7R9PSZvv",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273da5d5aeeabacacc1263c0f4b",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02da5d5aeeabacacc1263c0f4b",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851da5d5aeeabacacc1263c0f4b",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "reputation",
+              "release_date": "2017-11-10",
+              "release_date_precision": "day",
+              "total_tracks": 15,
+              "type": "album",
+              "uri": "spotify:album:6DEjYFkNZh67HP7R9PSZvv"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1o59UpKw81iHR0HPiSkJR0"
+              },
+              "id": "1o59UpKw81iHR0HPiSkJR0",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273dc2bacae1dca83d26e2b1949",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02dc2bacae1dca83d26e2b1949",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851dc2bacae1dca83d26e2b1949",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "1989 (Taylor's Version) [Deluxe]",
+              "release_date": "2023-10-27",
+              "release_date_precision": "day",
+              "total_tracks": 22,
+              "type": "album",
+              "uri": "spotify:album:1o59UpKw81iHR0HPiSkJR0"
+            },
+            {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/06HL4z0CvFAxyc27GXpf02"
+                  },
+                  "id": "06HL4z0CvFAxyc27GXpf02",
+                  "name": "Taylor Swift",
+                  "type": "artist",
+                  "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/6kZ42qRrzov54LcAk4onW9"
+              },
+              "id": "6kZ42qRrzov54LcAk4onW9",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273318443aab3531a0558e79a4d",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02318443aab3531a0558e79a4d",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851318443aab3531a0558e79a4d",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Red (Taylor's Version)",
+              "release_date": "2021-11-12",
+              "release_date_precision": "day",
+              "total_tracks": 30,
+              "type": "album",
+              "uri": "spotify:album:6kZ42qRrzov54LcAk4onW9"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 13
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLtGg4grckDka",
+        "images": [],
+        "name": "The Eras Tour is so back",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "heartbreak feels good in a place like this. Cover: Gracie Abrams",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWSqBruwoIXkA"
+              },
+              "id": "37i9dQZF1DWSqBruwoIXkA",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002845cbcf1a2dc28df6898ca0e",
+                  "width": null
+                }
+              ],
+              "name": "sad hour",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDNkYjczMmRiNTIzMDhjMjdkZTkzYmU0OTQ2MDQ2Mzkz",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWSqBruwoIXkA"
+            },
+            {
+              "collaborative": false,
+              "description": "I can buy my own flowers ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4fpCWaHOned"
+              },
+              "id": "37i9dQZF1DX4fpCWaHOned",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002932f90f49b48a29f9599f4c6",
+                  "width": null
+                }
+              ],
+              "name": "Confidence Boost",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDQ4ZDBjYmQ3OGIzYzU0ZTg1ZTFkZTc4Zjc5MDdkZWMw",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4fpCWaHOned"
+            },
+            {
+              "collaborative": false,
+              "description": "entering my reputation era",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3R7OWWGN4gH"
+              },
+              "id": "37i9dQZF1DX3R7OWWGN4gH",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024522bf2d2db31d5c97a82975",
+                  "width": null
+                }
+              ],
+              "name": "Villain Mode",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDc1NjgwMCwwMDAwMDAwMDRlN2JmMjRmY2Y1MzEyN2NlNTFmYWM0YWJlY2JlYjVk",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3R7OWWGN4gH"
+            },
+            {
+              "collaborative": false,
+              "description": "The best uptempo pop for the workout girlies",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX5gQonLbZD9s"
+              },
+              "id": "37i9dQZF1DX5gQonLbZD9s",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002f627ad1561941f125fa4ce5b",
+                  "width": null
+                }
+              ],
+              "name": "Pumped Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzE3NjAwMCwwMDAwMDAwMGUwMWQ1NjNhY2Q0MzM1OWI4MjRhNWQyMDM5ZjQ5MDVh",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5gQonLbZD9s"
+            },
+            {
+              "collaborative": false,
+              "description": "plaid shirt days and nights",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1WY4wcXo9Hn"
+              },
+              "id": "37i9dQZF1DX1WY4wcXo9Hn",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002df756f61b7b5cdc819460792",
+                  "width": null
+                }
+              ],
+              "name": "scarf season",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMjUyMTM4MiwwMDAwMDAwMDMwYmQ1MWNiN2U0ZTI1NTg1MjkzMTgzY2JmZjcxMzI0",
+              "tracks": {
+                "total": 85
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1WY4wcXo9Hn"
+            },
+            {
+              "collaborative": false,
+              "description": "Bossa nova vibes for the hopeless romantic daydreamers. Cover: Laufey",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcUY9O5yRihK"
+              },
+              "id": "37i9dQZF1DXcUY9O5yRihK",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002b558436206ef075d4652194c",
+                  "width": null
+                }
+              ],
+              "name": "bossa pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDc5MDEyN2M4M2Q2ZjYyZjViMDAzYjU4OGVlOWFkNzQy",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcUY9O5yRihK"
+            },
+            {
+              "collaborative": false,
+              "description": "Just good vibes all day long",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWYBO1MoTDhZI"
+              },
+              "id": "37i9dQZF1DWYBO1MoTDhZI",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000219b38bfde66a339b8bff7488",
+                  "width": null
+                }
+              ],
+              "name": "Good Vibes",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDJlOTdhZjI3ZDA3ODUzMjFjYmY2ZWE1NzhlZmI3ZWYx",
+              "tracks": {
+                "total": 85
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWYBO1MoTDhZI"
+            },
+            {
+              "collaborative": false,
+              "description": "Get happy with today's dose of feel-good songs!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3rxVfibe1L0"
+              },
+              "id": "37i9dQZF1DX3rxVfibe1L0",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000028191cc41d8585df6170b3e5e",
+                  "width": null
+                }
+              ],
+              "name": "Mood Booster",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMGI2ZjA4NGU0OTIxMThlNmEzYmNlMjEyMmYwYzdkZGZm",
+              "tracks": {
+                "total": 85
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0"
+            },
+            {
+              "collaborative": false,
+              "description": "summer has landed",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX9nkam6FKfgM"
+              },
+              "id": "37i9dQZF1DX9nkam6FKfgM",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000029b27562296f3f6032edf98ab",
+                  "width": null
+                }
+              ],
+              "name": "Summer Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzEyNDQ0MSwwMDAwMDAwMDJjYzQzOTUyOThkZmEwM2YxOTVmZmUwMjhkZmU4YzEz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX9nkam6FKfgM"
+            },
+            {
+              "collaborative": false,
+              "description": "Set the mood just right...",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXbEm2sKzgoJ8"
+              },
+              "id": "37i9dQZF1DXbEm2sKzgoJ8",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000021ed283e05ecc47be1d093c51",
+                  "width": null
+                }
+              ],
+              "name": "Make Out Jams",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzIxNjQzMiwwMDAwMDAwMGFhNmMxNDg0ODUxZmEwMmMxZTc1MmM0N2RhNjA2Y2E3",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXbEm2sKzgoJ8"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 16
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLmmLtORbI4fi",
+        "images": [],
+        "name": "Pop that's a whole mood",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "#SpotifyTBT celebrates 50 years of Ramones. Cover: Ramones",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWwaxRea1LWS"
+              },
+              "id": "37i9dQZF1DWWwaxRea1LWS",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e83a1b7ae0f8fa1f7c667ce7",
+                  "width": null
+                }
+              ],
+              "name": "Throwback Thursday",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzY5NDQwMCwwMDAwMDAwMDQ4Yjk5YzdlM2MyODJjYmZhMjEwOGY0NWY5MWZkNTcz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWwaxRea1LWS"
+            },
+            {
+              "collaborative": false,
+              "description": "this is what dreams are made of!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX24HW7kIIcEV"
+              },
+              "id": "37i9dQZF1DX24HW7kIIcEV",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002b640622c622b56c55256b904",
+                  "width": null
+                }
+              ],
+              "name": "after school club \ud83e\ude84",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA1ODgwNiwwMDAwMDAwMDg4ZTg3MmQzNWQzMDk2MDdiMDZiNWJlNTBmNGNlZjM5",
+              "tracks": {
+                "total": 85
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX24HW7kIIcEV"
+            },
+            {
+              "collaborative": false,
+              "description": "Turn up with the biggest party tracks of yesteryear.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX8ky12eWIvcW"
+              },
+              "id": "37i9dQZF1DX8ky12eWIvcW",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000025a3ddf7cd9b46e6b5709ea4d",
+                  "width": null
+                }
+              ],
+              "name": "Throwback Jams",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDgwNTAzMiwwMDAwMDAwMDk1MTI3NTg0MjE4YTVkNzZhYjA5MTBkZDY1YjA4OTAy",
+              "tracks": {
+                "total": 93
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX8ky12eWIvcW"
+            },
+            {
+              "collaborative": false,
+              "description": "Back when we had Kelly Clarkson, Usher, Lady Gaga and *NSYNC on repeat! Cover: Ashlee Simpson",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4UZCW3u80le"
+              },
+              "id": "37i9dQZF1DX4UZCW3u80le",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000265ee3e869c28e4881e92f50e",
+                  "width": null
+                }
+              ],
+              "name": "2000s Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDgxNzY1NiwwMDAwMDAwMDhhZDBlY2YyYzMzYzZmZTQ0ZWQ1ZTY1YzdmYjIxNTRk",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4UZCW3u80le"
+            },
+            {
+              "collaborative": false,
+              "description": "All the biggest hits from the biggest boybands!  Cover: One Direction",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX17dmzi8A5FV"
+              },
+              "id": "37i9dQZF1DX17dmzi8A5FV",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002dfcc4b574d6f6f87250aeaf7",
+                  "width": null
+                }
+              ],
+              "name": "Ultimate Boybands",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTc0NTcxNywwMDAwMDAwMGNlYzFhMmVmOTViMTY2ZDc0ZjJkNmFlZGIxY2MzMDRm",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX17dmzi8A5FV"
+            },
+            {
+              "collaborative": false,
+              "description": "From the decade that brought us Britney, Spice Girls, Coolio and so many more!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWVcJK7WY4M52"
+              },
+              "id": "37i9dQZF1DWVcJK7WY4M52",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000023c783941e311b5fc163cf219",
+                  "width": null
+                }
+              ],
+              "name": "90s Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDgxNDI5MSwwMDAwMDAwMDg4Zjg4ZmU2Yjk5YmI0MjBiZWU0ZDI1MDNkYTUwNzky",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWVcJK7WY4M52"
+            },
+            {
+              "collaborative": false,
+              "description": "You say guilty, we say non stop bangers!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4pUKG1kS0Ac"
+              },
+              "id": "37i9dQZF1DX4pUKG1kS0Ac",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000027773630113d067b9590817f4",
+                  "width": null
+                }
+              ],
+              "name": "Guilty Pleasures",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDc5MjQ4NCwwMDAwMDAwMDNkZWUyNjc0ZWMwN2Y3MzI3NGNlYTRhYWY0MmU5NWNl",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4pUKG1kS0Ac"
+            },
+            {
+              "collaborative": false,
+              "description": "Listen to all the tracks you've been missing. Cover: Lady Gaga",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0s5kDXi1oC5"
+              },
+              "id": "37i9dQZF1DX0s5kDXi1oC5",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000236ce7a9032f223a050ae9618",
+                  "width": null
+                }
+              ],
+              "name": "Hit Rewind",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxNjM3NTYwMCwwMDAwMDAwMDNiYzBiMzQyYTdlZDY5YzQzNDI4NTM4MzM0ZDNlMzFi",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0s5kDXi1oC5"
+            },
+            {
+              "collaborative": false,
+              "description": "this should have been her espresso\n\nSee also: <a href=\"spotify:playlist:37i9dQZF1DX7YE2tQ4q86h\">OBSESSED<\/a>",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1SbnWqcjJBz"
+              },
+              "id": "37i9dQZF1DX1SbnWqcjJBz",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000023ce090554d0581ccd556df0f",
+                  "width": null
+                }
+              ],
+              "name": "Deserved",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODU1MjY3NiwwMDAwMDAwMDc0YTkwZjJmOGQ4ZWFjZTgzMjBiY2QyNjA1NzRkZTQ3",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1SbnWqcjJBz"
+            },
+            {
+              "collaborative": false,
+              "description": "The most essential R&B songs from the '00s. Cover: Usher",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWYmmr74INQlb"
+              },
+              "id": "37i9dQZF1DWYmmr74INQlb",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000268cb2eaa5d98d95634b27f86",
+                  "width": null
+                }
+              ],
+              "name": "I Love My '00s R&B",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxOTUzODkyOCwwMDAwMDAwMDljMjhiNjM3OTJlNjE0NzViYmY4NjZjNjFjZGYxOTcz",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWYmmr74INQlb"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 14
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLmcZWO4bmt66",
+        "images": [],
+        "name": "Pop Throwbacks",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "The best new pop music by independent artists and labels. Cover: Chloe Qisha Artwork by Paola Saliby",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3u9TSHqpdJC"
+              },
+              "id": "37i9dQZF1DX3u9TSHqpdJC",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000286245a065847a95e818bcfb7",
+                  "width": null
+                }
+              ],
+              "name": "Fresh Finds Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzY3NzQ5MiwwMDAwMDAwMDk1ZjdlODVjMDlmNGEzZTE1MWUyY2EzMDg4ZmI0YTZm",
+              "tracks": {
+                "total": 107
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3u9TSHqpdJC"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/29becY8WA0wuCwIpFMIyk2"
+                  },
+                  "id": "29becY8WA0wuCwIpFMIyk2",
+                  "name": "EARTH TO EMILY",
+                  "type": "artist",
+                  "uri": "spotify:artist:29becY8WA0wuCwIpFMIyk2"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/3sAzc8Kh3uH4lva8kw6ifU"
+              },
+              "id": "3sAzc8Kh3uH4lva8kw6ifU",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27350c8a0ce9ce286d46517fa00",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0250c8a0ce9ce286d46517fa00",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485150c8a0ce9ce286d46517fa00",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "SOCIALITE RODEO",
+              "release_date": "2024-07-05",
+              "release_date_precision": "day",
+              "total_tracks": 5,
+              "type": "album",
+              "uri": "spotify:album:3sAzc8Kh3uH4lva8kw6ifU"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/2B2j4jb1ZGYKKIBOJAj4aq"
+                  },
+                  "id": "2B2j4jb1ZGYKKIBOJAj4aq",
+                  "name": "My Friend Catie",
+                  "type": "artist",
+                  "uri": "spotify:artist:2B2j4jb1ZGYKKIBOJAj4aq"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/5JStMEC0L8JLLLOqa1QA7W"
+              },
+              "id": "5JStMEC0L8JLLLOqa1QA7W",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2733dd28e736cb962a8106b92c9",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e023dd28e736cb962a8106b92c9",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d000048513dd28e736cb962a8106b92c9",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Technicolor Dream",
+              "release_date": "2024-06-21",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:5JStMEC0L8JLLLOqa1QA7W"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/4MfdeUAPPDpi4xdc1jvnwg"
+                  },
+                  "id": "4MfdeUAPPDpi4xdc1jvnwg",
+                  "name": "Meg Smith",
+                  "type": "artist",
+                  "uri": "spotify:artist:4MfdeUAPPDpi4xdc1jvnwg"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/2UsMZi3Icg6ZbsCDzsMVhJ"
+              },
+              "id": "2UsMZi3Icg6ZbsCDzsMVhJ",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2732946435e16e0779cc681d4b8",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e022946435e16e0779cc681d4b8",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d000048512946435e16e0779cc681d4b8",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Rom Com Pop",
+              "release_date": "2023-02-23",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:2UsMZi3Icg6ZbsCDzsMVhJ"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/0Dkj3iE06TJGxGIrGCmwVf"
+                  },
+                  "id": "0Dkj3iE06TJGxGIrGCmwVf",
+                  "name": "Nxdia",
+                  "type": "artist",
+                  "uri": "spotify:artist:0Dkj3iE06TJGxGIrGCmwVf"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/1795Gnf8L33OI6FuVwWeOe"
+              },
+              "id": "1795Gnf8L33OI6FuVwWeOe",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27318843eee96e912b5f14e7805",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0218843eee96e912b5f14e7805",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485118843eee96e912b5f14e7805",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "in the flesh",
+              "release_date": "2023-08-09",
+              "release_date_precision": "day",
+              "total_tracks": 6,
+              "type": "album",
+              "uri": "spotify:album:1795Gnf8L33OI6FuVwWeOe"
+            },
+            {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/7GwwoezwdbKvUaNgtg51pX"
+                  },
+                  "id": "7GwwoezwdbKvUaNgtg51pX",
+                  "name": "bludnymph",
+                  "type": "artist",
+                  "uri": "spotify:artist:7GwwoezwdbKvUaNgtg51pX"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/album\/73baAMMLjEnXi8ilwF7344"
+              },
+              "id": "73baAMMLjEnXi8ilwF7344",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27364bde73cb67080a453db7b96",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0264bde73cb67080a453db7b96",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485164bde73cb67080a453db7b96",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "DROOL",
+              "release_date": "2023-10-25",
+              "release_date_precision": "day",
+              "total_tracks": 9,
+              "type": "album",
+              "uri": "spotify:album:73baAMMLjEnXi8ilwF7344"
+            },
+            {
+              "collaborative": false,
+              "description": "The best new music by independent artists and labels. Cover: Wishy, Artwork: Isu Kim",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWjGdmeTyeJ6"
+              },
+              "id": "37i9dQZF1DWWjGdmeTyeJ6",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000029c0e54fdb5def71b3b07a00d",
+                  "width": null
+                }
+              ],
+              "name": "Fresh Finds",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzkxNDMxNiwwMDAwMDAwMDk3YTVmMDk5YjQ4YTc5MmZmNjEwOTZmYzVjYTgzYzJk",
+              "tracks": {
+                "total": 200
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWjGdmeTyeJ6"
+            }
+          ],
+          "limit": 10,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 7
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLv76zselc4IE",
+        "images": [],
+        "name": "Fresh Finds Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "Who's now and next in pop. Cover: Mark Ambor",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWUa8ZRTfalHk"
+              },
+              "id": "37i9dQZF1DWUa8ZRTfalHk",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000295ae4942f9478ff121f26364",
+                  "width": null
+                }
+              ],
+              "name": "Pop Rising",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDJiNTA5MDVmNDdmMjc4YzlkNjU3ZWY0ZmQ4ZTdmZGFj",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWUa8ZRTfalHk"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Emei. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO4wKHCh"
+              },
+              "id": "37i9dQZF1DZ06evO4wKHCh",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO4wKHCh-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Emei",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMGRkNTM0YzQ2NWI2M2NmODcxMGIyZDAxMDJjMjg0ZmYz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO4wKHCh"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Teddy Swims. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO1LvmfL"
+              },
+              "id": "37i9dQZF1DZ06evO1LvmfL",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO1LvmfL-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Teddy Swims",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMDVhNTFhMzk5ZGM0MDIyZDA3NmU0ZjQzMmE4YTM0Y2E0",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO1LvmfL"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Meg Smith. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO2NM7Yf"
+              },
+              "id": "37i9dQZF1DZ06evO2NM7Yf",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO2NM7Yf-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Meg Smith",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMDZiMTJlOGVkYzY2YTY1ZmIzOWE0ZDk1ODhkNDQxN2Vi",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO2NM7Yf"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Alexander Stewart. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO0gOlRe"
+              },
+              "id": "37i9dQZF1DZ06evO0gOlRe",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO0gOlRe-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Alexander Stewart",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMGIwODEyYTU3MDFiMjI2NTQ3MTM0ODU4M2M1MjI1Njkw",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO0gOlRe"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Isabel LaRosa. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO32laA8"
+              },
+              "id": "37i9dQZF1DZ06evO32laA8",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO32laA8-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Isabel LaRosa",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMDkxNDUwMWIzYjIxYTA5YTRmYjU4ZTZkNTg4ZDJlZjZk",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO32laA8"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Matt Hansen. All the essential tunes, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcHjU1mZDN38"
+              },
+              "id": "37i9dQZF1DXcHjU1mZDN38",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000021c74bfa9971e1fb4b34fa39b",
+                  "width": null
+                }
+              ],
+              "name": "This is Matt Hansen",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODk0MjQwMCwwMDAwMDAwMDIyNWE0MDZmYTNkY2M4MjJmNmRhYTA3MjJlZWJmODBl",
+              "tracks": {
+                "total": 13
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcHjU1mZDN38"
+            },
+            {
+              "collaborative": false,
+              "description": "This is: bludnymph. Alle wichtigen Tracks in einer Playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO4yfE9e"
+              },
+              "id": "37i9dQZF1DZ06evO4yfE9e",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO4yfE9e-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is bludnymph",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMGI2YmM0MWY0M2Q3YjE5YzhjMzQ0Zjk4NmRlOWI4ODU5",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO4yfE9e"
+            },
+            {
+              "collaborative": false,
+              "description": "This is METTE. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3ITa25xsl1Y"
+              },
+              "id": "37i9dQZF1DX3ITa25xsl1Y",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002fe95de4052410404cd2ad377",
+                  "width": null
+                }
+              ],
+              "name": "This is METTE",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxOTU0ODAwNCwwMDAwMDAwMGIzOWI3NzI3M2ExMDhiNmFkZDBiN2MxNWEwZmQ2NzBh",
+              "tracks": {
+                "total": 11
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3ITa25xsl1Y"
+            },
+            {
+              "collaborative": false,
+              "description": "This is Aidan Bissett. The essential tracks, all in one playlist.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DZ06evO2ULe02"
+              },
+              "id": "37i9dQZF1DZ06evO2ULe02",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/thisis-images.spotifycdn.com\/37i9dQZF1DZ06evO2ULe02-default.jpg",
+                  "width": null
+                }
+              ],
+              "name": "This Is Aidan Bissett",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg1MjgwMCwwMDAwMDAwMGZlOWFmZGU4ZDgzOGM4NmZiNzhhYTM4MjJmMmIxOTM2",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DZ06evO2ULe02"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 11
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLtWn9GD8m5hU",
+        "images": [],
+        "name": "Pop Rising's artists to watch 2024",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "it started pretty slowly \ud83d\udc0c\ud83d\udc0c\ud83d\udc0c",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWvvyNmW9V9a"
+              },
+              "id": "37i9dQZF1DWWvvyNmW9V9a",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c645a42279cc52e1f8ab6f5e",
+                  "width": null
+                }
+              ],
+              "name": "teen beats",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMGQ3YTI1MjlhYjA5MDg1NzU4N2I0Zjk3ODRhNDgyMDkz",
+              "tracks": {
+                "total": 104
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWvvyNmW9V9a"
+            },
+            {
+              "collaborative": false,
+              "description": "iykyk",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX5Vy6DFOcx00"
+              },
+              "id": "37i9dQZF1DX5Vy6DFOcx00",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000258cb9399d2d48a524106c0e4",
+                  "width": null
+                }
+              ],
+              "name": "big on the internet",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzY0OTIxOSwwMDAwMDAwMDJkNjhhNjFlMTI4YWUxNzBiYWYzNDlkNWVjY2M2NTBj",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5Vy6DFOcx00"
+            },
+            {
+              "collaborative": false,
+              "description": "Viral, trending and taking off.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX2L0iB23Enbq"
+              },
+              "id": "37i9dQZF1DX2L0iB23Enbq",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002204335eb7d241ef0dbf5c5ad",
+                  "width": null
+                }
+              ],
+              "name": "Viral Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzE5NjM0MywwMDAwMDAwMGYzMzI4NDcwMjNmOTBkODBlNWQ5MGQyZjk2ZGUxMDli",
+              "tracks": {
+                "total": 49
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX2L0iB23Enbq"
+            },
+            {
+              "collaborative": false,
+              "description": "Bad b**** energy. Be blessed, be spicy. Cover: Kesha",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX66m4icL86Ru"
+              },
+              "id": "37i9dQZF1DX66m4icL86Ru",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024f1e1af674ef17210d12e2c7",
+                  "width": null
+                }
+              ],
+              "name": "BBE",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzE3NjAwMCwwMDAwMDAwMDRlYTJhZWM4MTc2ZWVmNmE2MmZkZmM0ZDY1ODE4ZGM4",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX66m4icL86Ru"
+            },
+            {
+              "collaborative": false,
+              "description": "the mood is to scream into your dashboard\/choke back tears in the parking lot",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4mWCZw6qYIw"
+              },
+              "id": "37i9dQZF1DX4mWCZw6qYIw",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002bfeebb0327a153800291f037",
+                  "width": null
+                }
+              ],
+              "name": "songs to scream in the car",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcwOTY4MTE1MCwwMDAwMDAwMDgwOWRmZGRiNmRkNWJlZTU0MjI1ODY3MTNkZmM0NTZl",
+              "tracks": {
+                "total": 60
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4mWCZw6qYIw"
+            },
+            {
+              "collaborative": false,
+              "description": "Discover the next wave of talent writing their own songs. Cover: Emma Foley",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXdbTERrLjYkP"
+              },
+              "id": "37i9dQZF1DXdbTERrLjYkP",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e645d12022bbe73461a0deff",
+                  "width": null
+                }
+              ],
+              "name": "Next Gen Singer-Songwriters",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDdhNmI1NWU0MTZkMWYxZmU1YTIwOGMwNjVkOGVkODYy",
+              "tracks": {
+                "total": 65
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXdbTERrLjYkP"
+            },
+            {
+              "collaborative": false,
+              "description": "resurging tracks coming in hot. cover: Lorde in her \"Love Club\" era ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWYPhtvsbr1Fn"
+              },
+              "id": "37i9dQZF1DWYPhtvsbr1Fn",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002345aa83db96fd943d2c02bc0",
+                  "width": null
+                }
+              ],
+              "name": "reheat",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg0MjI2MiwwMDAwMDAwMDQwOTI1OWI1YzIxMzAxOWJhNDQ5NmI1MzY0OGI1YTY1",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWYPhtvsbr1Fn"
+            }
+          ],
+          "limit": 10,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 8
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLhxvYUQvvK0q",
+        "images": [],
+        "name": "Viral Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "Remy Bond <3",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXdwmD5Q7Gxah"
+              },
+              "id": "37i9dQZF1DXdwmD5Q7Gxah",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002f9cb679b896a734522a39881",
+                  "width": null
+                }
+              ],
+              "name": "Lorem",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzkyOTQ2MiwwMDAwMDAwMDg5NzBmYjE5OWRmYTgzMTBjZTExOGE4NDkwMzNlNjUx",
+              "tracks": {
+                "total": 117
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXdwmD5Q7Gxah"
+            },
+            {
+              "collaborative": false,
+              "description": "A little bit of pop, a little bit of rap. Cover: Russ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXdWMJMjqz9bm"
+              },
+              "id": "37i9dQZF1DXdWMJMjqz9bm",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000261e6cd7d9b6d54c7711260be",
+                  "width": null
+                }
+              ],
+              "name": "Varsity Bars",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxNzU5OTY3MCwwMDAwMDAwMDk4ZjNkMDZiZTM2NWJhMjFiNzZmMGY0NDI3Zjk2ZmFk",
+              "tracks": {
+                "total": 33
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXdWMJMjqz9bm"
+            },
+            {
+              "collaborative": false,
+              "description": "The hottest tracks of today ft. Don Toliver, Bryson Tiller, GloRilla and more.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWYs83FtTMQFw"
+              },
+              "id": "37i9dQZF1DWYs83FtTMQFw",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024f8bcde9df39d4e5aac27324",
+                  "width": null
+                }
+              ],
+              "name": "Hot Rhythmic",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzgyNzg1MywwMDAwMDAwMDU4OTBmOGNkZDM1ZTFlMzM2MTMzNzE2ZTdjMWRhMmFm",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWYs83FtTMQFw"
+            },
+            {
+              "collaborative": false,
+              "description": "New and approved indie pop. Cover: NIKI",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWEcRhUVtL8n"
+              },
+              "id": "37i9dQZF1DWWEcRhUVtL8n",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000020493f870e648f6cc11986fbb",
+                  "width": null
+                }
+              ],
+              "name": "Indie Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzkyOTMwMCwwMDAwMDAwMDg5Y2M4YTA1ZGU2YmY4ZjE3M2Q5OTI4NjJmMzk0MmUy",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWEcRhUVtL8n"
+            },
+            {
+              "collaborative": false,
+              "description": "A mix of soulful, folksy, and beloved singer-songwriter acoustic gems. Cover: Noah Kahan",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4VvfRBFClxm"
+              },
+              "id": "37i9dQZF1DX4VvfRBFClxm",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000251fc8e577acebe2fbff146cc",
+                  "width": null
+                }
+              ],
+              "name": "Acoustic Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDc1NjgwMCwwMDAwMDAwMGJlZjA2NWRhZWQyMTczOGYyMDYxYWI2NGYzMWFlYjMy",
+              "tracks": {
+                "total": 125
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4VvfRBFClxm"
+            },
+            {
+              "collaborative": false,
+              "description": "Pop country hits of today and tomorrow. Cover: Danielle Bradbery",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXadasIcsfbqh"
+              },
+              "id": "37i9dQZF1DXadasIcsfbqh",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002616b7a70775d54637e1e40fb",
+                  "width": null
+                }
+              ],
+              "name": "Pop Country",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzE3NjAwMCwwMDAwMDAwMGQwZTM2NGNjYjg0OTg0ZjM5OWY4YTFjMTUyYTRjNjA5",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXadasIcsfbqh"
+            },
+            {
+              "collaborative": false,
+              "description": "The hottest Afropop, Afrobeats and Afro-Caribbean hits, all in one place. Cover: Diamond Platnumz",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWX0o6sD1a6P5"
+              },
+              "id": "37i9dQZF1DWX0o6sD1a6P5",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000206d1d2f37e825afa465a16f6",
+                  "width": null
+                }
+              ],
+              "name": "Afro Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc1OTIwMCwwMDAwMDAwMGYzMTNlMGQzNGZhYjFmNzdmZDc3NTBkNmM1NjU1NTZk",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWX0o6sD1a6P5"
+            },
+            {
+              "collaborative": false,
+              "description": "The best of folk-infused pop and singer-songwriter. Cover: Jenna Raine",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWXJyjYpHunCf"
+              },
+              "id": "37i9dQZF1DWXJyjYpHunCf",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002058d2233187aa13335fb90c0",
+                  "width": null
+                }
+              ],
+              "name": "Folk Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDc1NGNmYzZjMWJhZjIxMmE0NjhhODE3MzA2Nzc1MTFh",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWXJyjYpHunCf"
+            },
+            {
+              "collaborative": false,
+              "description": "The hottest Latin hits in the US! Cover: Fuerza Regida",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4oUPBOaEkL6"
+              },
+              "id": "37i9dQZF1DX4oUPBOaEkL6",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002f1f4f11c01c083d8f1f3398c",
+                  "width": null
+                }
+              ],
+              "name": "\u00c9xitos USA",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4NTQ5OCwwMDAwMDAwMGZmOTE1YWIxNTRmMWJhOTY1ODI0YmNjYjM3NjUyNzUz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4oUPBOaEkL6"
+            },
+            {
+              "collaborative": false,
+              "description": "tsubi club is back",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX7HOk71GPfSw"
+              },
+              "id": "37i9dQZF1DX7HOk71GPfSw",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002b952327c7871f255a634845d",
+                  "width": null
+                }
+              ],
+              "name": "hyperpop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzgzMTA4MCwwMDAwMDAwMDU1Yzc5N2Q1ZGIyN2UyOWY3OGNjYjY1MzE4YmExNmVk",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX7HOk71GPfSw"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 14
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLBZelbhA8mt6",
+        "images": [],
+        "name": "Pop Adjacent",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "Classic hits from the 50s and 60s.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX56bqlsMxJYR"
+              },
+              "id": "37i9dQZF1DX56bqlsMxJYR",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002d47ee07c9a62f7c11e589c70",
+                  "width": null
+                }
+              ],
+              "name": "Classic Oldies",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDc2NDcxOCwwMDAwMDAwMDI3Y2MxMjVjMDU2ZWE5MTg2Yjk3OTA2NGY2NTUxMTk1",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX56bqlsMxJYR"
+            },
+            {
+              "collaborative": false,
+              "description": "Celebrating some of the most iconic female voices of all time. Cover: C\u00e9line Dion",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX9loJQLuEvap"
+              },
+              "id": "37i9dQZF1DX9loJQLuEvap",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000023a0fc8f2f7b146d78c410292",
+                  "width": null
+                }
+              ],
+              "name": "Great Female Voices",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODc2ODA2MSwwMDAwMDAwMGE5ZmZlNWU2YzI3OWQ4NjhlOWExYTc0OTBmZjIwMmVj",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX9loJQLuEvap"
+            },
+            {
+              "collaborative": false,
+              "description": "All your Disco favorites. Cover: Donna Summer",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1MUPbVKMgJE"
+              },
+              "id": "37i9dQZF1DX1MUPbVKMgJE",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000236145c6fc8ba020fc76994d4",
+                  "width": null
+                }
+              ],
+              "name": "Disco Forever",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxOTk1NzEzNiwwMDAwMDAwMDgxYjllM2EzNzgwNWI0YWJmY2QxNWIzNGVlZDFjNTli",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1MUPbVKMgJE"
+            },
+            {
+              "collaborative": false,
+              "description": "Sing-along favorites. Cover: Billy Joel",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWUh7dobVCfAj"
+              },
+              "id": "37i9dQZF1DWUh7dobVCfAj",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000020ae4b53715da237e6e836b48",
+                  "width": null
+                }
+              ],
+              "name": "Piano Bar Classics",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDQ2MTE2NCwwMDAwMDAwMGUwODZlMGE1OTdhOTg5ZjVmMjI3YTk0MjNkNjhhNGQ4",
+              "tracks": {
+                "total": 70
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWUh7dobVCfAj"
+            },
+            {
+              "collaborative": false,
+              "description": "Relive the good ol' days with these 60s and 70s classics.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX84kJlLdo9vT"
+              },
+              "id": "37i9dQZF1DX84kJlLdo9vT",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000028b2d3f7ca9da3c155d0e21d6",
+                  "width": null
+                }
+              ],
+              "name": "Happy Days",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDk3NzUxNSwwMDAwMDAwMDc0NzY0ZDFhOGE0ZjA1YTU3NDYxY2NiZmFhYWIzZDEz",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX84kJlLdo9vT"
+            },
+            {
+              "collaborative": false,
+              "description": "Timeless and smooth. Here are your favorite crooners. Cover: Nat King Cole. ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1cC4JrF1e4o"
+              },
+              "id": "37i9dQZF1DX1cC4JrF1e4o",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c0e359ccccbf2cd8ea6a42df",
+                  "width": null
+                }
+              ],
+              "name": "Crooner Classics",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA1NzAwNywwMDAwMDAwMDNmNWQ5OWJkNGJkMDZkZDhjMTc2MjhiODg1ZGMxNTQ3",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1cC4JrF1e4o"
+            },
+            {
+              "collaborative": false,
+              "description": "Dancing to electro-pop like a robot from 1984. Cover: Bronski Beat",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWU1f2CQHNexG"
+              },
+              "id": "37i9dQZF1DWU1f2CQHNexG",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002c782e46b2e047db2102f2524",
+                  "width": null
+                }
+              ],
+              "name": "Synthpop Classics ",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDQ5MzEzNCwwMDAwMDAwMDAyMGE2ZmFjNTYwOTZkYmU1YTJkNmUzM2U3OGY3NjJh",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWU1f2CQHNexG"
+            },
+            {
+              "collaborative": false,
+              "description": "The biggest songs of the 1990s. Cover: C\u00e9line Dion",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXbTxeAdrVG2l"
+              },
+              "id": "37i9dQZF1DXbTxeAdrVG2l",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002a5ba8ff3dfb154f4afcdb057",
+                  "width": null
+                }
+              ],
+              "name": "All Out 90s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODc2Njk0MCwwMDAwMDAwMDcyNTExMjVmZjgyNjcwMDRiMTIwYzU3OTlmYjkxYjEx",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXbTxeAdrVG2l"
+            },
+            {
+              "collaborative": false,
+              "description": "The biggest songs of the 1980s. Cover: Bruce Springsteen",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX4UtSsGT1Sbe"
+              },
+              "id": "37i9dQZF1DX4UtSsGT1Sbe",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002d6710ea346fec48e89d77dba",
+                  "width": null
+                }
+              ],
+              "name": "All Out 80s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODE5OTI1MCwwMDAwMDAwMDRmODZiYThmNWM0ZjY5YTUyYjZkMjY3M2Q5ODJhYWI3",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX4UtSsGT1Sbe"
+            },
+            {
+              "collaborative": false,
+              "description": "The biggest songs of the 1970s. Cover: ABBA",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWTJ7xPn4vNaz"
+              },
+              "id": "37i9dQZF1DWTJ7xPn4vNaz",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000241a94d08ee017512668505a3",
+                  "width": null
+                }
+              ],
+              "name": "All Out 70s",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcxODE5OTM1MCwwMDAwMDAwMGQ2YmY4ZmM3MjViZmUxYTJhN2E3OGM0Yzk4MjE5YWI3",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWTJ7xPn4vNaz"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 20
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLl4Nf8GB5Hbn",
+        "images": [],
+        "name": "Classic Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "Warm familiar pop you know and love. Cover: Adele",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWTwnEm1IYyoj"
+              },
+              "id": "37i9dQZF1DWTwnEm1IYyoj",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000242ede53dcaaa172b7bbca101",
+                  "width": null
+                }
+              ],
+              "name": "Soft Pop Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzQ4MTI2MCwwMDAwMDAwMDRmN2U1YjZiYTFkNjkwZjk0MjY5MjdkYzIzZDI4MDI2",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWTwnEm1IYyoj"
+            },
+            {
+              "collaborative": false,
+              "description": "Recent hits and new songs from your fave artists. Cover: Hozier",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0b1hHYQtJjp"
+              },
+              "id": "37i9dQZF1DX0b1hHYQtJjp",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002a26308f5f2bcc0f77d5403e1",
+                  "width": null
+                }
+              ],
+              "name": "Just Good Music",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDE0NDAxOTMyM2NmM2E3MmE5ODFkMzM5YjBkMjNjOGM3",
+              "tracks": {
+                "total": 70
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0b1hHYQtJjp"
+            },
+            {
+              "collaborative": false,
+              "description": "Reimagined pop covers of your favorite songs.  Cover: Ed Sheeran",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX2i24iHGhL24"
+              },
+              "id": "37i9dQZF1DX2i24iHGhL24",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000025ca6ca234d2744c0f3d1b0b8",
+                  "width": null
+                }
+              ],
+              "name": "Pop Covers",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMGZhZDhjODU2MzYzYWQzNzcwNmFiMDJiNGVkMWM1MDQz",
+              "tracks": {
+                "total": 90
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX2i24iHGhL24"
+            },
+            {
+              "collaborative": false,
+              "description": "Warm, inspirational pop, that's good at heart. ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWYzhk8ayyoEy"
+              },
+              "id": "37i9dQZF1DWYzhk8ayyoEy",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000242b27a96ff9f94e419f8bfaa",
+                  "width": null
+                }
+              ],
+              "name": "shine",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTk2NjQwMCwwMDAwMDAwMDBjNDMzZjgzMGM3NjFiN2ViNWNmNmRmZGFhOWY3OTEw",
+              "tracks": {
+                "total": 70
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWYzhk8ayyoEy"
+            },
+            {
+              "collaborative": false,
+              "description": "Vocals and keys, front and center. Cover: Bruno Mars",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWVIzZt2GAU4X"
+              },
+              "id": "37i9dQZF1DWVIzZt2GAU4X",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002fc075cbec1a56f4cea9b5e63",
+                  "width": null
+                }
+              ],
+              "name": "Piano Ballads",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzQ4MTIxNSwwMDAwMDAwMGIwNDNjYWJiMTk5MGFjZmY5ODFiNDg2ZTEwNzUyNTUw",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWVIzZt2GAU4X"
+            },
+            {
+              "collaborative": false,
+              "description": "Lovely, acoustic pop. Cover: Taylor Swift",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWWxrt1tiKYiX"
+              },
+              "id": "37i9dQZF1DWWxrt1tiKYiX",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000021587a09865a3bdaa14b6e89c",
+                  "width": null
+                }
+              ],
+              "name": "Acoustic Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzE3NjAwMCwwMDAwMDAwMDUzMjA4Yzc2ZmMzZmM4YzExZWY5NTQyZGNiYTViNzE3",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWWxrt1tiKYiX"
+            },
+            {
+              "collaborative": false,
+              "description": "Keeping it lowkey with the best chill pop. Cover: Bryant Barnes",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0MLFaUdXnjA"
+              },
+              "id": "37i9dQZF1DX0MLFaUdXnjA",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000023e532e259a067f65d441fdd0",
+                  "width": null
+                }
+              ],
+              "name": "Chill Pop",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDBmNzQxMzkzM2RjYWE0MzRkYzRkOWEyN2YzM2Q4ZWZm",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0MLFaUdXnjA"
+            },
+            {
+              "collaborative": false,
+              "description": "It's giving coastal grandmother, it's giving Diane Keaton, it's giving apple pies.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXc2jw7z4RD7k"
+              },
+              "id": "37i9dQZF1DXc2jw7z4RD7k",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002da1935d66375f0cf110e1a3b",
+                  "width": null
+                }
+              ],
+              "name": "Grandma's Home",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA2MDY3NCwwMDAwMDAwMDlhNmE1NDE4NDcwYTM3YjM3ZjQzMmY3OTIxMDlmMDQz",
+              "tracks": {
+                "total": 80
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXc2jw7z4RD7k"
+            },
+            {
+              "collaborative": false,
+              "description": "Everything Broadway-adjacent. Cover: WONKA",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWZs0W69wXP5G"
+              },
+              "id": "37i9dQZF1DWZs0W69wXP5G",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000026390ae37c81bdf0ad4ac494c",
+                  "width": null
+                }
+              ],
+              "name": "Off Broadway",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMTA2ODU4MSwwMDAwMDAwMGRlODFmOGI2MTAzNjMzOTA4MDA5YTUzZDJkZWNmMmVm",
+              "tracks": {
+                "total": 90
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWZs0W69wXP5G"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 11
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLr8pSANmibHq",
+        "images": [],
+        "name": "Easy Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      },
+      {
+        "content": {
+          "items": [
+            {
+              "collaborative": false,
+              "description": "The hottest 50. Cover: Post Malone",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXcBWIGoYBM5M"
+              },
+              "id": "37i9dQZF1DXcBWIGoYBM5M",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002997259ab71bbecfa630edc82",
+                  "width": null
+                }
+              ],
+              "name": "Today\u2019s Top Hits",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDdiNGIzODk1OTgzNmNmMTVjM2Y3ZjVkZWM4N2JjMDk2",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+            },
+            {
+              "collaborative": false,
+              "description": "All the hits you'll need to make your summer sizzle.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX1gRalH1mWrP"
+              },
+              "id": "37i9dQZF1DX1gRalH1mWrP",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000024fdcd4954713745550ba27b3",
+                  "width": null
+                }
+              ],
+              "name": "Summer Hits 2024",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDQ0OTFmNzY3ZjIxYWRjMjkwMjA4OGE5NGNlNzZiNTU3",
+              "tracks": {
+                "total": 75
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX1gRalH1mWrP"
+            },
+            {
+              "collaborative": false,
+              "description": "The hottest tracks in the United States. Cover: Billie Eilish",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX0kbJZpiYdZl"
+              },
+              "id": "37i9dQZF1DX0kbJZpiYdZl",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002e6ad86e434f08c75cb5d12dc",
+                  "width": null
+                }
+              ],
+              "name": "Hot Hits USA",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzgxNjM0NCwwMDAwMDAwMGNlNDlmMTAxZjhkOTgyNGY4YjNlYmRlY2VmOGU4ODgx",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX0kbJZpiYdZl"
+            },
+            {
+              "collaborative": false,
+              "description": "iykyk",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX5Vy6DFOcx00"
+              },
+              "id": "37i9dQZF1DX5Vy6DFOcx00",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000258cb9399d2d48a524106c0e4",
+                  "width": null
+                }
+              ],
+              "name": "big on the internet",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzY0OTIxOSwwMDAwMDAwMDJkNjhhNjFlMTI4YWUxNzBiYWYzNDlkNWVjY2M2NTBj",
+              "tracks": {
+                "total": 50
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5Vy6DFOcx00"
+            },
+            {
+              "collaborative": false,
+              "description": "The songs with the biggest throwback moments. Cover: Arctic Monkeys",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DXdpy4ZQQMZKm"
+              },
+              "id": "37i9dQZF1DXdpy4ZQQMZKm",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000266bf3d21138dc703e2d8dced",
+                  "width": null
+                }
+              ],
+              "name": "Top Throwbacks 2023",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcwMTI2MDIyMCwwMDAwMDAwMDdlNjlhMjViM2RkMTIzZDQ2NjYyMzNlYzQ2YTE1ZTU4",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DXdpy4ZQQMZKm"
+            },
+            {
+              "collaborative": false,
+              "description": "Classic hits from the 50s and 60s.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX56bqlsMxJYR"
+              },
+              "id": "37i9dQZF1DX56bqlsMxJYR",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002d47ee07c9a62f7c11e589c70",
+                  "width": null
+                }
+              ],
+              "name": "Classic Oldies",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMDc2NDcxOCwwMDAwMDAwMDI3Y2MxMjVjMDU2ZWE5MTg2Yjk3OTA2NGY2NTUxMTk1",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX56bqlsMxJYR"
+            },
+            {
+              "collaborative": false,
+              "description": "A perfect little pop party. ",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DWXti3N4Wp5xy"
+              },
+              "id": "37i9dQZF1DWXti3N4Wp5xy",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f00000002dce5bc8321d570243742d421",
+                  "width": null
+                }
+              ],
+              "name": "Pop Party",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDdlZjgzMzE2Njg4YmYxYzBjMDJkYWZjNTI4NWI5NWU3",
+              "tracks": {
+                "total": 150
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DWXti3N4Wp5xy"
+            },
+            {
+              "collaborative": false,
+              "description": "That summer sound.",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX5Ozry5U6G0d"
+              },
+              "id": "37i9dQZF1DX5Ozry5U6G0d",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000214cf9bcc5db1b15430578b87",
+                  "width": null
+                }
+              ],
+              "name": "Summer Party",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMDZiMTBiYjk5ZjY5MDdhYjY3MmI5YmFlYWNiMGMyZjE3",
+              "tracks": {
+                "total": 100
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX5Ozry5U6G0d"
+            },
+            {
+              "collaborative": false,
+              "description": "Get happy with today's dose of feel-good songs!",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX3rxVfibe1L0"
+              },
+              "id": "37i9dQZF1DX3rxVfibe1L0",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000028191cc41d8585df6170b3e5e",
+                  "width": null
+                }
+              ],
+              "name": "Mood Booster",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzc4MDgwMCwwMDAwMDAwMGI2ZjA4NGU0OTIxMThlNmEzYmNlMjEyMmYwYzdkZGZm",
+              "tracks": {
+                "total": 85
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0"
+            },
+            {
+              "collaborative": false,
+              "description": "put a little yee haw in your laid back",
+              "external_urls": {
+                "spotify": "https:\/\/open.spotify.com\/playlist\/37i9dQZF1DX42rTd7wQPNO"
+              },
+              "id": "37i9dQZF1DX42rTd7wQPNO",
+              "images": [
+                {
+                  "height": null,
+                  "url": "https:\/\/i.scdn.co\/image\/ab67706f000000022196fd9181a5492c8b702336",
+                  "width": null
+                }
+              ],
+              "name": "coastal cowgirl",
+              "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                  "spotify": "https:\/\/open.spotify.com\/user\/spotify"
+                },
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTcyMzg2NzIwMCwwMDAwMDAwMDJmYjM5MzAzOTgxYTlhNjRiNzNhZmEyODk4ZTk0MmEz",
+              "tracks": {
+                "total": 120
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX42rTd7wQPNO"
+            }
+          ],
+          "limit": 10,
+          "next": true,
+          "offset": 0,
+          "previous": null,
+          "total": 204
+        },
+        "custom_fields": [],
+        "external_urls": null,
+        "id": "section0JQ5IMCbQBLoSVpnseIhn6",
+        "images": [],
+        "name": "All Things Pop",
+        "rendering": "LIST",
+        "tag_line": null,
+        "type": "view"
+      }
+    ],
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 15
+  },
+  "custom_fields": [],
+  "external_urls": null,
+  "id": "page0JQ5DAqbMKFEC4WFtoNRpw",
+  "images": [],
+  "name": null,
+  "rendering": "STACK",
+  "tag_line": null,
+  "type": "view"
+}
