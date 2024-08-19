@@ -15,7 +15,6 @@ import {
   withInterceptors,
 } from "@angular/common/http";
 import { AlbumsComponent } from "./pages/albums/albums.component";
-import { FavoritesComponent } from "./pages/favorites/favorites.component";
 import { PlaylistsComponent } from "./pages/playlists/playlists.component";
 import { ArtistsComponent } from "./pages/artists/artists.component";
 import { TrendingComponent } from "./pages/trending/trending.component";
@@ -34,6 +33,7 @@ import { spotifyReducer } from "./store/spotify/spotify.reducer";
 import { authInterceptor } from "./core/interceptors/auth.interceptor";
 import { reauthenticationInterceptor } from "./core/interceptors/reauthenticate.interceptor";
 import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
+import { GenreComponent } from './pages/genre/genre.component';
 
 const reducers = {
   theme: themeReducer,
@@ -47,10 +47,10 @@ const reducers = {
     AppComponent,
     HomeComponent,
     AlbumsComponent,
-    FavoritesComponent,
     PlaylistsComponent,
     ArtistsComponent,
     TrendingComponent,
+    GenreComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,7 +74,6 @@ const reducers = {
     provideHttpClient(
       withInterceptors([
         authInterceptor,
-        reauthenticationInterceptor,
         spotifyPlayerInterceptor,
       ])
     ),

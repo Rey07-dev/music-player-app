@@ -19,6 +19,7 @@ import { AppRoutes } from "../app.routes";
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 import { LoginComponent } from './components/login/login.component';
 import { CallbackComponent } from "./components/login/callback.component";
+import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-album.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CallbackComponent } from "./components/login/callback.component";
     ControlIconComponent,
     HomeCarouselComponent,
     LoginComponent,
-    CallbackComponent
+    CallbackComponent,
+    TracksInAlbumComponent
   ],
   imports: [
     CommonModule,
