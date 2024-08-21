@@ -9,8 +9,6 @@ import { AuthGuard } from './core/models/guards/auth.guard';
 import { TracksInAlbumComponent } from './shared/components/tracks-in-album/tracks-in-album.component';
 import { GenreComponent } from './pages/genre/genre.component';
 import { PlaylistsComponent } from './pages/playlists/playlists.component';
-import { LoginComponent } from './shared/components/auth/login/login.component';
-import { SignupComponent } from './shared/components/auth/signup/signup.component';
 
 export const AppRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthGuard] },
