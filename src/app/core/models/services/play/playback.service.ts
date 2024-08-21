@@ -1,62 +1,51 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { Track } from '../../interfaces/music/tracks';
+import { Injectable } from "@angular/core";
+import { BehaviorSubject } from "rxjs/internal/BehaviorSubject";
+import { IAlbumItem } from "../../interfaces/spotify";
+import { SpotifyPlayerService } from "../spotify/spotify-player.service";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class PlaybackService {
-
   private currentTrackSubject = new BehaviorSubject<any>(null);
-  private playlist: any[] = [];
-  private currentIndex = -1;
-  private playbackPosition = 0;
+  private currentIndexSubject = new BehaviorSubject<number>(-1);
+  public playlist: IAlbumItem[] = [];
+  audio = new Audio();
 
   currentTrack$ = this.currentTrackSubject.asObservable();
+  currentIndex$ = this.currentIndexSubject.asObservable();
   playbackPosition$ = new BehaviorSubject<number>(0);
 
-  setPlaylist(tracks: any[]) {
+  constructor(private spotifyService: SpotifyPlayerService,) { }
+
+  setPlaylist(tracks:IAlbumItem[]) {
     this.playlist = tracks;
-    this.currentIndex = -1; // Reset index
+    this.currentIndexSubject.next(-1);
   }
 
-  playTrack(index: number, info?: Track) {
-    console.log(info, index)
-    if (index >= 0 && index < this.playlist.length) {
-      this.currentIndex = index;
-      this.currentTrackSubject.next(this.playlist[index]);
-      this.playbackPosition = 0;
-      this.playbackPosition$.next(this.playbackPosition);
-      console.log(`Playing track: ${this.playlist[index].title}`);
-    }
+  playTrack(index: number) {
+    const track = this.playlist[index];
+    this.spotifyService.play(track?.uri);
+    this.currentIndexSubject.next(index);
+    this.currentTrackSubject.next(track);
   }
 
-  seek(position: number) {
-    if (this.currentTrackSubject.value) {
-      this.playbackPosition = position;
-      this.playbackPosition$.next(this.playbackPosition);
-      console.log(`Seeked to position: ${position}`);
-      // Implement actual seeking logic with your audio player here
-    }
+  pauseTrack() {
+    this.spotifyService.pause();
   }
+
 
   nextTrack() {
-    if (this.currentIndex < this.playlist.length - 1) {
-      this.playTrack(this.currentIndex + 1);
+    const currentIndex = this.currentIndexSubject.value;
+    if (currentIndex < this.playlist.length - 1) {
+      this.playTrack(currentIndex + 1);
     }
   }
 
   previousTrack() {
-    if (this.currentIndex > 0) {
-      this.playTrack(this.currentIndex - 1);
+    const currentIndex = this.currentIndexSubject.value;
+    if (currentIndex > 0) {
+      this.playTrack(currentIndex - 1);
     }
-  }
-
-  trackFinished() {
-    this.nextTrack();
-  }
-
-  getTrackInfo(info: Track) {
-    return info
   }
 }

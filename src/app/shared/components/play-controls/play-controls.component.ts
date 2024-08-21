@@ -1,8 +1,9 @@
-import {  Component,  ElementRef,  ViewChild,} from "@angular/core";
-import { PlaybackService } from "../../../core/models/services/play/playback.service";
+import { PlaybackService } from './../../../core/models/services/play/playback.service';
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { Store } from "@ngrx/store";
-import {  nextTrack,  pauseTrack,  playTrack,  previousTrack,  trackEnded,} from "../../../store/play-track/playMusic.actions";
-import { selectCurrentTrack } from "../../../store/play-track/playMusic.selectors";
+
+import { SpotifyPlayerService } from "../../../core/models/services/spotify/spotify-player.service";
+import { PlayingSongState } from "../../../core/models/interfaces/spotify";
 
 @Component({
   selector: "app-play-controls",
@@ -10,48 +11,49 @@ import { selectCurrentTrack } from "../../../store/play-track/playMusic.selector
   styleUrl: "./play-controls.component.css",
 })
 export class PlayControlsComponent {
-  @ViewChild("audioPlayer") audioPlayerRef!: ElementRef<HTMLAudioElement>;
-  trackDetails = this.store.selectSignal(selectCurrentTrack);
 
-  audio = new Audio();
-  isPlaying: any;
-  constructor(private playbackService: PlaybackService, private store: Store) {}
+  @ViewChild("audioPlayerRef") audioPlayerRef!: ElementRef<HTMLAudioElement>;
+  isPlaying = false;
+  trackDetail!: PlayingSongState | null;
+  artistName: any;
+
+  constructor(
+    private spotifyPlayerService: SpotifyPlayerService,
+    private store: Store, private playbackService: PlaybackService
+  ) {
+    this.spotifyPlayerService.initializePlayer();
+  }
 
   ngOnInit(): void {
-    console.log(this.trackDetails());
+    setInterval(() => {
+      this.trackDetail = this.trackInfo();
+      this.artistName = this.trackDetail?.track_window.current_track.artists[0].name;
+    }, 100);
   }
 
-
-  play(): void {
-    console.log(this.store.dispatch(playTrack()));
-    this.store.dispatch(playTrack());
+  trackInfo(){
+    const playerState = localStorage.getItem('player_state');
+    return playerState ? JSON.parse(playerState) : null;
   }
 
-  pause(): void {
-    this.store.dispatch(pauseTrack());
+  play() {
+    const playlistUris: PlayingSongState = localStorage.getItem('player_state')
+     ? JSON.parse(localStorage.getItem('player_state')!)
+     : null;
+    this.spotifyPlayerService.play(playlistUris.track_window.current_track.album.uri);
   }
 
-  next(): void {
-    this.store.dispatch(nextTrack());
+  pause() {
+    this.spotifyPlayerService.pause();
   }
 
-  stop(): void {
-    this.store.dispatch(trackEnded());
+  next() {
+    this.spotifyPlayerService.next();
   }
 
-  previous(): void {
-    this.store.dispatch(previousTrack());
-  }
-
-  seek(event: any): void {
-    const seekTime = (event.target.value / 100) * this.audio.duration;
-    this.audio.currentTime = seekTime;
-  }
-
-  formatTime(seconds: number): string {
-    const minutes = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+  previous() {
+    this.trackDetail = this.trackInfo();
+    this.spotifyPlayerService.previous();
   }
 
   onKeyPress(event: KeyboardEvent): void {}

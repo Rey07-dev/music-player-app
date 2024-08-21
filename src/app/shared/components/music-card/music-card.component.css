@@ -1,0 +1,38 @@
+
+.music-card {
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-card:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.music-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.music-card-content {
+  padding: 1px;
+  text-align: center;
+}
+
+.music-card-plays {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.music-card-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+}

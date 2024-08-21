@@ -31,17 +31,8 @@ export class MusicService {
   getArtists(artistId: string | undefined): Observable<any> {
     return this.http.get(`${this.API_URL}artist.php?i=${artistId}`);
   }
-  // getNewReleases(): Observable<any> {
-  //   return this.http.get(`${this.API_URL}searchalbum.php?s=latest`);
-  // }
-
-  // getGenres(): Observable<any> {
-  //   return this.http.get(`${this.API_URL}genre.php`);
-  // }
 
   getTrending(): Observable<any> {
-    console.log("music service", this.API_URL);
-    // www.theaudiodb.com/api/v1/json/2/trending.php?country=us&type=itunes&format=albums
     return this.http.get(
       `${this.API_URL}/${this.API_KEY}/trending.php?country=us&type=itunes&format=albums`
     );

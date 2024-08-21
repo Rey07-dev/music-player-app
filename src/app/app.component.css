@@ -4,10 +4,12 @@
 }
 
 #navbar {
-  height: 8vh;
   min-width: 15px;
   max-width: 100%;
   box-shadow: #ccc 0 0 5px;
+  background: var(--nav-bg);
+  top: 0;
+  position: sticky;
 }
 
 .container {
@@ -34,7 +36,9 @@
 
 #play {
   box-shadow: #ccc 0 0 5px;
-  height: 12vh;
+  position: sticky;
+  background: var(--nav-bg);
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {

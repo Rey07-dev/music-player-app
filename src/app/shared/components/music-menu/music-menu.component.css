@@ -15,11 +15,11 @@
 }
 
 .active-link {
-  color: #0642e6;
+  color: var(--active-link);
 }
 
 .musicListUlSpan:hover {
-  color: #0642e6;
+  color: var(--active-link);
   transition: all 0.3s ease;
 }
 

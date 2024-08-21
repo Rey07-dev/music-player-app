@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import { Track } from '../../../core/models/interfaces/music/tracks';
 import { PlaybackService } from '../../../core/models/services/play/playback.service';
 import { selectTrack } from '../../../store/play-track/playMusic.actions';
+import { IAlbumItem, PlayingSongState, SpotifyTrack } from '../../../core/models/interfaces/spotify';
 
 @Component({
   selector: 'app-card',
@@ -10,16 +11,15 @@ import { selectTrack } from '../../../store/play-track/playMusic.actions';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input({ required: true }) songs!: Track;
+  @Input({ required: true }) songs!: IAlbumItem;
   placeholder: string = "astro.png";
   showPlayButton = false;
 
   constructor(private playbackService: PlaybackService, private store: Store) {}
 
-  playSong(song: Track) {
-    // console.log(song);
-    // this.playbackService.getTrackInfo(song);
-    // this.playbackService.playTrack(parseInt(song.intDuration), song)
+  playSong(song: any) {
+    this.playbackService.setPlaylist([song]);
     this.store.dispatch(selectTrack({ track: song }));
+    localStorage.setItem('select_track', JSON.stringify(song))
   }
 }

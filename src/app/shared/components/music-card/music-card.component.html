@@ -1,1 +1,13 @@
-<p>music-card works!</p>
+<div class="card">
+  <div class="music-card">
+    <img
+      [src]="musicData.strAlbumThumb || placeholder"
+      alt=" cover"
+      class="music-card-img"
+      fetchpriority="high"
+    />
+    <div class="music-card-content">
+      <p class="music-card-title">{{musicData.strAlbum}}</p>
+    </div>
+  </div>
+</div>

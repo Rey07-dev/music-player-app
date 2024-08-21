@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 /* Light Theme */
 .light-theme {
   --background-color: #ffffff00;
@@ -6,7 +5,10 @@
   --height-content: 80vh;
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --hover-color: rgba(12, 7, 7, 0.39);
-  --play-color: rgba(45, 82, 247, 5)
+  --play-color: rgba(45, 82, 247, 5);
+  --background: #cccccce8;
+  --active-link: #0642e6;
+  --nav-bg: #ffffff;
 }
 
 /* Dark Theme */
@@ -16,7 +18,9 @@
   --height-content: 80vh;
   --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.281);
   --hover-color: rgba(255, 255, 255, 0.562);
-  --play-color: white
+  --play-color: white;
+  --active-link: #0642e6;
+  --nav-bg: #000000;
 }
 
 /* Apply theme variables */
@@ -26,4 +30,8 @@ body {
   color: var(--text-color);
   box-shadow: var(--box-shadow);
   transition: background-color 0.3s, color 0.3s;
+  /* background: var(--background); */
 }
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

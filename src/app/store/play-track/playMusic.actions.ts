@@ -1,20 +1,21 @@
 import { createAction, props } from "@ngrx/store";
 import { Track } from "../../core/models/interfaces/music/tracks";
+import { IAlbumItem, PlayingSongState, PlayTrack, SpotifyTrack } from "../../core/models/interfaces/spotify";
 
 
 export const selectTrack = createAction(
   '[Play Track] Play Track',
-  props<{ track: Track }>()
+  props<{ track: IAlbumItem }>()
 );
 
 export const playTrack = createAction('[Play Track] Play Track');
 
-export const pauseTrack = createAction('[Play Track] Pause Track');
+export const pauseTrack = createAction('[Pause Track] Pause Track');
 
-export const stopTrack = createAction('[Play Track] Stop Track');
+export const stopTrack = createAction('[Stop Track] Stop Track');
 
-export const nextTrack = createAction('[Play Track] Next Track');
+export const nextTrack = createAction('[Next Track] Next Track');
 
-export const previousTrack = createAction('[Play Track] Previous Track');
+export const previousTrack = createAction('[Previous Track] Previous Track');
 
-export const trackEnded = createAction('[Play Track] Track Ended');
+export const trackEnded = createAction('[End Track] Track Ended');

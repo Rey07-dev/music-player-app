@@ -1,6 +1,6 @@
 .music-player-controls {
   display: flex;
-  height: 100%;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -15,10 +15,13 @@
 }
 
 .track-info p {
-  margin: 0;
+  margin: 5px 0;
   font-size: 1.2em;
 }
 
+.title{
+  font-weight: 500;
+}
 
 .controlsWrap {
   display: flex;
@@ -26,7 +29,7 @@
   justify-content: center;
   flex-direction: column;
   width: 200px;
-  padding: 15px;
+  padding: 20px 15px;
 }
 
 .controls {

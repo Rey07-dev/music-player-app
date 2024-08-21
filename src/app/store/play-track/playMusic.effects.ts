@@ -1,39 +1,79 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { of, switchMap } from "rxjs";
-import { nextTrack, pauseTrack, playTrack, previousTrack } from "./playMusic.actions";
+import { tap } from "rxjs/operators";
+import { PlaybackService } from "../../core/models/services/play/playback.service";
+import { nextTrack, pauseTrack, playTrack, previousTrack, selectTrack } from "./playMusic.actions";
 
 @Injectable()
-
 export class PlayMusicEffects {
+  constructor(
+    private actions$: Actions,
+    private playbackService: PlaybackService
+  ) {}
 
-  constructor(private actions$: Actions) {}
-
-  playTrack$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(playTrack),
-      switchMap(() => of(playTrack()))
-    )
+  selectAndPlayTrack$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(selectTrack),
+        tap(({ track }) => {
+          if (track) {
+            const trackIndex = this.playbackService.playlist.findIndex(
+              (t) => t.id === track.id
+            );
+            if (trackIndex !== -1) {
+              this.playbackService.playTrack(trackIndex);
+            } else {
+              console.error("Track not found in playlist", trackIndex);
+            }
+          } else {
+            console.error("Track is undefined or null");
+          }
+        })
+      ),
+    { dispatch: false }
   );
 
-  // nextTrack$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(nextTrack),
-  //     switchMap(() => of(nextTrack()))
-  //   )
-  // );
+  playTrack$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(playTrack),
+        tap(() => {
+          this.playbackService.playTrack(1);
+        })
+      ),
+    { dispatch: false }
+  );
 
-  // previousTrack$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(previousTrack),
-  //     switchMap(() => of(previousTrack()))
-  //   )
-  // );
+   pauseTrack$ = createEffect(
+     () =>
+       this.actions$.pipe(
+         ofType(pauseTrack),
+         tap(() => {
+           this.playbackService.pauseTrack();
+         })
+       ),
+     { dispatch: false }
+   );
 
-  // pauseTrack$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(pauseTrack),
-  //     switchMap(() => of(pauseTrack()))
-  //   )
-  // );
+   nextTrack$ = createEffect(
+     () =>
+       this.actions$.pipe(
+         ofType(nextTrack),
+         tap(() => {
+           this.playbackService.nextTrack();
+         })
+       ),
+     { dispatch: false }
+   );
+
+   previousTrack$ = createEffect(
+     () =>
+       this.actions$.pipe(
+         ofType(previousTrack),
+         tap(() => {
+           this.playbackService.previousTrack();
+         })
+       ),
+     { dispatch: false }
+   );
 }
