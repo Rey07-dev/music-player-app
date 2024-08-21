@@ -7,11 +7,9 @@
 .banner img {
   width: 100%;
   height: 300px;
-  /* object-fit: cover; */
+  object-fit: cover;
   border-radius: 10px;
 }
-
-.tracks {}
 
 .currentTrack {
   width: 70%;
@@ -26,10 +24,6 @@
   margin: 0 0 10px 0;
   position: relative;
 }
-
-/* .currentTrack:hover {
-  background: #ccc;
-} */
 
 .cover {
   display: flex;
