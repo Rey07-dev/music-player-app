@@ -1,1 +1,23 @@
-<p>playlists works!</p>
+<div class="playlist-container">
+  <div class="playlist-header">
+      <img class="playlist-cover" [src]="playlistImg" alt="Playlist Cover">
+      <div class="playlist-details">
+          <h2 class="playlist-title">{{ playlists?.name }}</h2>
+          <p class="playlist-owner">{{ playlists?.owner?.display_name }}</p>
+          <p class="playlist-followers">{{ followers  > 1 ? 'followers' : 'follower'}}</p>
+          <p class="playlist-description">
+              <a href="spotify:playlist:37i9dQZF1DXdnOj1VEuhgb">NKVT</a> sunar: yılın favori Türkçe rap parçaları. Kapak: BLOK3
+          </p>
+      </div>
+  </div>
+  <div class="playlist-tracks">
+      <ul>
+          <li *ngFor="let track of tracks; let i = index">
+              <div class="track-info">
+                  <p class="track-number">{{ i + 1 }}</p>
+                  <p class="track-duration">{{ track.track.duration_ms | duration }}</p>
+              </div>
+          </li>
+      </ul>
+  </div>
+</div>
