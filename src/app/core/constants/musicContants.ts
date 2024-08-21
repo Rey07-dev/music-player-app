@@ -7,23 +7,10 @@ export const musicList: MusicList[] = [
     link: '',
     label: 'Home',
   },
-  // {
-  //   name: 'Trending',
-  //   label: 'Trending',
-  //   icon: 'fas fa-fire',
-  //   link: '/trending',
-  // },
-  // {
-  //   name: 'New',
-  //   icon: 'fas fa-music',
-  //   link: '/new-releases',
-  //   label: 'New Releases',
-  //   isActive: false
-  // },
   {
     name: 'Artists',
     icon: 'fas fa-user-md',
-    link: '/artists',
+    link: '/artist/2w9zwq3AktTeYYMuhMjju8',
     label: 'Artists',
   },
   {
@@ -41,12 +28,6 @@ export const musicList: MusicList[] = [
 ];
 
 export const libraryList: MusicList[] = [
-  // {
-  //   name: 'Favorites',
-  //   icon: 'fas fa-heart',
-  //   link: '/favorites',
-  //   label: 'Favorites',
-  // },
   {
     name: 'My Playlists',
     icon: 'fas fa-list',
