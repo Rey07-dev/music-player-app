@@ -10,16 +10,19 @@ import { MusicCardComponent } from "./components/music-card/music-card.component
 import { CardComponent } from "./components/card/card.component";
 import { MusicMenuComponent } from "./components/music-menu/music-menu.component";
 import { ControlIconComponent } from "./components/control-icon/control-icon.component";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule } from "@angular/router";
 import { AppRoutes } from "../app.routes";
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
-import { LoginComponent } from './components/login/login.component';
+import { SpotifyLoginComponent } from './components/login/login.component';
 import { CallbackComponent } from "./components/login/callback.component";
 import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-album.component';
+import { LoginComponent } from "./components/auth/login/login.component";
+import { SignupComponent } from "./components/auth/signup/signup.component";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -32,9 +35,11 @@ import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-a
     MusicMenuComponent,
     ControlIconComponent,
     HomeCarouselComponent,
-    LoginComponent,
     CallbackComponent,
-    TracksInAlbumComponent
+    TracksInAlbumComponent,
+    SpotifyLoginComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     CommonModule,
@@ -47,6 +52,8 @@ import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-a
     MatButtonModule,
     MatProgressSpinnerModule,
     MatIconModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
   ],
   exports: [
     NavbarComponent,
@@ -58,7 +65,9 @@ import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-a
     MusicMenuComponent,
     ControlIconComponent,
     HomeCarouselComponent,
-    LoginComponent
+    SpotifyLoginComponent,
+    LoginComponent,
+    SignupComponent
   ],
 })
 export class SharedModule {}

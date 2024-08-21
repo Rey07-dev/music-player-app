@@ -19,10 +19,8 @@ export class MusicCardComponent {
   ) {}
 
   openAlbum(album: IAlbumItem) {
-    console.log('album', album)
     this.spotifyPlayerService.play(album.uri);
     this.route.navigate(["/album/", album.id]);
     localStorage.setItem("album", JSON.stringify(album));
-
   }
 }
