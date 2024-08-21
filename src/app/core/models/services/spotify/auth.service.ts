@@ -1,12 +1,13 @@
 import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
-import { HttpClient, HttpParams } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Router } from "@angular/router";
+import { catchError, map, retry, throwError } from "rxjs";
 
 @Injectable({
   providedIn: "root",
 })
-export class AuthService {
+export class SpotifyAuthService {
   private clientId = environment.clientId;
   private redirectUri = environment.redirectUri;
   private scopes = environment.scopes;
@@ -56,17 +57,38 @@ export class AuthService {
 
   refreshAccessToken() {
     const refreshToken = localStorage.getItem("spotify_refresh_token")!;
-    const body = new URLSearchParams();
-    body.set("grant_type", "refresh_token");
-    body.set("refresh_token", refreshToken);
-    body.set("client_id", this.clientId);
-
-    return this.http.post<any>((this.tokenEndpoint, body.toString()), {
+    if (!refreshToken) {
+      return throwError(() => new Error("Refresh token not found"));
+    }
+    const payload = {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: "Basic " + btoa(this.clientId + ":" + this.clientSecret),
+        Authorization: "Bearer " + btoa(this.clientId + ":" + this.clientSecret),
       },
-    });
+      body: new HttpParams()
+        .set("grant_type", "refresh_token")
+        .set("refresh_token", refreshToken)
+        .set("client_id", this.clientId),
+    }
+
+    return this.http
+      .post(this.tokenEndpoint,payload)
+      .pipe(
+        map((response: any) => {
+          const newAccessToken = response.access_token;
+          const newRefreshToken = response.refresh_token;
+          localStorage.setItem("spotify_token", newAccessToken);
+
+          if (newRefreshToken) {
+            localStorage.setItem("spotify_refresh_token", newRefreshToken);
+          }
+          return newAccessToken;
+        }),
+        retry(2),
+        catchError((error) => {
+          return throwError(() => error);
+        })
+      );
   }
 
   isTokenExpired(): boolean {
@@ -74,7 +96,11 @@ export class AuthService {
     if (!expiration) {
       return true;
     }
-    return new Date().getTime() > parseInt(expiration, 10);
+    if (new Date().getTime() > parseInt(expiration, 10)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   isLoggedIn(): boolean {
