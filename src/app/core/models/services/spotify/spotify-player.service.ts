@@ -1,6 +1,6 @@
+import { ToastService } from "./../toast/toast.service";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { IAlbumItem, PlayingSongState } from "../../interfaces/spotify";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
 
@@ -19,16 +19,14 @@ export class SpotifyPlayerService {
   device_id!: string;
   public isPaused: boolean = true;
 
-  constructor(
-    private http: HttpClient
-  ) {
+  constructor(private http: HttpClient, private toastService: ToastService) {
     this.loadSpotifySDK();
   }
 
   loadSpotifySDK() {
     if (!window.Spotify) {
       const script = document.createElement("script");
-      script.src = "https://sdk.scdn.co/spotify-player.js";
+      script.src = environment.srcipt_for_player;
       script.onload = () => {
         this.initializePlayer();
       };
@@ -76,7 +74,9 @@ export class SpotifyPlayerService {
   }
 
   getStoredData(keyName: string) {
-    return localStorage.getItem(keyName) ? JSON.parse(localStorage.getItem(keyName)!) : null;
+    return localStorage.getItem(keyName)
+      ? JSON.parse(localStorage.getItem(keyName)!)
+      : null;
   }
 
   play(uri: string, playlists?: string[]) {
@@ -88,16 +88,20 @@ export class SpotifyPlayerService {
       ? this.device_id
       : localStorage.getItem("device_id");
     const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
-    const resume: PlayingSongState = this.getStoredData("player_state");
-    const checkId: IAlbumItem = localStorage.getItem("album") ? JSON.parse(localStorage.getItem("album")!) : null;
-    const playData =  {
-          context_uri: uri,
-          uris: playlists,
-          offset: { position: 0 },
-          position_ms: 0,
-        };
+
+    const playData = {
+      context_uri: uri,
+      uris: playlists,
+      offset: { position: 0 },
+      position_ms: 0,
+    };
     this.http.put(url, playData).subscribe({
-      error: (err) => console.error(err),
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
     });
   }
 
@@ -106,7 +110,12 @@ export class SpotifyPlayerService {
     const url = `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`;
 
     this.http.put(url, {}).subscribe({
-      error: (err) => console.error(err),
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
     });
   }
 
@@ -115,7 +124,12 @@ export class SpotifyPlayerService {
     const url = `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`;
 
     this.http.post(url, {}).subscribe({
-      error: (err) => console.error(err),
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
     });
   }
 
@@ -124,7 +138,12 @@ export class SpotifyPlayerService {
     const url = `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`;
 
     this.http.post(url, {}).subscribe({
-      error: (err) => console.error(err),
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
     });
   }
 }

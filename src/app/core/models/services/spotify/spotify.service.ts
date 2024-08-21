@@ -4,6 +4,8 @@ import { environment } from '../../../../../environments/environment';
 import { SpotifyAlbums } from '../../interfaces/spotify';
 import { ArtistsResponse } from '../../interfaces/user/artist';
 import { SpotifyGenreData } from '../../interfaces/genre';
+import { Playlist } from '../../interfaces/playlist';
+import { SingleArtist } from '../../interfaces/artisit';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,6 @@ import { SpotifyGenreData } from '../../interfaces/genre';
 export class SpotifyService {
 
   private url = 'https://spotify117.p.rapidapi.com/new_releases/?country=us';
-  // private tracksURL = 'https://spotify117.p.rapidapi.com/spotify_single_track/?url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F1Ef0TmgS1QrVO6tKHrMMmH'
   private trackApiUrl = 'https://spotify23.p.rapidapi.com/tracks';
   private albumTracksUrl = 'https://spotify23.p.rapidapi.com/album_tracks'
   private singleArtistUrl = 'https://spotify23.p.rapidapi.com/artists'
@@ -42,16 +43,15 @@ export class SpotifyService {
     return this.http.get(url, { headers: this.headers });
   }
 
-  getSingleArtist() {
-    // const url = `${this.singleArtistUrl}/?ids=${id}`;
-    // return this.http.get(url, { headers: this.headers });
-    return this.http.get<ArtistsResponse>(this.singleArtist);
+  getSingleArtist(id: string) {
+    const url = `${this.singleArtistUrl}/?ids=${id}`;
+    return this.http.get<SingleArtist>(url, { headers: this.headers });
   }
 
   getPlaylist() {
     // const url = `${this.playlistUrl}/?ids=${id}`;
     // return this.http.get(url, { headers: this.headers });
-    return this.http.get(this.playlist);
+    return this.http.get<Playlist>(this.playlist);
   }
 
   getGenre() {
