@@ -30,10 +30,14 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatMenuModule } from "@angular/material/menu";
 import { PlayMusicEffects } from "./store/play-track/playMusic.effects";
 import { spotifyReducer } from "./store/spotify/spotify.reducer";
-import { authInterceptor } from "./core/interceptors/auth.interceptor";
-import { reauthenticationInterceptor } from "./core/interceptors/reauthenticate.interceptor";
+import { spotifyAuthInterceptor } from "./core/interceptors/spotify_auth.interceptor";
 import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
 import { GenreComponent } from './pages/genre/genre.component';
+import { DurationPipe } from "./core/models/pipes/duration.pipe";
+import { reauthenticationInterceptor } from "./core/interceptors/spotify_reauthenticate.interceptor";
+import { authInterceptor } from "./core/interceptors/auth/auth.interceptor";
+import { ToastComponent } from "./shared/components/toast/toast.component";
+
 
 const reducers = {
   theme: themeReducer,
@@ -51,6 +55,8 @@ const reducers = {
     ArtistsComponent,
     TrendingComponent,
     GenreComponent,
+    DurationPipe,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +80,8 @@ const reducers = {
     provideHttpClient(
       withInterceptors([
         authInterceptor,
+        spotifyAuthInterceptor,
+        reauthenticationInterceptor,
         spotifyPlayerInterceptor,
       ])
     ),
