@@ -6,16 +6,47 @@
     fetchpriority="high"
     alt="logo"
   />
-  <input type="text" placeholder="Search Artists, Albums" name="" id="" />
+  <div class="search">
+    <input #searchInput type="text" placeholder="Search Artists, Albums, Tracks..." (input)="onSearch(searchInput)" />
+    <select [(ngModel)]="type">
+      <option value="" disabled>Select Type</option>
+      <option value="track">Tracks</option>
+      <option value="album">Albums</option>
+      <option value="artist">Artists</option>
+    </select>
+    <div class="dropdown" *ngIf="isSearching">
+      <div *ngIf="results$ | async as results">
+        <div class="track" *ngIf="results.tracks">
+          <h4>Tracks</h4>
+          <div *ngFor="let track of results.tracks.items">
+            <button (click)="onItemSelected(track, searchInput)">{{ track.name }} - {{ getArtistNames(track) }}</button>
+          </div>
+        </div>
+        <div class=" albums" *ngIf="results.albums">
+          <h4>Albums</h4>
+          <div *ngFor="let album of results.albums.items">
+            <button (click)="onItemSelected(album, searchInput)">{{ album.name }} - {{ getArtistNames(album) }}</button>
+          </div>
+        </div>
+        <div class="artists" *ngIf="results.artists">
+          <h4>Artists</h4>
+          <div *ngFor="let artist of results.artists.items">
+            <button  (click)="onItemSelected(artist, searchInput)">{{ artist.name }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="profileWrapper">
     <app-theme-toggle></app-theme-toggle>
-    <div class="profile" (click)="toggleProfile()">
+    <button mat-button class="profile" (click)="toggleProfile()">
       <i class="fas fa-user"></i>
-    </div>
+    </button>
     <div *ngIf="isDrop" class="profileContent">
       <p>Profile</p>
-      <p (click)="logout()">Logout</p>
+      <button mat-button (click)="openModal()">Login</button>
+      <button mat-button  (click)="logout()">Logout</button>
     </div>
   </div>
 </nav>

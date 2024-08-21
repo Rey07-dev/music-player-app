@@ -5,12 +5,36 @@ nav {
   padding: 5px 30px 5px 20px;
 }
 
-nav input {
+.search input {
   width: 400px;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid #ccc;
   background: none;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search select {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+option {
+  background-color: white;
+  color: black;
+  font-size: medium;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 .profileWrapper {
@@ -19,6 +43,7 @@ nav input {
   justify-content: center;
   gap: 10px;
 }
+
 .profile {
   display: flex;
   align-items: center;
@@ -64,4 +89,39 @@ nav input {
   cursor: pointer;
   color: var(--active-link);
   border-bottom: 1px solid var(--active-link);
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 0 10px 5px 10px;
+  height: 40vh;
+  overflow-y: auto;
+  z-index: 100000;
+  top: 45px;
+  border-radius: 10px;
+  background: #cccccc;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.artist button {
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button{
+  border: none;
+  background: none;
 }
