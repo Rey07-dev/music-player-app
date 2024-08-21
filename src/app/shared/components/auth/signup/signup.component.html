@@ -1,0 +1,45 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <h4>Sign up</h4>
+  <div class="username">
+    <input type="text" placeholder="Enter First name" formControlName="first_name">
+    <div *ngIf="signupForm.get('first_name')?.invalid && signupForm.get('first_name')?.touched || signupForm.get('first_name')?.dirty">
+      <small *ngIf="signupForm.get('first_name')?.hasError('required')">First name is required</small>
+      <small *ngIf="signupForm.get('first_name')?.hasError('minlength')">First name should be more than 2 characters</small>
+      <small *ngIf="signupForm.get('first_name')?.hasError('maxlength')">First name shouldn't be more than 20 characters</small>
+    </div>
+  </div>
+  <div class="username">
+    <input type="text" placeholder="Enter Last name" formControlName="last_name">
+    <div *ngIf="signupForm.get('last_name')?.invalid && signupForm.get('last_name')?.touched || signupForm.get('last_name')?.dirty">
+      <small *ngIf="signupForm.get('last_name')?.hasError('required')">Last name is required</small>
+      <small *ngIf="signupForm.get('last_name')?.hasError('minlength')">Last name should be more than 2 characters</small>
+      <small *ngIf="signupForm.get('last_name')?.hasError('maxlength')">Last name shouldn't be more than 30 characters</small>
+    </div>
+  </div>
+
+
+  <div class="email">
+    <input type="email" placeholder="Your Email Address" formControlName="email">
+    <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched || signupForm.get('email')?.dirty">
+      <small *ngIf="signupForm.get('email')?.hasError('required')">Email is required</small>
+      <small *ngIf="signupForm.get('email')?.hasError('email')">Invalid email format</small>
+    </div>
+  </div>
+
+  <div class="password">
+    <input type="password" placeholder="Password" formControlName="password">
+    <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched || signupForm.get('password')?.dirty">
+      <small *ngIf="signupForm.get('password')?.hasError('required')">Password is required</small>
+      <small *ngIf="signupForm.get('password')?.hasError('minlength')">Password must be at least 6 characters</small>
+      <small *ngIf="signupForm.get('password')?.hasError('maxlength')">Password cannot exceed 16 characters</small>
+    </div>
+  </div>
+
+  <button mat-raised-button type="submit" [disabled]="signupForm.invalid">Sign up</button>
+</form>
+
+<div class="already-have-account">
+  <p>Already have an account?
+    <button mat-button (click)="openModal()" >Log in</button>
+  </p>
+</div>
