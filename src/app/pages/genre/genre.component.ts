@@ -10,6 +10,7 @@ import { SpotifyGenreData } from '../../core/models/interfaces/genre';
 })
 export class GenreComponent {
   genreData!: SpotifyGenreData;
+  placeholder = 'astro.png';
 
   constructor(private spotifyService: SpotifyService, private spotifyPlayerService: SpotifyPlayerService) { }
 
@@ -22,10 +23,8 @@ export class GenreComponent {
         console.error('Error fetching genre data', err);
       }
     })
-    localStorage.removeItem('player_state')
   }
   playPlaylist(playlist: any) {
-    console.log('playlist', playlist)
     localStorage.setItem('album', JSON.stringify(playlist))
     this.spotifyPlayerService.play(playlist.uri);
   }
