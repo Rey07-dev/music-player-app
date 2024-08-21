@@ -8,7 +8,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class SpotifyEffects {
-  constructor(private actions$: Actions<any>, private router: Router) {}
+  constructor(private actions$: Actions, private router: Router) {}
 
   authenticate$ = createEffect(() =>
     this.actions$.pipe(
