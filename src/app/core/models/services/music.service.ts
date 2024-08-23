@@ -9,41 +9,11 @@ import { Track, Tracks } from "../interfaces/music/tracks";
   providedIn: "root",
 })
 export class MusicService {
-  private API_URL = environment.apiBaseUrl;
   private API_KEY = environment.apiKey;
   private favorites: string[] = [];
   private playlists: { [key: string]: string[] } = {};
   constructor(private http: HttpClient) {}
 
-  getAlbums(artistId: string | undefined) {
-    return this.http.get<AlbumList>(`${this.API_URL}/${this.API_KEY}/album.php?i=${artistId}`);
-  }
-
-  getTracks(albumId: string | undefined): Observable<Tracks> {
-    return this.http.get<Tracks>(`${this.API_URL}/${this.API_KEY}/track.php?m=${albumId}`)
-  }
-
-
-  getPlaylists(): Observable<any> {
-    return this.http.get(`${this.API_URL}playlist.php?u=1`);
-  }
-
-  getArtists(artistId: string | undefined): Observable<any> {
-    return this.http.get(`${this.API_URL}artist.php?i=${artistId}`);
-  }
-
-  getTrending(): Observable<any> {
-    return this.http.get(
-      `${this.API_URL}/${this.API_KEY}/trending.php?country=us&type=itunes&format=albums`
-    );
-  }
-
-  addToFavorites(trackId: string): Observable<any> {
-    if (!this.favorites.includes(trackId)) {
-      this.favorites.push(trackId);
-    }
-    return of(this.favorites);
-  }
 
   addToPlaylist(trackId: string, playlistId: string): Observable<any> {
     if (!this.playlists[playlistId]) {
