@@ -23,6 +23,10 @@ import { TracksInAlbumComponent } from './components/tracks-in-album/tracks-in-a
 import { LoginComponent } from "./components/auth/login/login.component";
 import { SignupComponent } from "./components/auth/signup/signup.component";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { DurationPipe } from "../core/models/pipes/duration.pipe";
+
+
 
 @NgModule({
   declarations: [
@@ -40,6 +44,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     SpotifyLoginComponent,
     LoginComponent,
     SignupComponent,
+    DurationPipe
   ],
   imports: [
     CommonModule,
@@ -54,6 +59,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     MatIconModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatProgressBarModule
   ],
   exports: [
     NavbarComponent,
@@ -67,7 +73,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     HomeCarouselComponent,
     SpotifyLoginComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DurationPipe
   ],
 })
 export class SharedModule {}
