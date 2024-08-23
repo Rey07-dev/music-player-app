@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { SpotifyAuthService } from './auth.service';
+import { SpotifyAuthService } from './spotify-auth.service';
 
 
 describe('AuthService', () => {

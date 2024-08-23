@@ -19,45 +19,39 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  private getHeaders(): HttpHeaders {
-    return new HttpHeaders({
-      "X-APN": this.apn,
-      "Content-Type": "application/json",
-    });
+  login(email: string, password: string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/user/login`, { email, password });
   }
 
-  login(email: string, password: string): Observable<any> {
+  signup(data: {
+    email: string;
+    first_name: string;
+    last_name: string;
+    password: string;
+  }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/user/signup`, data);
+  }
+
+  refreshToken(): Observable<any> {
+    const refreshToken = localStorage.getItem("inno_refresh_token");
     return this.http.post(
-      `${this.baseUrl}/user/login`,
-      { email, password },
+      `${this.baseUrl}/user/refresh-token`,
+      { refresh_token: refreshToken },
       {
-        headers: this.getHeaders(),
+        headers: {
+          Authorization: `Bearer ${refreshToken}`,
+        },
       }
     );
   }
 
-  signup(
-    data: {email: string,
-    first_name: string,
-    last_name: string,
-    password: string}
-  ): Observable<any> {
-    return this.http.post(
-      `${this.baseUrl}/user/signup`,
-      data,
-      { headers: this.getHeaders() }
-    );
-  }
-
-  refreshToken(token: string): Observable<any> {
-    return this.http.post(
-      `${this.baseUrl}/user/refresh-token`,
-      { refresh_token: token },
-      { headers: this.getHeaders() }
-    );
+  logout(){
+    localStorage.removeItem("inno_refresh_token");
+    localStorage.removeItem("inno_access_token");
+    localStorage.removeItem("access_token_expiration");
   }
 
   getProfile(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/user/profile`, { headers: this.getHeaders() });
+    return this.http.get(`${this.baseUrl}/user/profile`);
   }
 }
