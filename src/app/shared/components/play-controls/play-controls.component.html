@@ -1,6 +1,6 @@
 <div class="music-player-controls">
   <div class="track-info">
-    <img [src]="playImage" alt="{{artistName}} cover">
+    <img [src]="playImage ? playImage : 'public/astro.png'" alt="{{artistName}} cover">
     <p>
       <span class="title">Title: {{ trackDetail?.track_window?.current_track?.name }}</span>
       <span class="title">Artist: {{ artistName }}</span>
@@ -33,6 +33,16 @@
         (iconClick)="next()"
       ></app-control-icon>
     </div>
-
+    <div class="seek-bar">
+      <span>{{ currentTime | duration }}</span>
+      <input type="range"
+        [min]="0"
+        *ngIf="trackDetail"
+        [max]="duration"
+        [value]="currentTime"
+        (input)="seek($event)"
+      >
+      <span *ngIf="trackDetail">{{ trackDetail.track_window.current_track.duration_ms | duration }}</span>
+    </div>
   </div>
 </div>
