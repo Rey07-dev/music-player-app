@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { SpotifyAuthService } from '../services/spotify/auth.service';
+import { SpotifyAuthService } from '../services/spotify/spotify-auth.service';
 
 @Injectable({
   providedIn: 'root',
