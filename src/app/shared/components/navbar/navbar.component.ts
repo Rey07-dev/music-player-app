@@ -14,7 +14,7 @@ import { ThemeState } from "../../../core/models/interfaces/types";
 import { SpotifyState } from "../../../store/spotify/spotify.reducer";
 import { SpotifySearchService } from "../../../core/models/services/search/spotify-search.service";
 import { SearchResponse } from "../../../core/models/interfaces/search";
-import { SpotifyAuthService } from "../../../core/models/services/spotify/auth.service";
+import { SpotifyAuthService } from "../../../core/models/services/spotify/spotify-auth.service";
 import { MatDialog } from "@angular/material/dialog";
 import { LoginComponent } from "../auth/login/login.component";
 import { Router } from "@angular/router";
@@ -39,6 +39,7 @@ export class NavbarComponent {
     private spotifySearchService: SpotifySearchService,
     public dialog: MatDialog,
     private route: Router,
+    private authService: AuthService,
     private spotifyPlayerService: SpotifyPlayerService
   ) {
     this.isDarkTheme$ = this.store.pipe(
@@ -52,6 +53,7 @@ export class NavbarComponent {
       document.body.classList.remove("dark-theme", "light-theme");
       document.body.classList.add(themeClass);
     });
+    this.getProfile();
   }
 
   token$ = this.store.select((state) => state.spotify.token);
@@ -124,5 +126,11 @@ export class NavbarComponent {
       this.route.navigate([`/artist/${selectedItem.id}`]);
     }
     this.clearSearchInput(query);
+  }
+
+  getProfile() {
+    this.authService.getProfile().subscribe((response) => {
+      console.log('profile', response)
+    });
   }
 }
