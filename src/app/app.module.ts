@@ -33,10 +33,9 @@ import { spotifyReducer } from "./store/spotify/spotify.reducer";
 import { spotifyAuthInterceptor } from "./core/interceptors/spotify_auth.interceptor";
 import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
 import { GenreComponent } from './pages/genre/genre.component';
-import { DurationPipe } from "./core/models/pipes/duration.pipe";
-import { reauthenticationInterceptor } from "./core/interceptors/spotify_reauthenticate.interceptor";
 import { authInterceptor } from "./core/interceptors/auth/auth.interceptor";
 import { ToastComponent } from "./shared/components/toast/toast.component";
+import { addHeader } from "./core/interceptors/auth/header.interceptor";
 
 
 const reducers = {
@@ -55,7 +54,6 @@ const reducers = {
     ArtistsComponent,
     TrendingComponent,
     GenreComponent,
-    DurationPipe,
     ToastComponent
   ],
   imports: [
@@ -79,9 +77,9 @@ const reducers = {
     provideAnimationsAsync(),
     provideHttpClient(
       withInterceptors([
+        addHeader,
         authInterceptor,
         spotifyAuthInterceptor,
-        reauthenticationInterceptor,
         spotifyPlayerInterceptor,
       ])
     ),
