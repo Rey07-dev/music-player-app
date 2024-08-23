@@ -1,53 +1,55 @@
-import { AuthService } from './../../models/services/auth/auth.service';
-import { HttpRequest, HttpHandlerFn } from '@angular/common/http';
-import { inject } from '@angular/core';
-import { catchError, throwError, switchMap } from 'rxjs';
+import { AuthService } from "./../../models/services/auth/auth.service";
+import { HttpRequest, HttpHandlerFn, HttpErrorResponse } from "@angular/common/http";
+import { inject } from "@angular/core";
+import { catchError, throwError, switchMap } from "rxjs";
+import { environment } from "../../../../environments/environment";
 
+export function authInterceptor(
+  request: HttpRequest<any>,
+  next: HttpHandlerFn
+) {
+  if (request.url.startsWith(environment.innoBasicUrl)) {
+    const access_token = localStorage.getItem("access_token");
+    const authService = inject(AuthService);
+    const refreshTokenURL = `${environment.innoBasicUrl}/user/refresh-token`;
+    let cloneRequest = request
 
-export function authInterceptor(request: HttpRequest<any>, next: HttpHandlerFn) {
-  const token = localStorage.getItem('token');
+    if (request.url.startsWith(refreshTokenURL)) {
+      return next(request);
+    }
 
-  if (token) {
-    const cloned = request.clone({
-      headers: request.headers.set('Authorization', `Bearer ${token}`)
+    cloneRequest = request.clone({
+      setHeaders: {
+        Authorization: `Bearer ${access_token}`,
+      },
     });
 
-    return next(cloned).pipe(
-      catchError((err) => {
+    return next(cloneRequest).pipe(
+      catchError((err: HttpErrorResponse) => {
+        console.log('trying to refresh token', err);
         if (err.status === 401) {
-          return handle401Error(cloned, next);
+          console.log("trying to refresh token----1");
+          return authService.refreshToken().pipe(
+            switchMap(({ login_token, refresh_token }) => {
+              localStorage.setItem("access_token", login_token);
+              localStorage.setItem("inno_refresh_token", refresh_token);
+              const clonedReq = request.clone({
+                headers: request.headers.set(
+                  "Authorization",
+                  `Bearer ${login_token}`
+                ),
+              });
+              return next(clonedReq);
+            }),
+            catchError((err) => {
+              authService.logout()
+              return throwError(() => err);
+            })
+          )
         }
         return throwError(() => err);
       })
-    );
-  } else {
-    return next(request);
+    )
   }
-}
-
-export function handle401Error(req: HttpRequest<any>, next: HttpHandlerFn) {
-  const authService = inject(AuthService);
-  const refreshToken = localStorage.getItem('refresh_token');
-  if (refreshToken) {
-    return authService.refreshToken(refreshToken).pipe(
-      switchMap((response: any) => {
-        localStorage.setItem('token', response.login_token);
-        if (response.refresh_token) {
-          localStorage.setItem('refresh_token', response.refresh_token);
-        }
-
-        const clonedReq = req.clone({
-          headers: req.headers.set('Authorization', `Bearer ${response.login_token}`)
-        });
-        return next(clonedReq);
-      }),
-      catchError((err) => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('refresh_token');
-        return throwError(()=> err);
-      })
-    );
-  } else {
-    return throwError(() => 'Refresh token not available');
-  }
+  return next(request)
 }
