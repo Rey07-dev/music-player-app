@@ -59,7 +59,8 @@ body {
 }
 
 .playlist-item:hover {
-  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: #000000 0 0 8px;
 }
 
 .playlist-item img {

@@ -18,7 +18,6 @@ export class LoginComponent {
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
-    private router: Router,
     public dialogRef: MatDialogRef<LoginComponent>,
     public dialog: MatDialog,
     private toastService: ToastService
@@ -35,8 +34,8 @@ export class LoginComponent {
       this.authService.login(email, password).subscribe({
         next: (response) => {
           this.toastService.showToast(response.message, "success");
-          localStorage.setItem('token', response.login_token);
-          localStorage.setItem('refresh_token', response.refresh_token);
+          localStorage.setItem('access_token', response.login_token);
+          localStorage.setItem('inno_refresh_token', response.refresh_token);
           this.close();
         },
         error: (err) => {
