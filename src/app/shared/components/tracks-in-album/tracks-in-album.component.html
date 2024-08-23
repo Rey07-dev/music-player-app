@@ -3,7 +3,7 @@
     <img
       [src]="albumImg"
       [alt]="album?.name"
-      [attr.aria-label]="'album ' + album?.name + ' cover'"
+      [attr.aria-label]="'album ' + album.name + ' cover'"
     />
   </div>
   <div class="tracks">
@@ -13,17 +13,18 @@
       (mouseover)="showPlayButton = true"
       (mouseleave)="showPlayButton = false"
       onfocus=""
+      *ngIf="currentPlay"
     >
       <div class="cover">
-        <img [src]="playImg" [alt]="currentPlay?.name" />
+        <img [src]="playImg" [alt]="currentPlay.name" />
         <div class="info">
           <p>
-            {{ currentPlay?.name }}
+            {{ currentPlay.name }}
             <span>{{ getArtistNames(currentPlay) }}</span>
           </p>
         </div>
       </div>
-      <p>{{ duration(currentPlay) }}</p>
+      <p>{{ currentPlay.duration_ms | duration }}</p>
       <button
         aria-label="Play Button"
         *ngIf="showPlayButton"
@@ -36,7 +37,7 @@
     <h4>Up Next</h4>
     <div
       class="currentTrack"
-      *ngFor="let track of tracks?.track_window?.next_tracks"
+      *ngFor="let track of tracks.track_window?.next_tracks"
     >
       <div class="cover">
         <img [src]="track.album.images[2].url" [alt]="track.name" />
@@ -47,7 +48,7 @@
           </p>
         </div>
       </div>
-      <p>{{ duration(track) }}</p>
+      <p>{{ tracks.track_window.next_tracks[0].duration_ms | duration }}</p>
     </div>
   </div>
 </div>
