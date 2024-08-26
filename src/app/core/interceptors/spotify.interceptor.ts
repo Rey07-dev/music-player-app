@@ -8,7 +8,7 @@ import {
 import { inject } from "@angular/core";
 import { from, Observable, throwError } from "rxjs";
 import { catchError, switchMap } from "rxjs/operators";
-import { environment } from "../../../environments/environment.development";
+import { environment } from "../../../environments/environment";
 
 export function spotifyPlayerInterceptor(
   req: HttpRequest<unknown>,
@@ -19,7 +19,7 @@ export function spotifyPlayerInterceptor(
     const token = localStorage.getItem("spotify_token")!;
     const spotifyAuthService = inject(SpotifyAuthService);
     const clientId = environment.clientId;
-    const clientSecret = environment.CLIENT_SECRET;
+    const clientSecret = environment.clientSecret;
 
     const cloneReq = req.clone({
       headers: req.headers.set("Authorization", "Bearer " + token),

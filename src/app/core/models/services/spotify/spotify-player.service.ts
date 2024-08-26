@@ -1,7 +1,7 @@
 import { ToastService } from "./../toast/toast.service";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { environment } from "../../../../../environments/environment.development";
+import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
 import { CurrentTrackPlaying, PlayingSongState } from "../../interfaces/spotify";
 
@@ -27,7 +27,7 @@ export class SpotifyPlayerService {
   loadSpotifySDK() {
     if (!window.Spotify) {
       const script = document.createElement("script");
-      script.src = environment.srcipt_for_player;
+      script.src = environment.script_for_player;
       script.onload = () => {
         this.initializePlayer();
       };

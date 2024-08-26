@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { environment } from "../../../../../environments/environment.development";
+import { environment } from "../../../../../environments/environment";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { catchError, map, Observable, retry, throwError } from "rxjs";
@@ -13,7 +13,7 @@ export class SpotifyAuthService {
   private clientId = environment.clientId;
   private redirectUri = environment.redirectUri;
   private scopes = environment.scopes;
-  private clientSecret = environment.CLIENT_SECRET;
+  private clientSecret = environment.clientSecret;
   private authEndpoint = `${environment.spotifyAuthEndpoint}/authorize`;
   private tokenEndpoint = environment.spotify_Token;
 

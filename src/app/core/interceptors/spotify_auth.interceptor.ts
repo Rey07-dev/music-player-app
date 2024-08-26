@@ -1,5 +1,5 @@
 import { HttpHandlerFn, HttpRequest } from "@angular/common/http";
-import { environment } from "../../../environments/environment.development";
+import { environment } from "../../../environments/environment";
 
 export function spotifyAuthInterceptor (request: HttpRequest<unknown>, next: HttpHandlerFn) {
 
