@@ -11,9 +11,9 @@ import { catchError, switchMap } from "rxjs/operators";
 import { environment } from "../../../environments/environment";
 
 export function spotifyPlayerInterceptor(
-  req: HttpRequest<any>,
+  req: HttpRequest<unknown>,
   next: HttpHandlerFn
-): Observable<HttpEvent<any>> {
+): Observable<HttpEvent<unknown>> {
 
   if (req.url.startsWith(environment.playerURL)) {
     const token = localStorage.getItem("spotify_token")!;

@@ -5,7 +5,7 @@ import { catchError, throwError, switchMap } from "rxjs";
 import { environment } from "../../../../environments/environment";
 
 export function authInterceptor(
-  request: HttpRequest<any>,
+  request: HttpRequest<unknown>,
   next: HttpHandlerFn
 ) {
   if (request.url.startsWith(environment.innoBasicUrl)) {
