@@ -1,4 +1,4 @@
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../environments/environment.development';
 import { MusicList } from '../models/interfaces/music/types';
 
 export const musicList: MusicList[] = [
