@@ -1,14 +1,19 @@
 import { HttpHandlerFn, HttpRequest } from "@angular/common/http";
+import { environment } from "../../../environments/environment.development";
 
 export function spotifyAuthInterceptor (request: HttpRequest<any>, next: HttpHandlerFn) {
 
-  const token = localStorage.getItem("spotify_token");
-  if (token) {
-    request = request.clone({
-      setHeaders: {
-        Authorization: `Basic ${token}`
-      }
-    })
+  if (request.url.startsWith(environment.playerURL)) {
+    const token = localStorage.getItem("spotify_token");
+    const spotifyTokenType = localStorage.getItem("spotify_token_type");
+    if (token && spotifyTokenType) {
+      const cloneRequest = request.clone({
+        setHeaders: {
+          Authorization: `${spotifyTokenType} ${token}`
+        }
+      })
+      return next(cloneRequest);
+    }
   }
   return next(request);
 }
