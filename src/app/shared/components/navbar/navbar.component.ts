@@ -1,7 +1,6 @@
 import { SpotifyPlayerService } from "./../../../core/models/services/spotify/spotify-player.service";
-import { SpotifyService } from "./../../../core/models/services/spotify/spotify.service";
 import { AuthService } from "./../../../core/models/services/auth/auth.service";
-import { Component, HostBinding, HostListener } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { Store, select } from "@ngrx/store";
 import {
   debounceTime,

@@ -36,7 +36,6 @@ export class PlayControlsComponent {
         this.currentTime = trackDetails.progress_ms;
         this.duration = trackDetails.item.duration_ms;
         this.isPlaying = trackDetails.is_playing;
-        console.log('trackDetails......', trackDetails);
       }
     });
   }

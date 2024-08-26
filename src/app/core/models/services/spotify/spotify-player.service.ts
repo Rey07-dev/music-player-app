@@ -153,7 +153,7 @@ export class SpotifyPlayerService {
     return this.http.get<CurrentTrackPlaying>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {})
   }
 
-  seekToPosition(positionMs: number, deviceId?: string): void {
+  seekToPosition(positionMs: number): void {
     this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, {})
       .subscribe(
         error => console.error('Seek failed', error)
