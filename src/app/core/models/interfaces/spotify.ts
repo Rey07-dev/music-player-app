@@ -152,7 +152,7 @@ export type PlaybackFeatures = {
     selected: number;
     restricted: boolean;
   };
-  signal_ids: Array<any>;
+  signal_ids: Array<unknown>;
   modes: {};
 };
 

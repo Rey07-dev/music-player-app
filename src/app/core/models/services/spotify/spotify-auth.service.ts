@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Router } from "@angular/router";
-import { catchError, map, retry, throwError } from "rxjs";
+import { catchError, map, Observable, retry, throwError } from "rxjs";
 import { jwtDecode } from "jwt-decode";
 
 
@@ -40,7 +40,7 @@ export class SpotifyAuthService {
       .set('code', code)
       .set('redirect_uri', this.redirectUri);
     this.http
-      .post(this.tokenEndpoint, body, {
+      .post<SpotifyToken>(this.tokenEndpoint, body, {
         headers: {
           Authorization:
             'Basic ' + btoa(this.clientId + ':' + this.clientSecret),
@@ -48,10 +48,10 @@ export class SpotifyAuthService {
         },
       })
       .subscribe({
-        next: (response: any) => {
+        next: (response: SpotifyToken) => {
           localStorage.setItem('spotify_token', response.access_token);
           localStorage.setItem('spotify_refresh_token', response.refresh_token);
-          localStorage.setItem('spotify_token_expiration', response.expires_in);
+          localStorage.setItem('spotify_token_expiration', JSON.stringify(response.expires_in));
           localStorage.setItem('spotify_scope', response.scope);
           localStorage.setItem('spotify_token_type', response.token_type);
           this.router.navigate(['/']);
@@ -62,7 +62,7 @@ export class SpotifyAuthService {
       });
   }
 
-  refreshAccessToken() {
+  refreshAccessToken(): Observable<SpotifyToken> {
     const refreshToken = localStorage.getItem('spotify_refresh_token')!;
 
     if (!refreshToken) {
@@ -79,8 +79,8 @@ export class SpotifyAuthService {
         .set('client_id', this.clientId),
     };
 
-    return this.http.post(this.tokenEndpoint, payload).pipe(
-      map((response: any) => {
+    return this.http.post<SpotifyToken>(this.tokenEndpoint, payload).pipe(
+      map((response) => {
         const newAccessToken = response.access_token;
         const newRefreshToken = response.refresh_token;
         localStorage.setItem('spotify_token', newAccessToken);
@@ -88,7 +88,7 @@ export class SpotifyAuthService {
         if (newRefreshToken) {
           localStorage.setItem('spotify_refresh_token', newRefreshToken);
         }
-        return newAccessToken;
+        return response;
       }),
       retry(1),
       catchError((error) => {
@@ -114,6 +114,12 @@ export class SpotifyAuthService {
     localStorage.removeItem('refresh_token');
     this.router.navigate(['/spotify-login']);
   }
+}
 
-  checkToken() {}
+export interface SpotifyToken {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
+  refresh_token: string;
+  scope: string;
 }

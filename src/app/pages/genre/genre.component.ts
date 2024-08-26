@@ -1,7 +1,7 @@
 import { SpotifyPlayerService } from './../../core/models/services/spotify/spotify-player.service';
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../core/models/services/spotify/spotify.service';
-import { SpotifyGenreData } from '../../core/models/interfaces/genre';
+import { SpotifyGenreData, SpotifyPlaylist } from '../../core/models/interfaces/genre';
 
 @Component({
   selector: 'app-genre',
@@ -24,7 +24,7 @@ export class GenreComponent {
       }
     })
   }
-  playPlaylist(playlist: any) {
+  playPlaylist(playlist: SpotifyPlaylist) {
     localStorage.setItem('album', JSON.stringify(playlist))
     this.spotifyPlayerService.play(playlist.uri);
   }

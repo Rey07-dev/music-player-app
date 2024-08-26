@@ -59,7 +59,7 @@ export interface SpotifyGenreSection {
 
 export interface SpotifyGenreData {
   content: SpotifyContent<SpotifyGenreSection>;
-  custom_fields: any[];
+  custom_fields: unknown[];
   external_urls: SpotifyExternalUrls | null;
   id: string;
   images: SpotifyImage[];

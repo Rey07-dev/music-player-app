@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { SpotifyPlayerService } from "../../core/models/services/spotify/spotify-player.service";
 import { SpotifyService } from "../../core/models/services/spotify/spotify.service";
 import { IAlbumItem } from "../../core/models/interfaces/spotify";
-import { SpotifyGenreData } from "../../core/models/interfaces/genre";
+import { SpotifyGenreData, SpotifyPlaylist } from "../../core/models/interfaces/genre";
 import { Router } from "@angular/router";
 import { ToastService } from "../../core/models/services/toast/toast.service";
 
@@ -55,7 +55,7 @@ export class HomeComponent {
     });
   }
 
-  playPlaylist(playlist: any) {
+  playPlaylist(playlist: SpotifyPlaylist) {
     localStorage.setItem("album", JSON.stringify(playlist));
     this.spotifyPlayerService.play(playlist.uri);
   }

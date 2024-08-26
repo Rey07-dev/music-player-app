@@ -4,7 +4,7 @@ export type SingleArtist = {
       spotify: string
     }
     followers: {
-      href: any
+      href: unknown
       total: number
     }
     genres: Array<string>

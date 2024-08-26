@@ -1,40 +1,29 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { environment } from "../../../../../environments/environment";
+import { LoginResponse, Signup, RefreshTokenResponse, GetProfile } from "../../interfaces/user/artist";
 
-interface Signup {
-  email: string;
-  first_name: string;
-  last_name: string;
-  password: string;
-}
 
 @Injectable({
   providedIn: "root",
 })
 export class AuthService {
   private baseUrl = environment.innoBasicUrl;
-  private apn = environment.xAPN;
 
   constructor(private http: HttpClient) {}
 
-  login(email: string, password: string): Observable<any> {
-    return this.http.post(`${this.baseUrl}/user/login`, { email, password });
+  login(email: string, password: string): Observable<LoginResponse> {
+    return this.http.post<LoginResponse>(`${this.baseUrl}/user/login`, { email, password });
   }
 
-  signup(data: {
-    email: string;
-    first_name: string;
-    last_name: string;
-    password: string;
-  }): Observable<any> {
-    return this.http.post(`${this.baseUrl}/user/signup`, data);
+  signup(data: Signup): Observable<{message: string}> {
+    return this.http.post<{message: string}>(`${this.baseUrl}/user/signup`, data);
   }
 
-  refreshToken(): Observable<any> {
+  refreshToken(): Observable<RefreshTokenResponse> {
     const refreshToken = localStorage.getItem("refresh_token");
-    return this.http.post(
+    return this.http.post<RefreshTokenResponse>(
       `${this.baseUrl}/user/refresh-token`,
       { refresh_token: refreshToken },
       {
@@ -51,7 +40,7 @@ export class AuthService {
     localStorage.removeItem("access_token_expiration");
   }
 
-  getProfile(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/user/profile`);
+  getProfile(): Observable<GetProfile> {
+    return this.http.get<GetProfile>(`${this.baseUrl}/user/profile`);
   }
 }

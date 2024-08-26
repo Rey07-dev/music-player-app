@@ -8,3 +8,6 @@
     <a [href]="artist.external_urls.spotify" target="_blank">Listen on Spotify</a>
   </div>
 </div>
+<div class="loading" *ngIf="!artist">
+  <mat-spinner></mat-spinner>
+</div>

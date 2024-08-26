@@ -1,4 +1,4 @@
-import { SpotifyAuthService } from "../models/services/spotify/spotify-auth.service";
+import { SpotifyAuthService, SpotifyToken } from "../models/services/spotify/spotify-auth.service";
 import {
   HttpEvent,
   HttpRequest,
@@ -31,13 +31,13 @@ export function spotifyPlayerInterceptor(
           return from(spotifyAuthService.refreshAccessToken()).pipe(
             switchMap((newToken) => {
               localStorage.setItem("spotify_token", newToken.access_token);
-              localStorage.setItem("spotify_token_expires_in", newToken.expires_in);
+              localStorage.setItem("spotify_token_expires_in", JSON.stringify(newToken.expires_in));
               localStorage.setItem("spotify_token_type", newToken.token_type);
               localStorage.setItem("spotify_scope", newToken.scope);
               localStorage.setItem("spotify_refresh_token", newToken.refresh_token);
               const newAuthReq = req.clone({
                 setHeaders: {
-                  Authorization: `Bearer ${newToken}`,
+                  Authorization: `Bearer ${newToken.access_token}`,
                 },
               });
               return next(newAuthReq);

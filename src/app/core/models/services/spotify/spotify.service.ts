@@ -2,10 +2,11 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../../../environments/environment';
 import { SpotifyAlbums } from '../../interfaces/spotify';
-import { ArtistsResponse } from '../../interfaces/user/artist';
+import { Artist, ArtistsResponse } from '../../interfaces/user/artist';
 import { SpotifyGenreData } from '../../interfaces/genre';
 import { Playlist } from '../../interfaces/playlist';
 import { SingleArtist } from '../../interfaces/artisit';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -45,7 +46,7 @@ export class SpotifyService {
 
   getSingleArtist(id: string) {
     const url = `${this.singleArtistUrl}/?ids=${id}`;
-    return this.http.get<SingleArtist>(url, { headers: this.headers });
+    return this.http.get<ArtistsResponse>(url, { headers: this.headers })
   }
 
   getPlaylist() {

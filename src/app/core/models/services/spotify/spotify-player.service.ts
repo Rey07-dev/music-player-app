@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
-import { CurrentTrackPlaying } from "../../interfaces/spotify";
+import { CurrentTrackPlaying, PlayingSongState } from "../../interfaces/spotify";
 
 declare global {
   interface Window {
@@ -48,18 +48,19 @@ export class SpotifyPlayerService {
     window.onSpotifyWebPlaybackSDKReady = () => {
       this.player = new window.Spotify.Player({
         name: "Angular Spotify Player",
-        getOAuthToken: (cb: any) => {
+        getOAuthToken: (cb) => {
           cb(token);
         },
         volume: 0.5,
       });
 
-      this.player.addListener("ready", ({ device_id }: any) => {
+      this.player.addListener("ready", ({ device_id }) => {
         this.device_id = device_id;
+        console.log("Ready with Device ID", device_id);
         localStorage.setItem("device_id", device_id);
       });
 
-      this.player.addListener("player_state_changed", (state: any) => {
+      this.player.addListener("player_state_changed", (state: PlayingSongState) => {
         if (!state) {
           return;
         }

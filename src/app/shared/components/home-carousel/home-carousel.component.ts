@@ -11,10 +11,11 @@ export class HomeCarouselComponent {
 
   slides = slides;
   currentIndex = 0;
-  intervalId: any;
+  intervalId!: ReturnType<typeof setInterval>;
 
   ngOnInit() {
     this.startAutoSlide();
+    console.log('inter', this.intervalId)
   }
 
   ngOnDestroy() {

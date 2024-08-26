@@ -16,7 +16,7 @@ export class CardComponent {
 
   constructor(private playbackService: PlaybackService, private store: Store) {}
 
-  playSong(song: any) {
+  playSong(song: IAlbumItem) {
     this.playbackService.setPlaylist([song]);
     this.store.dispatch(selectTrack({ track: song }));
     localStorage.setItem('select_track', JSON.stringify(song))
