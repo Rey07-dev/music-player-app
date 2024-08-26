@@ -26,13 +26,11 @@ export function authInterceptor(
 
     return next(cloneRequest).pipe(
       catchError((err: HttpErrorResponse) => {
-        console.log('trying to refresh token', err);
         if (err.status === 401) {
-          console.log("trying to refresh token----1");
           return authService.refreshToken().pipe(
             switchMap(({ login_token, refresh_token }) => {
               localStorage.setItem("access_token", login_token);
-              localStorage.setItem("inno_refresh_token", refresh_token);
+              localStorage.setItem("refresh_token", refresh_token);
               const clonedReq = request.clone({
                 headers: request.headers.set(
                   "Authorization",

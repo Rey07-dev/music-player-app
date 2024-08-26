@@ -53,7 +53,6 @@ export class SpotifyPlayerService {
         },
         volume: 0.5,
       });
-      console.log(this.player);
 
       this.player.addListener("ready", ({ device_id }: any) => {
         this.device_id = device_id;
@@ -83,6 +82,7 @@ export class SpotifyPlayerService {
 
   play(uri: string, playlists?: string[]) {
     if (!this.player) {
+      this.toastService.showToast("Player not initialized", "error");
       console.error("Player not initialized");
       return;
     }
@@ -157,7 +157,7 @@ export class SpotifyPlayerService {
     return this.http.get<any>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {headers}).pipe(
       map(response => {
         if (response) {
-          console.log("Currently playing track:", response);
+          // console.log("Currently playing track:", response);
           const currentTime = response.progress_ms;
           const trackDetails = {
             track: response.item,
@@ -166,7 +166,7 @@ export class SpotifyPlayerService {
           };
           return trackDetails;
         } else {
-          console.log("No track is currently playing.");
+          // console.log("No track is currently playing.");
           return null;
         }
       })

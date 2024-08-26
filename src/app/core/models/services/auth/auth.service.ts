@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   refreshToken(): Observable<any> {
-    const refreshToken = localStorage.getItem("inno_refresh_token");
+    const refreshToken = localStorage.getItem("refresh_token");
     return this.http.post(
       `${this.baseUrl}/user/refresh-token`,
       { refresh_token: refreshToken },
@@ -46,8 +46,8 @@ export class AuthService {
   }
 
   logout(){
-    localStorage.removeItem("inno_refresh_token");
-    localStorage.removeItem("inno_access_token");
+    localStorage.removeItem("refresh_token");
+    localStorage.removeItem("access_token");
     localStorage.removeItem("access_token_expiration");
   }
 
