@@ -1,4 +1,4 @@
-import { SpotifyAuthService } from "./../models/services/spotify/auth.service";
+import { SpotifyAuthService } from "../models/services/spotify/spotify-auth.service";
 import {
   HttpEvent,
   HttpRequest,
@@ -6,7 +6,7 @@ import {
   HttpHandlerFn,
 } from "@angular/common/http";
 import { inject } from "@angular/core";
-import { Observable, throwError } from "rxjs";
+import { from, Observable, throwError } from "rxjs";
 import { catchError, switchMap } from "rxjs/operators";
 import { environment } from "../../../environments/environment";
 
@@ -14,52 +14,52 @@ export function spotifyPlayerInterceptor(
   req: HttpRequest<any>,
   next: HttpHandlerFn
 ): Observable<HttpEvent<any>> {
-  const token = localStorage.getItem("spotify_token");
-  const spotifyAuthService = inject(SpotifyAuthService);
-  const clientId = environment.clientId;
-  const clientSecret = environment.CLIENT_SECRET;
 
-  let clonedRequest = req.clone({
-    headers: req.headers.set("Authorization", `Bearer ${token}`),
-  });
+  if (req.url.startsWith(environment.playerURL)) {
+    const token = localStorage.getItem("spotify_token")!;
+    const spotifyAuthService = inject(SpotifyAuthService);
+    const clientId = environment.clientId;
+    const clientSecret = environment.CLIENT_SECRET;
 
-  return next(clonedRequest).pipe(
-    catchError((error: HttpErrorResponse) => {
-      if (error.status === 401) {
-        return spotifyAuthService.refreshAccessToken().pipe(
-          switchMap((response) => {
-            const newToken = response.access_token;
-            localStorage.setItem("spotify_token", newToken);
-            const newRequest = req.clone({
-              headers: req.headers.set("Authorization", `Bearer ${newToken}`),
-            });
-            return next(newRequest);
-          }),
-          catchError((refreshError) => {
-            spotifyAuthService.logout();
-            return throwError(() => refreshError);
-          })
-        );
-      } else if (error.status === 400) {
-        return handleUnauthorized(req, next, clientId, clientSecret);
-      } else {
-        return throwError(() => error);
-      }
+    const cloneReq = req.clone({
+      headers: req.headers.set("Authorization", "Bearer " + token),
     })
-  );
-}
 
-function handleUnauthorized(
-  req: HttpRequest<any>,
-  next: HttpHandlerFn,
-  clientId: string,
-  clientSecret: string
-): Observable<HttpEvent<any>> {
-  const clonedRequest = req.clone({
-    setHeaders: {
-      Authorization: "Basic " + btoa(clientId + ":" + clientSecret),
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-  });
-  return next(clonedRequest);
+    return next(cloneReq).pipe(
+      catchError((error: HttpErrorResponse) => {
+        if (error.status === 401) {
+          return from(spotifyAuthService.refreshAccessToken()).pipe(
+            switchMap((newToken) => {
+              localStorage.setItem("spotify_token", newToken.access_token);
+              localStorage.setItem("spotify_token_expires_in", newToken.expires_in);
+              localStorage.setItem("spotify_token_type", newToken.token_type);
+              localStorage.setItem("spotify_scope", newToken.scope);
+              localStorage.setItem("spotify_refresh_token", newToken.refresh_token);
+              const newAuthReq = req.clone({
+                setHeaders: {
+                  Authorization: `Bearer ${newToken}`,
+                },
+              });
+              return next(newAuthReq);
+            }),
+            catchError((err) => {
+              spotifyAuthService.logout();
+              return throwError(() => err);
+            })
+          );
+        } else if (error.status === 400) {
+          const clonedRequest = req.clone({
+            setHeaders: {
+              Authorization: "Basic " + btoa(clientId + ":" + clientSecret),
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          });
+          return next(clonedRequest);
+        }
+
+        return throwError(() => error);
+      })
+    );
+  }
+  return next(req);
 }
