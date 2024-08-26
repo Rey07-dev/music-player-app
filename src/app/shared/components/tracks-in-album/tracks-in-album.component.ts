@@ -55,7 +55,7 @@ export class TracksInAlbumComponent {
     this.spotifyService.play(song?.album.uri);
   }
 
-  getArtistNames(name: any) {
-    return name?.artists[0].name;
+  getArtistNames(name: TrackInfo) {
+    return name.artists[0].name;
   }
 }
