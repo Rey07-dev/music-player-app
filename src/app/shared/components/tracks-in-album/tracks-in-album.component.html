@@ -1,8 +1,8 @@
-<div class="albumWrap" *ngIf="album">
+<div class="albumWrap" *ngIf="album && currentPlay && tracks">
   <div class="banner">
     <img
       [src]="albumImg"
-      [alt]="album?.name"
+      [alt]="album.name"
       [attr.aria-label]="'album ' + album.name + ' cover'"
     />
   </div>
@@ -13,7 +13,6 @@
       (mouseover)="showPlayButton = true"
       (mouseleave)="showPlayButton = false"
       onfocus=""
-      *ngIf="currentPlay"
     >
       <div class="cover">
         <img [src]="playImg" [alt]="currentPlay.name" />
@@ -53,6 +52,6 @@
   </div>
 </div>
 
-<div class="loading" *ngIf="!album">
+<div class="loading" *ngIf="!album && !currentPlay">
   <mat-spinner></mat-spinner>
 </div>

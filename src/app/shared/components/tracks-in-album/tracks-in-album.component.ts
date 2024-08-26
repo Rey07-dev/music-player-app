@@ -27,22 +27,25 @@ export class TracksInAlbumComponent {
     }, 2000);
   }
 
+  getData(key: string) {
+    return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)!) : null;
+  }
+
   getAndPlay(){
-    this.album = localStorage.getItem("album")
-      ? JSON.parse(localStorage.getItem("album")!)
-      : null;
-    this.tracks = localStorage.getItem("player_state")
-      ? JSON.parse(localStorage.getItem("player_state")!)
-      : null;
-    this.album.images.forEach((img: any) => {
-      img.height >= 500 ? this.albumImg = img.url : this.albumImg = img.url;
-    });
+    this.album = this.getData("album")
+    this.tracks = this.getData("player_state")
     this.currentPlay = this.tracks.track_window.current_track;
     this.tracks.track_window.next_tracks.forEach((track: any) => {
       this.nextPlay?.push(track);
     });
-    this.currentPlay.album.images.forEach((img: any) => {
-      img.height >= 60 ? this.playImg = img.url : this.playImg = img.url;
+    this.currentPlay.album.images.forEach((img: { height: number; url: string; width: number }) => {
+      if (img.height >= 500) {
+        this.albumImg = img.url;
+      } else if(img.height >= 60) {
+        this.playImg = img.url;
+      } else {
+        this.playImg = img.url
+      }
     })
   }
 
