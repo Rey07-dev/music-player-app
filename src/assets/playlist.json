@@ -1,0 +1,477 @@
+{
+  "name": "NKVT 2023",
+  "owner": {
+    "display_name": "Spotify",
+    "uri": "spotify:user:spotify",
+    "id": "spotify"
+  },
+  "uri": "spotify:playlist:37i9dQZF1DX4Wsb4d7NKfP",
+  "public": true,
+  "collaborative": false,
+  "followers": {
+    "total": 131229
+  },
+  "tracks": {
+    "items": [
+      {
+        "track": {
+          "duration_ms": 182117,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 182400,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 124716,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 135416,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 171641,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 191275,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 165059,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 173987,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 141968,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 141072,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 158064,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 186352,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 190442,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 210044,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 186950,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 138817,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 144744,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 149732,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 190270,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 152187,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 163404,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 116499,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 122000,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 101116,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 150909,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 141305,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 158023,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 130951,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 91413,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 187500,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 159112,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 145015,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 144000,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 274959,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 130485,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 135459,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 156233,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 168542,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 134049,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 126137,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 93015,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 125714,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 187333,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 158099,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 214846,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 211040,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 150220,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 125599,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 177565,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 119230,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 169373,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 150877,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 177392,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 123946,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 161025,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 138017,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 98000,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 161857,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 188680,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 163404,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 119189,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 150857,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 201290,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 186407,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 116947,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 176927,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 176999,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 141757,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 198425,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 147999,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 112105,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 118326,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 167753,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 123629,
+          "type": "track"
+        }
+      },
+      {
+        "track": {
+          "duration_ms": 209829,
+          "type": "track"
+        }
+      }
+    ],
+    "total": 75
+  },
+  "images": [
+    {
+      "height": null,
+      "url": "https:\/\/i.scdn.co\/image\/ab67706f0000000250a6c1a7e758c852fdacee4c",
+      "width": null
+    }
+  ],
+  "description": "<a href=\"spotify:playlist:37i9dQZF1DXdnOj1VEuhgb\">NKVT<\/a> sunar: y\u0131l\u0131n favori T\u00fcrk\u00e7e rap par\u00e7alar\u0131. Kapak: BLOK3"
+}

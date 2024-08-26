@@ -1,13 +1,12 @@
-<div class="card">
+<div class="card" (click)="openAlbum(musicData)" routerLinkActive="/albums">
   <div class="music-card">
     <img
-      [src]="musicData.strAlbumThumb || placeholder"
+      [src]="musicData.images[0].url || placeholder"
       alt=" cover"
       class="music-card-img"
-      fetchpriority="high"
     />
     <div class="music-card-content">
-      <p class="music-card-title">{{musicData.strAlbum}}</p>
+      <p class="music-card-title">{{musicData.name}}</p>
     </div>
   </div>
 </div>

@@ -1,0 +1,27 @@
+<div class="genre-container" *ngIf="genreData">
+
+  <div class="genre-list" *ngIf="genreData.content.items.length > 0; else noGenres">
+    <div class="genre-item" *ngFor="let item of genreData.content.items">
+      <h2>{{ item.name }}</h2>
+
+      <div class="playlist-list" *ngIf="item.content.items.length > 0; else noPlaylists">
+        <div class="playlist-item" *ngFor="let playlist of item.content.items">
+          <img [src]="playlist.images[0].url || placeholder" alt="{{ playlist.name }}" />
+          <div class="playlist-info">
+            <h3>{{ playlist.name }}</h3>
+            <p>{{ playlist.description }}</p>
+            <button (click)="playPlaylist(playlist)">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noGenres>
+    <p>No genres available.</p>
+  </ng-template>
+
+  <ng-template #noPlaylists>
+    <p>No playlists available for this genre.</p>
+  </ng-template>
+</div>

@@ -4,6 +4,8 @@ import { AlbumState } from '../../store/musicAlbum/album.state';
 import * as albumSelectors from '../../store/musicAlbum/album.selectors';
 import * as albumActions from '../../store/musicAlbum/album.actions';
 import { Album } from '../../core/models/interfaces/music/album';
+import { SpotifyService } from '../../core/models/services/spotify/spotify.service';
+import { IAlbumItem } from '../../core/models/interfaces/spotify';
 
 @Component({
   selector: 'app-albums',
@@ -15,11 +17,20 @@ export class AlbumsComponent {
   loading = this.store.selectSignal(albumSelectors.selectAlbumsLoading);
   error = this.store.selectSignal(albumSelectors.selectAlbumsError);
   albumData: Album[] = [];
+  tracks!: IAlbumItem[];
 
-  constructor(private store: Store<{ albums: AlbumState }>) {}
+  constructor(private store: Store<{ albums: AlbumState }>,private spotifyService: SpotifyService) {}
   ngOnInit(): void {
     if(!this.albums()?.length) {
       this.store.dispatch(albumActions.albumRequestStart());
     }
+
+    this.spotifyService.getNewReleases().subscribe({
+      next: (data) => {
+        if (data) {
+          this.tracks = data.albums.items;
+        }
+      },
+    });
   }
 }

@@ -1,3 +1,4 @@
+import { environment } from '../../../environments/environment';
 import { MusicList } from '../models/interfaces/music/types';
 
 export const musicList: MusicList[] = [
@@ -8,22 +9,9 @@ export const musicList: MusicList[] = [
     label: 'Home',
   },
   {
-    name: 'Trending',
-    label: 'Trending',
-    icon: 'fas fa-fire',
-    link: '/trending',
-  },
-  // {
-  //   name: 'New',
-  //   icon: 'fas fa-music',
-  //   link: '/new-releases',
-  //   label: 'New Releases',
-  //   isActive: false
-  // },
-  {
     name: 'Artists',
     icon: 'fas fa-user-md',
-    link: '/artists',
+    link: `/artist/${environment.defaultArtistId}`,
     label: 'Artists',
   },
   {
@@ -41,12 +29,6 @@ export const musicList: MusicList[] = [
 ];
 
 export const libraryList: MusicList[] = [
-  {
-    name: 'Favorites',
-    icon: 'fas fa-heart',
-    link: '/favorites',
-    label: 'Favorites',
-  },
   {
     name: 'My Playlists',
     icon: 'fas fa-list',

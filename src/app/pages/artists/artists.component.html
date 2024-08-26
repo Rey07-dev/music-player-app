@@ -1,1 +1,13 @@
-<p>artists works!</p>
+<div *ngIf="artist" class="artist-card">
+  <img [src]="artist.images[0].url" [alt]="artist.name" class="artist-image">
+  <div class="artist-details">
+    <h2>{{ artist.name }}</h2>
+    <p><strong>Genres:</strong> {{ artist.genres.join(', ') }}</p>
+    <p><strong>Followers:</strong> {{ artist.followers.total | number }}</p>
+    <p><strong>Popularity:</strong> {{ artist.popularity }}</p>
+    <a [href]="artist.external_urls.spotify" target="_blank">Listen on Spotify</a>
+  </div>
+</div>
+<div class="loading" *ngIf="!artist">
+  <mat-spinner></mat-spinner>
+</div>

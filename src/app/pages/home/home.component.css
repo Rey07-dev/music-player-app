@@ -1,7 +1,6 @@
-.homeMusic{
+.homeMusic, .homePlaylist{
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 5px;
   flex-wrap: wrap;
   margin-top: 5px;
   padding-bottom: 15px;
@@ -15,4 +14,18 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+
+.homeMusic button, .viewMore{
+  width: 45px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: #1d47b96e;
+  color: white;
+}
+
+.homeMusic button:hover, .viewMore:hover{
+  cursor: pointer;
+  background-color: #1b4ca7;
 }

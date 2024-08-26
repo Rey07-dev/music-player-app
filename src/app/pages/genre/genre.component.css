@@ -1,0 +1,24 @@
+.genre-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.genre-header {
+  background-color: #1db954;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.genre-list {
+  margin-top: 20px;
+}
+
+.genre-item {
+  margin-bottom: 40px;
+}
+
+.genre-item h2 {
+  margin-bottom: 20px;
+  color: #333;
+}

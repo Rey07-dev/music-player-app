@@ -1,10 +1,12 @@
 <div class="music-player-controls">
-  <div class="track-info">
-    <p>
-      <span class="title">Title: </span>{{ trackDetail?.track_window?.current_track?.name }}
-    </p>
-    <p >
-      <span class="title">Artist: </span>{{ artistName }}
+  <div class="track-info" (click)="onTrackClick()" onkeydown="">
+    <img *ngIf="trackDetail" [src]="playImage" alt="{{ artistName }} cover" />
+    <p *ngIf="!trackDetail" class="placeholder"> <span>No Image</span></p>
+    <p class="">
+      <span class="title">
+        Title: {{ trackDetail?.track_window?.current_track?.name }}
+      </span>
+      <span class="title">Artist: {{ artistName }}</span>
     </p>
   </div>
 
@@ -34,6 +36,18 @@
         (iconClick)="next()"
       ></app-control-icon>
     </div>
-
+    <div class="seek-bar">
+      <span>{{ currentTime | duration }}</span>
+      <input
+        type="range"
+        [min]="0"
+        [max]="duration"
+        [value]="currentTime"
+        (input)="seek($event)"
+      />
+      <span>
+        {{ !trackDetail ? '0:00': trackDetail.track_window.current_track.duration_ms | duration }}
+      </span>
+    </div>
   </div>
 </div>

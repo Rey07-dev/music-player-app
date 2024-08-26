@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../../core/models/services/spotify/auth.service';
+import { SpotifyAuthService } from '../../../core/models/services/spotify/spotify-auth.service';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-spotify-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
-  constructor(private authService: AuthService) {}
+export class SpotifyLoginComponent {
+  constructor(private spotifyAuthService: SpotifyAuthService) {}
 
   login() {
-    this.authService.login();
+    this.spotifyAuthService.login();
   }
 }

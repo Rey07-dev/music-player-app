@@ -33,5 +33,126 @@ body {
   /* background: var(--background); */
 }
 
+.loading {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.playlist-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.playlist-item {
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.playlist-item:hover {
+  cursor: pointer;
+  box-shadow: #000000 0 0 8px;
+}
+
+.playlist-item img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+}
+
+.playlist-info h3 {
+  font-size: 16px;
+  margin: 2px 0;
+}
+
+.playlist-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.playlist-info button {
+  background-color: #007bffb3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-info button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+small {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.already-have-account {
+  text-align: center;
+}
+
+.already-have-account a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+

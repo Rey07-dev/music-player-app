@@ -1,9 +1,30 @@
 <app-home-carousel />
 
-<div class="homeMusic">
-  <ng-container *ngFor="let item of tracks">
-    <div class="music-card">
-      <app-card [songs]="item" />
-    </div>
-  </ng-container>
+<div class="album">
+  <h4>Top Albums</h4>
+  <div class="homeMusic">
+    <ng-container *ngFor="let item of tracks?.slice(0, 6)">
+      <div class="music-card">
+        <app-music-card [musicData]="item" />
+      </div>
+    </ng-container>
+    <button (click)="goToAlbums()">View More</button>
+  </div>
+</div>
+<div class="playlist">
+  <h4>Most Popular Genres</h4>
+  <div class="homePlaylist" *ngIf="genreData">
+    <ng-container *ngFor="let item of genreData.content.items?.slice(0, 2)">
+      <div class="playlist-list" *ngIf="item.content.items.length > 0;">
+        <div class="playlist-item" *ngFor="let playlist of item.content.items.slice(0,5)">
+          <img [src]="playlist.images[0].url" alt="{{ playlist.name }}" />
+          <div class="playlist-info">
+            <h3>{{ playlist.name }}</h3>
+            <p>{{ playlist.description }}</p>
+            <button (click)="playPlaylist(playlist)">Play</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <button class="viewMore" (click)="goToGenres()">View More</button>
 </div>

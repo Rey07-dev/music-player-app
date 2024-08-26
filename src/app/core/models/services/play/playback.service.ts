@@ -7,12 +7,10 @@ import { SpotifyPlayerService } from "../spotify/spotify-player.service";
   providedIn: "root",
 })
 export class PlaybackService {
-  private currentTrackSubject = new BehaviorSubject<any>(null);
   private currentIndexSubject = new BehaviorSubject<number>(-1);
   public playlist: IAlbumItem[] = [];
   audio = new Audio();
 
-  currentTrack$ = this.currentTrackSubject.asObservable();
   currentIndex$ = this.currentIndexSubject.asObservable();
   playbackPosition$ = new BehaviorSubject<number>(0);
 
@@ -27,7 +25,6 @@ export class PlaybackService {
     const track = this.playlist[index];
     this.spotifyService.play(track?.uri);
     this.currentIndexSubject.next(index);
-    this.currentTrackSubject.next(track);
   }
 
   pauseTrack() {

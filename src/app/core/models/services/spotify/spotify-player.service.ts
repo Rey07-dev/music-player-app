@@ -1,8 +1,9 @@
+import { ToastService } from "./../toast/toast.service";
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { PlayingSongState } from "../../interfaces/spotify";
-import { Store } from "@ngrx/store";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
+import { CurrentTrackPlaying, PlayingSongState } from "../../interfaces/spotify";
 
 declare global {
   interface Window {
@@ -15,18 +16,18 @@ declare global {
   providedIn: "root",
 })
 export class SpotifyPlayerService {
-  player: any;
+  player: Spotify.Player | undefined;
   device_id!: string;
   public isPaused: boolean = true;
 
-  constructor(private store: Store<{ playingSong: PlayingSongState }>) {
+  constructor(private http: HttpClient, private toastService: ToastService) {
     this.loadSpotifySDK();
   }
 
   loadSpotifySDK() {
     if (!window.Spotify) {
       const script = document.createElement("script");
-      script.src = "https://sdk.scdn.co/spotify-player.js";
+      script.src = environment.srcipt_for_player;
       script.onload = () => {
         this.initializePlayer();
       };
@@ -47,22 +48,22 @@ export class SpotifyPlayerService {
     window.onSpotifyWebPlaybackSDKReady = () => {
       this.player = new window.Spotify.Player({
         name: "Angular Spotify Player",
-        getOAuthToken: (cb: any) => {
+        getOAuthToken: (cb) => {
           cb(token);
         },
         volume: 0.5,
       });
 
-      this.player.addListener("ready", ({ device_id }: any) => {
+      this.player.addListener("ready", ({ device_id }) => {
         this.device_id = device_id;
+        console.log("Ready with Device ID", device_id);
         localStorage.setItem("device_id", device_id);
       });
 
-      this.player.addListener("player_state_changed", (state: any) => {
+      this.player.addListener("player_state_changed", (state: PlayingSongState) => {
         if (!state) {
           return;
         }
-        this.isPaused = state.paused;
         localStorage.setItem("player_state", JSON.stringify(state));
       });
 
@@ -74,81 +75,89 @@ export class SpotifyPlayerService {
     }
   }
 
+  getStoredData(keyName: string) {
+    return localStorage.getItem(keyName)
+      ? JSON.parse(localStorage.getItem(keyName)!)
+      : null;
+  }
+
   play(uri: string, playlists?: string[]) {
     if (!this.player) {
+      this.toastService.showToast("Player not initialized", "error");
       console.error("Player not initialized");
       return;
     }
-
-    const token = localStorage.getItem("spotify_token");
-    const playData = {
-      context_uri: uri,
-      uris: playlists,
-      offset: {
-        position: 0,
-      },
-      position_ms: 0,
-    };
     const deviceId = this.device_id
       ? this.device_id
       : localStorage.getItem("device_id");
-    fetch(
-      `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`,
-      {
-        method: "PUT",
-        body: JSON.stringify(playData),
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
+
+    const playData = {
+      context_uri: uri,
+      uris: playlists,
+      offset: { position: 0 },
+      position_ms: 0,
+    };
+    this.http.put(url, playData).subscribe({
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
+    });
   }
 
   pause() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
-    fetch(
-      `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`,
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    const url = `${environment.playerURL}${playerControl.pause}?device_id=${deviceId}`;
+
+    this.http.put(url, {}).subscribe({
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
+    });
   }
 
   next() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
+    const url = `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`;
 
-    fetch(
-      `${environment.playerURL}${playerControl.next}?device_id=${deviceId}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    this.http.post(url, {}).subscribe({
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
+    });
   }
 
   previous() {
     const deviceId = this.device_id || localStorage.getItem("device_id");
-    const token = localStorage.getItem("spotify_token");
+    const url = `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`;
 
-    fetch(
-      `${environment.playerURL}${playerControl.previous}?device_id=${deviceId}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    ).then();
+    this.http.post(url, {}).subscribe({
+      error: (err) => {
+        if (err.status !== 200) {
+          this.toastService.showToast(err.error.error.message, "error");
+        }
+        console.error(err);
+      },
+    });
+  }
+
+  getCurrentlyPlayingTrack() {
+    return this.http.get<CurrentTrackPlaying>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {})
+  }
+
+  seekToPosition(positionMs: number): void {
+    this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, {})
+      .subscribe(
+        error => console.error('Seek failed', error)
+      );
   }
 }

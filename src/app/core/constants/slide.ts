@@ -33,4 +33,6 @@ export const playerControl = {
   pause: "/pause",
   next: "/next",
   previous: "/previous",
+  currentlyPlaying: "/currently-playing",
+  seek: "/seek",
 };

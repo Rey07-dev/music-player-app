@@ -9,9 +9,12 @@ import { provideAnimationsAsync } from "@angular/platform-browser/animations/asy
 import { MatButtonModule } from "@angular/material/button";
 import { themeReducer } from "./store/theme/theme.reducer";
 import { SharedModule } from "./shared/shared.module";
-import { HttpClientModule, provideHttpClient, withInterceptors } from "@angular/common/http";
+import {
+  HttpClientModule,
+  provideHttpClient,
+  withInterceptors,
+} from "@angular/common/http";
 import { AlbumsComponent } from "./pages/albums/albums.component";
-import { FavoritesComponent } from "./pages/favorites/favorites.component";
 import { PlaylistsComponent } from "./pages/playlists/playlists.component";
 import { ArtistsComponent } from "./pages/artists/artists.component";
 import { TrendingComponent } from "./pages/trending/trending.component";
@@ -27,8 +30,12 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatMenuModule } from "@angular/material/menu";
 import { PlayMusicEffects } from "./store/play-track/playMusic.effects";
 import { spotifyReducer } from "./store/spotify/spotify.reducer";
-import { authInterceptor } from "./core/interceptors/auth.interceptor";
-import { reauthenticationInterceptor } from "./core/interceptors/reauthenticate.interceptor";
+import { spotifyAuthInterceptor } from "./core/interceptors/spotify_auth.interceptor";
+import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
+import { GenreComponent } from './pages/genre/genre.component';
+import { authInterceptor } from "./core/interceptors/auth/auth.interceptor";
+import { ToastComponent } from "./shared/components/toast/toast.component";
+import { addHeader } from "./core/interceptors/auth/header.interceptor";
 
 
 const reducers = {
@@ -43,10 +50,11 @@ const reducers = {
     AppComponent,
     HomeComponent,
     AlbumsComponent,
-    FavoritesComponent,
     PlaylistsComponent,
     ArtistsComponent,
     TrendingComponent,
+    GenreComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +66,7 @@ const reducers = {
     HttpClientModule,
     AsyncPipe,
     StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([AlbumEffects,  PlayMusicEffects]),
+    EffectsModule.forRoot([AlbumEffects, PlayMusicEffects]),
     SharedModule,
     MatButtonModule,
     MatProgressSpinnerModule,
@@ -67,7 +75,14 @@ const reducers = {
   ],
   providers: [
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([authInterceptor, reauthenticationInterceptor])),
+    provideHttpClient(
+      withInterceptors([
+        addHeader,
+        authInterceptor,
+        spotifyAuthInterceptor,
+        spotifyPlayerInterceptor,
+      ])
+    ),
   ],
   bootstrap: [AppComponent],
   exports: [],

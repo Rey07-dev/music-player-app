@@ -4,8 +4,32 @@
   justify-content: space-between;
 }
 
+.music-player-controls img {
+  width: 70px;
+  height: 80px;
+  margin: 0 10px 0 0;
+}
+
 .track-info {
-  margin-left: 20px;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.placeholder {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.placeholder span {
+  color: #cccccc91;
+  rotate: -50deg;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .track-info h3 {
@@ -15,11 +39,14 @@
 }
 
 .track-info p {
-  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-size: 1.2em;
 }
 
-.title{
+.title {
+  display: flex;
   font-weight: 500;
 }
 
@@ -29,7 +56,7 @@
   justify-content: center;
   flex-direction: column;
   width: 200px;
-  padding: 20px 15px;
+  padding: 10px 15px;
 }
 
 .controls {
