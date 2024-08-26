@@ -157,7 +157,6 @@ export class SpotifyPlayerService {
     return this.http.get<any>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {headers}).pipe(
       map(response => {
         if (response) {
-          // console.log("Currently playing track:", response);
           const currentTime = response.progress_ms;
           const trackDetails = {
             track: response.item,
@@ -166,7 +165,6 @@ export class SpotifyPlayerService {
           };
           return trackDetails;
         } else {
-          // console.log("No track is currently playing.");
           return null;
         }
       })
@@ -182,7 +180,6 @@ export class SpotifyPlayerService {
     const params = deviceId ? { device_id: deviceId } : {};
     this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, { headers })
       .subscribe(
-        () => console.log('Seek successful'),
         error => console.error('Seek failed', error)
       );
   }

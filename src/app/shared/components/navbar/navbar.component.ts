@@ -122,7 +122,6 @@ export class NavbarComponent {
   }
 
   onItemSelected(selectedItem: any, query: HTMLInputElement): void {
-    console.log('selectedItem', selectedItem)
     if (selectedItem.type == "track" || selectedItem.type == "album") {
       this.playTrack(selectedItem);
     } else{
@@ -139,7 +138,6 @@ export class NavbarComponent {
   }
 
   getTheInitials() {
-    console.log('name', this.profile.first_name[0] + this.profile.last_name[0])
     const initials = this.profile.first_name[0] + this.profile.last_name[0]
     return initials
   }

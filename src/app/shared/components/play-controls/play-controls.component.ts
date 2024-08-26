@@ -35,7 +35,6 @@ export class PlayControlsComponent {
       if (trackDetails) {
         this.currentTime = trackDetails.currentTime;
         this.duration = trackDetails.duration;
-        console.log('trackDetails', trackDetails)
       }
     });
   }
