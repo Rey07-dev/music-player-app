@@ -25,6 +25,7 @@ export const setEnv = () => {
     playerURL: '${process.env["playerURL"]}'
     script_for_player: '${process.env["script_for_player"]}'
     searchURL: '${process.env["searchURL"]}'
+    defaultArtistId: '${process.env["defaultArtistId"]}'
   };`;
 
   writeFile(targetPathProd, envConfigFileProd, () => {
