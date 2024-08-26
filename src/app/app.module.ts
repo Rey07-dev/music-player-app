@@ -19,16 +19,12 @@ import { PlaylistsComponent } from "./pages/playlists/playlists.component";
 import { ArtistsComponent } from "./pages/artists/artists.component";
 import { TrendingComponent } from "./pages/trending/trending.component";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
-import { AlbumEffects } from "./store/musicAlbum/album.effects";
 import { EffectsModule } from "@ngrx/effects";
-import { albumReducer } from "./store/musicAlbum/album.reducer";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatIconModule } from "@angular/material/icon";
 import { AsyncPipe, CommonModule } from "@angular/common";
-import { playMusicReducer } from "./store/play-track/playMusic.reducer";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatMenuModule } from "@angular/material/menu";
-import { PlayMusicEffects } from "./store/play-track/playMusic.effects";
 import { spotifyReducer } from "./store/spotify/spotify.reducer";
 import { spotifyAuthInterceptor } from "./core/interceptors/spotify_auth.interceptor";
 import { spotifyPlayerInterceptor } from "./core/interceptors/spotify.interceptor";
@@ -40,8 +36,6 @@ import { addHeader } from "./core/interceptors/auth/header.interceptor";
 
 const reducers = {
   theme: themeReducer,
-  albums: albumReducer,
-  music: playMusicReducer,
   spotifyReducer,
 };
 
@@ -66,7 +60,7 @@ const reducers = {
     HttpClientModule,
     AsyncPipe,
     StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([AlbumEffects, PlayMusicEffects]),
+    EffectsModule.forRoot(),
     SharedModule,
     MatButtonModule,
     MatProgressSpinnerModule,
