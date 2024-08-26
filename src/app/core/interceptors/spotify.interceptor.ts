@@ -8,7 +8,7 @@ import {
 import { inject } from "@angular/core";
 import { from, Observable, throwError } from "rxjs";
 import { catchError, switchMap } from "rxjs/operators";
-import { environment } from "../../../environments/environment";
+import { environment } from "../../../environments/environment.development";
 
 export function spotifyPlayerInterceptor(
   req: HttpRequest<unknown>,

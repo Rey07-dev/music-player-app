@@ -1,12 +1,10 @@
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '../../../../../environments/environment';
+import { environment } from '../../../../../environments/environment.development';
 import { SpotifyAlbums } from '../../interfaces/spotify';
-import { Artist, ArtistsResponse } from '../../interfaces/user/artist';
+import { ArtistsResponse } from '../../interfaces/user/artist';
 import { SpotifyGenreData } from '../../interfaces/genre';
 import { Playlist } from '../../interfaces/playlist';
-import { SingleArtist } from '../../interfaces/artisit';
-import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
