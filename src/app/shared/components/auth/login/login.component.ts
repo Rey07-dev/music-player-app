@@ -35,7 +35,7 @@ export class LoginComponent {
         next: (response) => {
           this.toastService.showToast(response.message, "success");
           localStorage.setItem('access_token', response.login_token);
-          localStorage.setItem('inno_refresh_token', response.refresh_token);
+          localStorage.setItem('refresh_token', response.refresh_token);
           this.close();
         },
         error: (err) => {
