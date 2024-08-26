@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { PlaybackService } from '../../../core/models/services/play/playback.service';
-import { selectTrack } from '../../../store/play-track/playMusic.actions';
 import { IAlbumItem } from '../../../core/models/interfaces/spotify';
 
 @Component({
@@ -18,7 +17,6 @@ export class CardComponent {
 
   playSong(song: IAlbumItem) {
     this.playbackService.setPlaylist([song]);
-    this.store.dispatch(selectTrack({ track: song }));
     localStorage.setItem('select_track', JSON.stringify(song))
   }
 }
