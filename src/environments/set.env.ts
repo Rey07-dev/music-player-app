@@ -28,7 +28,6 @@ export const setEnv = () => {
   };`;
 
   writeFile(targetPathProd, envConfigFileProd, () => {
-    console.log('Astro config file created!');
   });
 };
 
