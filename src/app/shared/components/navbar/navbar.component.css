@@ -29,6 +29,26 @@ nav {
   cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+  .search select{
+    padding: 5px;
+  }
+
+  .search input {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search select{
+    padding: 5px;
+  }
+
+  .search input {
+    width: 200px;
+  }
+}
+
 option {
   background-color: white;
   color: black;
@@ -63,11 +83,8 @@ option {
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   box-shadow: var(--box-shadow);
   background: #cccccce8;
-  color: black;
   font-size: large;
   top: 55px;
   right: 15px;
@@ -78,18 +95,25 @@ option {
   padding: 1px;
 }
 
-.profileContent p {
+.profileInfo{
   width: 90%;
   text-align: center;
   padding: 5px;
   margin: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #1c08cc;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 10px;
 }
 
-.profileContent p:hover {
+.profileInfo span{
+  border: 1px solid #212dd4;
+  border-radius: 10px;
+  padding: 10px;
   cursor: pointer;
-  color: var(--active-link);
-  border-bottom: 1px solid var(--active-link);
+  background: #cccccce8;
+  text-transform: uppercase;
 }
 
 .dropdown {
@@ -103,7 +127,7 @@ option {
   z-index: 100000;
   top: 45px;
   border-radius: 10px;
-  background: #cccccc;
+  background: #ccccccf8;
   color: black;
   display: flex;
   justify-content: center;

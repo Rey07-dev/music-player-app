@@ -39,14 +39,17 @@
   </div>
 
   <div class="profileWrapper">
-    <app-theme-toggle></app-theme-toggle>
+    <app-theme-toggle />
     <button mat-button class="profile" (click)="toggleProfile()">
-      <i class="fas fa-user"></i>
+      <i class="fas fa-user" aria-label="Profile"></i>
     </button>
     <div *ngIf="isDrop" class="profileContent">
-      <p>Profile</p>
-      <button mat-button (click)="openModal()">Login</button>
-      <button mat-button  (click)="logout()">Logout</button>
+      <p *ngIf="profile" class="profileInfo" aria-label="Profile Info">
+        <span aria-label="Name Initials">{{getTheInitials()}}</span>
+        {{profile.first_name }}
+      </p>
+      <button aria-label="Login button" *ngIf="!profile" mat-button (click)="openModal()">Login</button>
+      <button aria-label="Logout button" *ngIf="profile" mat-button  (click)="logout()">Logout</button>
     </div>
   </div>
 </nav>
