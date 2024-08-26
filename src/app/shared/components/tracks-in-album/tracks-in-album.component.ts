@@ -35,7 +35,7 @@ export class TracksInAlbumComponent {
     this.album = this.getData("album")
     this.tracks = this.getData("player_state")
     this.currentPlay = this.tracks.track_window.current_track;
-    this.tracks.track_window.next_tracks.forEach((track: any) => {
+    this.tracks.track_window.next_tracks.forEach((track) => {
       this.nextPlay?.push(track);
     });
     this.currentPlay.album.images.forEach((img: { height: number; url: string; width: number }) => {
