@@ -17,7 +17,7 @@
     <ng-container *ngFor="let item of genreData?.content?.items?.slice(0, 2)">
       <div class="playlist-list" *ngIf="item.content.items.length > 0;">
         <div class="playlist-item" *ngFor="let playlist of item.content.items?.slice(0,5)">
-          <img [src]="playlist.images[0]?.url" alt="{{ playlist.name }}" />
+          <img [src]="playlist.images[0].url" alt="{{ playlist.name }}" />
           <div class="playlist-info">
             <h3>{{ playlist.name }}</h3>
             <p>{{ playlist.description }}</p>

@@ -33,8 +33,10 @@ export class PlayControlsComponent {
       switchMap(() => this.spotifyPlayerService.getCurrentlyPlayingTrack())
     ).subscribe(trackDetails => {
       if (trackDetails) {
-        this.currentTime = trackDetails.currentTime;
-        this.duration = trackDetails.duration;
+        this.currentTime = trackDetails.progress_ms;
+        this.duration = trackDetails.item.duration_ms;
+        this.isPlaying = trackDetails.is_playing;
+        console.log('trackDetails......', trackDetails);
       }
     });
   }
@@ -77,7 +79,6 @@ export class PlayControlsComponent {
   }
 
   previous() {
-    this.trackDetail = this.trackInfo();
     this.spotifyPlayerService.previous();
   }
 
@@ -92,10 +93,4 @@ export class PlayControlsComponent {
       this.route.navigate(['/album', this.trackDetail?.track_window.current_track.id]);
     }
   }
-
-  onKeyPress(): void {}
-
-  onKeyDown(): void {}
-
-  onKeyUp(): void {}
 }

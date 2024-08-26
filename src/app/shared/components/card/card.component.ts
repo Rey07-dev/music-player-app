@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Track } from '../../../core/models/interfaces/music/tracks';
 import { PlaybackService } from '../../../core/models/services/play/playback.service';
 import { selectTrack } from '../../../store/play-track/playMusic.actions';
-import { IAlbumItem, PlayingSongState, SpotifyTrack } from '../../../core/models/interfaces/spotify';
+import { IAlbumItem, PlayingSongState, } from '../../../core/models/interfaces/spotify';
 
 @Component({
   selector: 'app-card',

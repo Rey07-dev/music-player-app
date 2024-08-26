@@ -6,7 +6,7 @@
 
       <div class="playlist-list" *ngIf="item.content.items.length > 0; else noPlaylists">
         <div class="playlist-item" *ngFor="let playlist of item.content.items">
-          <img [src]="playlist.images[0]?.url || placeholder" alt="{{ playlist.name }}" />
+          <img [src]="playlist.images[0].url || placeholder" alt="{{ playlist.name }}" />
           <div class="playlist-info">
             <h3>{{ playlist.name }}</h3>
             <p>{{ playlist.description }}</p>
