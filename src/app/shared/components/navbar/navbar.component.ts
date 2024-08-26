@@ -90,8 +90,6 @@ export class NavbarComponent {
             return of(results);
           })
         );
-    } else {
-      console.error("Query is empty");
     }
   }
 
