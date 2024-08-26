@@ -7,7 +7,6 @@
   overflow: hidden;
   box-shadow: var(--box-shadow);
   cursor: pointer;
-  z-index: -1;
 }
 
 .music-card-img {
