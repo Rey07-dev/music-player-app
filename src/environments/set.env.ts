@@ -1,10 +1,7 @@
 export const setEnv = () => {
   const fs = require("fs");
   const writeFile = fs.writeFile;
-  // Configure Angular `environment.ts` file path
   const targetPathProd = "./src/environments/environment.ts";
-  // const targetPathDev = "./src/environments/environment.development.ts";
-  // Load node modules
   const appVersion = require("../../package.json").version;
   require("dotenv").config({
     path: "src/environments/.env",
