@@ -32,6 +32,7 @@ export class NavbarComponent {
   loginModel: boolean = false;
   type: string = "track";
   isSearching: boolean = false;
+  profile!: Profile;
 
   constructor(
     private store: Store<{ theme: ThemeState; spotify: SpotifyState }>,
@@ -53,13 +54,11 @@ export class NavbarComponent {
       document.body.classList.remove("dark-theme", "light-theme");
       document.body.classList.add(themeClass);
     });
-    this.getProfile();
   }
-
-  token$ = this.store.select((state) => state.spotify.token);
 
   toggleProfile() {
     this.isDrop = !this.isDrop;
+    this.getProfile();
   }
 
   logout() {
@@ -67,6 +66,7 @@ export class NavbarComponent {
     this.spotifyAuthService.logout();
     this.isDrop = false;
     this.openModal();
+    this.getProfile();
   }
 
   openModal() {
@@ -103,8 +103,11 @@ export class NavbarComponent {
   playTrack(track: any) {
     if (track.type == "track") {
       this.spotifyPlayerService.play(track.album.uri);
+      this.route.navigate([`/track/${track.id}`]);
     } else if (track.type == "album") {
       this.spotifyPlayerService.play(track.uri);
+      this.route.navigate([`/album/${track.id}`]);
+      localStorage.setItem("album", JSON.stringify(track));
     }
     this.isSearching = false;
   }
@@ -119,10 +122,10 @@ export class NavbarComponent {
   }
 
   onItemSelected(selectedItem: any, query: HTMLInputElement): void {
+    console.log('selectedItem', selectedItem)
     if (selectedItem.type == "track" || selectedItem.type == "album") {
       this.playTrack(selectedItem);
     } else{
-      console.log('selectedItem', selectedItem)
       this.route.navigate([`/artist/${selectedItem.id}`]);
     }
     this.clearSearchInput(query);
@@ -130,7 +133,21 @@ export class NavbarComponent {
 
   getProfile() {
     this.authService.getProfile().subscribe((response) => {
-      console.log('profile', response)
+      this.profile = response;
     });
+    this.getTheInitials();
   }
+
+  getTheInitials() {
+    console.log('name', this.profile.first_name[0] + this.profile.last_name[0])
+    const initials = this.profile.first_name[0] + this.profile.last_name[0]
+    return initials
+  }
+}
+
+export interface Profile{
+  first_name: string;
+  last_name: string;
+  email: string;
+  id: string;
 }
