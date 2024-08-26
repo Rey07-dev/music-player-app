@@ -1,9 +1,9 @@
 import { ToastService } from "./../toast/toast.service";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
-import { map } from "rxjs";
+import { CurrentTrackPlaying } from "../../interfaces/spotify";
 
 declare global {
   interface Window {
@@ -150,35 +150,11 @@ export class SpotifyPlayerService {
   }
 
   getCurrentlyPlayingTrack() {
-    const access_token = localStorage.getItem("spotify_token");
-    const headers = new HttpHeaders({
-      Authorization: `Bearer ${access_token}`,
-    })
-    return this.http.get<any>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {headers}).pipe(
-      map(response => {
-        if (response) {
-          const currentTime = response.progress_ms;
-          const trackDetails = {
-            track: response.item,
-            currentTime: currentTime,
-            duration: response.item.duration_ms,
-          };
-          return trackDetails;
-        } else {
-          return null;
-        }
-      })
-    );
+    return this.http.get<CurrentTrackPlaying>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {})
   }
 
   seekToPosition(positionMs: number, deviceId?: string): void {
-    const accessToken = localStorage.getItem("spotify_token");
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${accessToken}`,
-    });
-
-    const params = deviceId ? { device_id: deviceId } : {};
-    this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, { headers })
+    this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, {})
       .subscribe(
         error => console.error('Seek failed', error)
       );
