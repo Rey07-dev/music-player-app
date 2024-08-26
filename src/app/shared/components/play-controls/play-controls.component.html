@@ -1,8 +1,11 @@
 <div class="music-player-controls">
-  <div class="track-info">
-    <img [src]="playImage ? playImage : 'public/astro.png'" alt="{{artistName}} cover">
-    <p>
-      <span class="title">Title: {{ trackDetail?.track_window?.current_track?.name }}</span>
+  <div class="track-info" (click)="onTrackClick()" onkeydown="">
+    <img *ngIf="trackDetail" [src]="playImage" alt="{{ artistName }} cover" />
+    <p *ngIf="!trackDetail" class="placeholder"> <span>No Image</span></p>
+    <p class="">
+      <span class="title">
+        Title: {{ trackDetail?.track_window?.current_track?.name }}
+      </span>
       <span class="title">Artist: {{ artistName }}</span>
     </p>
   </div>
@@ -35,14 +38,16 @@
     </div>
     <div class="seek-bar">
       <span>{{ currentTime | duration }}</span>
-      <input type="range"
+      <input
+        type="range"
         [min]="0"
-        *ngIf="trackDetail"
         [max]="duration"
         [value]="currentTime"
         (input)="seek($event)"
-      >
-      <span *ngIf="trackDetail">{{ trackDetail.track_window.current_track.duration_ms | duration }}</span>
+      />
+      <span>
+        {{ !trackDetail ? '0:00': trackDetail.track_window.current_track.duration_ms | duration }}
+      </span>
     </div>
   </div>
 </div>

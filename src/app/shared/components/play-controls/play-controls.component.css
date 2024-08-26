@@ -12,9 +12,25 @@
 
 .track-info {
   display: flex;
+  gap: 5px;
+  cursor: pointer;
 }
 
+.placeholder {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
+.placeholder span {
+  color: #cccccc91;
+  rotate: -50deg;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .track-info h3 {
   margin: 0;
