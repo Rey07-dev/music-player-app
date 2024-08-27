@@ -29,7 +29,7 @@ const setEnv = () => {
     apiKey: '${process.env["apiKey"]}',
     clientId: '${process.env["clientId"]}',
     clientSecret: '${process.env["CLIENT_SECRET"]}',
-    redirectUri: '${process.env["redirectUri"]}',
+    redirectUri: '${process.env["redirectUriDev"]}',
     spotifyAuthEndpoint: '${process.env["spotifyAuthEndpoint"]}',
     scopes: '${process.env["scopes"]}',
     spotify_Token: '${process.env["spotify_Token"]}',
