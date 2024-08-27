@@ -56,7 +56,6 @@ export class SpotifyPlayerService {
 
       this.player.addListener("ready", ({ device_id }) => {
         this.device_id = device_id;
-        console.log("Ready with Device ID", device_id);
         localStorage.setItem("device_id", device_id);
       });
 
@@ -88,16 +87,21 @@ export class SpotifyPlayerService {
       return;
     }
     const deviceId = this.device_id
-      ? this.device_id
-      : localStorage.getItem("device_id");
     const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
+    const currentTrack: PlayingSongState = this.toastService.getStoredData('player_state');
+    const currentTime = this.toastService.getStoredData('currentTime')
 
-    const playData = {
-      context_uri: uri,
-      uris: playlists,
-      offset: { position: 0 },
-      position_ms: 0,
-    };
+    const playData = currentTrack.track_window.current_track.album.uri === uri
+    ? {
+        uris: [currentTrack.track_window.current_track.uri],
+        offset: { position: 0 },
+        position_ms: currentTime ?? 0,
+      }
+    : {
+        context_uri: uri,
+        offset: { position: 0 },
+      };
+
     this.http.put(url, playData).subscribe({
       error: (err) => {
         if (err.status !== 200) {
@@ -157,7 +161,10 @@ export class SpotifyPlayerService {
   seekToPosition(positionMs: number): void {
     this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, {})
       .subscribe(
-        error => console.error('Seek failed', error)
+        error => {
+          this.toastService.showToast('Seek failed', 'error');
+          console.error('Seek failed', error)
+        }
       );
   }
 }

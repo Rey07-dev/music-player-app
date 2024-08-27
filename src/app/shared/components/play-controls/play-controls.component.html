@@ -1,12 +1,12 @@
 <div class="music-player-controls">
   <div class="track-info" (click)="onTrackClick()" onkeydown="">
-    <img *ngIf="trackDetail" [src]="playImage" alt="{{ artistName }} cover" />
-    <p *ngIf="!trackDetail" class="placeholder"> <span>No Image</span></p>
-    <p class="">
+    <img *ngIf="trackDetail" [src]="trackDetail.track_window.current_track.album.images[2].url" alt="{{ artistName }} cover" />
+    <span *ngIf="!trackDetail" class="placeholder"> <span>No Image</span></span>
+    <p class="" *ngIf="trackDetail">
       <span class="title">
-        Title: {{ trackDetail?.track_window?.current_track?.name }}
+        Title: {{ trackDetail.track_window.current_track.name }}
       </span>
-      <span class="title">Artist: {{ artistName }}</span>
+      <span class="title">Artist: {{ trackDetail.track_window.current_track.artists[0].name }}</span>
     </p>
   </div>
 
@@ -17,18 +17,19 @@
         ariaLabel="Previous"
         (iconClick)="previous()"
       ></app-control-icon>
-
-      <app-control-icon
-        iconClass="fas fa-play"
-        ariaLabel="Play"
-        (iconClick)="play()"
-      ></app-control-icon>
-
-      <app-control-icon
-        iconClass="fas fa-pause"
-        ariaLabel="Pause"
-        (iconClick)="pause()"
-      ></app-control-icon>
+      @if (!isPlaying) {
+        <app-control-icon
+          iconClass="fas fa-play"
+          ariaLabel="Play"
+          (iconClick)="play()"
+        ></app-control-icon>
+      } @else {
+        <app-control-icon
+          iconClass="fas fa-pause"
+          ariaLabel="Pause"
+          (iconClick)="pause()"
+        ></app-control-icon>
+      }
 
       <app-control-icon
         iconClass="fas fa-forward"

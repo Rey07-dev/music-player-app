@@ -1,3 +1,4 @@
+import { ToastService } from './../../../core/models/services/toast/toast.service';
 import { Component } from "@angular/core";
 import {
   IAlbumItem,
@@ -18,8 +19,9 @@ export class TracksInAlbumComponent {
   currentPlay!: TrackInfo;
   playImg!: string;
   nextPlay!: TrackInfo[];
+  showPlayButton = false;
 
-  constructor(private spotifyService: SpotifyPlayerService){}
+  constructor(private spotifyService: SpotifyPlayerService, private toastService: ToastService){}
 
   ngOnInit(): void {
     setInterval(() => {
@@ -27,29 +29,25 @@ export class TracksInAlbumComponent {
     }, 2000);
   }
 
-  getData(key: string) {
-    return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)!) : null;
-  }
-
   getAndPlay(){
-    this.album = this.getData("album")
-    this.tracks = this.getData("player_state")
-    this.currentPlay = this.tracks.track_window.current_track;
-    this.tracks.track_window.next_tracks.forEach((track) => {
-      this.nextPlay?.push(track);
-    });
-    this.currentPlay.album.images.forEach((img: { height: number; url: string; width: number }) => {
-      if (img.height >= 500) {
-        this.albumImg = img.url;
-      } else if(img.height >= 60) {
-        this.playImg = img.url;
-      } else {
-        this.playImg = img.url
-      }
-    })
+    this.album = this.toastService.getStoredData("album")
+    this.tracks = this.toastService.getStoredData("player_state")
+    if (this.tracks && this.album) {
+      this.currentPlay = this.tracks.track_window.current_track;
+      this.tracks.track_window.next_tracks.forEach((track) => {
+        this.nextPlay?.push(track);
+      });
+      this.currentPlay.album.images.forEach((img: { height: number; url: string; width: number }) => {
+        if (img.height >= 500) {
+          this.albumImg = img.url;
+        } else if(img.height >= 60) {
+          this.playImg = img.url;
+        } else {
+          this.playImg = img.url
+        }
+      })
+    }
   }
-
-  showPlayButton = false;
 
   playSong(song: TrackInfo) {
     this.spotifyService.play(song?.album.uri);

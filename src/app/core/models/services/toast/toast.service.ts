@@ -23,4 +23,10 @@ export class ToastService {
   ): void {
     this.toastSubject.next({ type, message, position });
   }
+
+  getStoredData(keyName: string) {
+    return localStorage.getItem(keyName)
+      ? JSON.parse(localStorage.getItem(keyName)!)
+      : null;
+  }
 }
