@@ -15,7 +15,6 @@ export class HomeCarouselComponent {
 
   ngOnInit() {
     this.startAutoSlide();
-    console.log('inter', this.intervalId)
   }
 
   ngOnDestroy() {
