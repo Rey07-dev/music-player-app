@@ -1,3 +1,4 @@
+import { ToastService } from "./../../../core/models/services/toast/toast.service";
 import { Component, ElementRef, ViewChild } from "@angular/core";
 import { SpotifyPlayerService } from "../../../core/models/services/spotify/spotify-player.service";
 import { PlayingSongState } from "../../../core/models/interfaces/spotify";
@@ -13,31 +14,39 @@ export class PlayControlsComponent {
   @ViewChild("audioPlayerRef") audioPlayerRef!: ElementRef<HTMLAudioElement>;
   isPlaying: boolean = false;
   trackDetail!: PlayingSongState | null;
-  artistName: any;
+  artistName!: string | undefined;
   playImage!: string;
   currentTime: number = 0;
   duration: number = 0;
-  placeholder: string = '/public/astro.png';
+  placeholder: string = "/public/astro.png";
   private pollSubscription!: Subscription;
 
-  constructor(private spotifyPlayerService: SpotifyPlayerService, private route: Router) {}
+  constructor(
+    private spotifyPlayerService: SpotifyPlayerService,
+    private route: Router,
+  ) {}
 
   ngOnInit(): void {
     setTimeout(() => {
       this.spotifyPlayerService.initializePlayer();
-    },5000)
+    }, 3000);
 
     this.updateTrackInfo();
 
-    this.pollSubscription = interval(1000).pipe(
-      switchMap(() => this.spotifyPlayerService.getCurrentlyPlayingTrack())
-    ).subscribe(trackDetails => {
-      if (trackDetails) {
-        this.currentTime = trackDetails.progress_ms;
-        this.duration = trackDetails.item.duration_ms;
-        this.isPlaying = trackDetails.is_playing;
-      }
-    });
+    this.pollSubscription = interval(1000)
+      .pipe(
+        switchMap(() => this.spotifyPlayerService.getCurrentlyPlayingTrack())
+      )
+      .subscribe((trackDetails) => {
+        if (trackDetails) {
+          localStorage.setItem("currentTime",JSON.stringify(trackDetails.progress_ms));
+          this.currentTime = trackDetails.progress_ms;
+          this.duration = trackDetails.item.duration_ms;
+          this.isPlaying = trackDetails.is_playing;
+          this.artistName = trackDetails.item.artists[0].name;
+          this.playImage = trackDetails.item.album.images[2].url;
+        }
+      });
   }
 
   ngOnDestroy(): void {
@@ -48,12 +57,11 @@ export class PlayControlsComponent {
     setInterval(() => {
       this.trackDetail = this.trackInfo();
       this.playImage =
-      this.trackDetail?.track_window.current_track.album.images[2].url ?? "";
+        this.trackDetail?.track_window.current_track.album.images[2].url ?? "";
       this.artistName =
-      this.trackDetail?.track_window.current_track.artists[0].name;
+        this.trackDetail?.track_window.current_track.artists[0].name;
     }, 100);
   }
-
 
   trackInfo() {
     const playerState = localStorage.getItem("player_state");

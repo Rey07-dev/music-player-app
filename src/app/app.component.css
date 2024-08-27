@@ -1,6 +1,6 @@
 .mainWrapper {
   width: screen;
-  height: 100%;
+  height: 100vh;
 }
 
 #navbar {
@@ -35,7 +35,7 @@
 }
 
 #play {
-  box-shadow: #ccc 0 0 5px;
+  border-top: 1px solid #ccc;
   position: sticky;
   background: var(--nav-bg);
   bottom: 0;

@@ -1,13 +1,12 @@
 .music-player-controls {
   display: flex;
-  height: auto;
   justify-content: space-between;
 }
 
 .music-player-controls img {
   width: 70px;
-  height: 80px;
   margin: 0 10px 0 0;
+  height: fit-content;
 }
 
 .track-info {
@@ -39,6 +38,7 @@
 }
 
 .track-info p {
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -70,25 +70,6 @@
   flex-direction: column;
 }
 
-.controls button {
-  background: none;
-  border: none;
-  color: #00e5ff;
-  font-size: 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.track-duration {
-  display: flex;
-  align-items: center;
-}
-
-.track-duration input {
-  width: 100px;
-  margin: 0 10px;
-}
-
 .seek-bar {
   width: 100%;
   max-width: 300px;
@@ -116,12 +97,4 @@
   .seek-bar input {
     width: 100px;
   }
-}
-
-@media screen and (max-width: 500px) {
-
-  .volume {
-    display: none;
-  }
-
 }

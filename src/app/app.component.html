@@ -1,6 +1,6 @@
 <div class="mainWrapper">
   <div id="navbar">
-    <navbar id="navbar" />
+    <navbar aria-label="navbar" />
   </div>
   <div class="container">
     <app-sidebar id="sidebar" />
@@ -9,7 +9,7 @@
     </div>
   </div>
   <div id="play">
-    <app-play-controls id="play" aria-label="player controls" />
+    <app-play-controls aria-label="player controls" />
   </div>
 </div>
 <app-toast *ngIf="toastState$ | async as toast"
