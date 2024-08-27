@@ -50,6 +50,12 @@
       </p>
       <button aria-label="Login button" *ngIf="!profile" mat-button (click)="openModal()">Login</button>
       <button aria-label="Logout button" *ngIf="profile" mat-button  (click)="logout()">Logout</button>
+      <button aria-label="Logout spotify button"
+        matTooltip="logout spotify"
+        matTooltipPosition="above"
+        *ngIf="checkLogin" mat-button
+        (click)="logoutSpotify()"
+      >Logout</button>
     </div>
   </div>
 </nav>
