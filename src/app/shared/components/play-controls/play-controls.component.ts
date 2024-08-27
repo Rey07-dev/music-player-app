@@ -25,7 +25,7 @@ export class PlayControlsComponent {
   ngOnInit(): void {
     setTimeout(() => {
       this.spotifyPlayerService.initializePlayer();
-    },3000)
+    },5000)
 
     this.updateTrackInfo();
 
