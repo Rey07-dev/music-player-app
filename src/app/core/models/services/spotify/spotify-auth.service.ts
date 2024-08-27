@@ -99,8 +99,7 @@ export class SpotifyAuthService {
 
   isLoggedIn(): boolean {
     return !!(
-      localStorage.getItem('spotify_token')// &&
-      // localStorage.getItem('access_token')
+      localStorage.getItem('spotify_token')
     );
   }
 
@@ -110,8 +109,6 @@ export class SpotifyAuthService {
     localStorage.removeItem('spotify_token_expiration');
     localStorage.removeItem('spotify_scope');
     localStorage.removeItem('spotify_token_type');
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('refresh_token');
     this.router.navigate(['/spotify-login']);
   }
 }

@@ -32,6 +32,7 @@ export class NavbarComponent {
   type: string = "track";
   isSearching: boolean = false;
   profile!: Profile;
+  checkLogin: boolean = false;
 
   constructor(
     private store: Store<{ theme: ThemeState; spotify: SpotifyState }>,
@@ -57,15 +58,22 @@ export class NavbarComponent {
 
   toggleProfile() {
     this.isDrop = !this.isDrop;
-    this.getProfile();
+    this.checkLogin = this.spotifyAuthService.isLoggedIn();
+    if (this.authService.isLoggedIn()) {
+      this.getProfile();
+    }
   }
 
   logout() {
     this.isLoggedIn = false;
-    this.spotifyAuthService.logout();
     this.isDrop = false;
     this.openModal();
     this.getProfile();
+  }
+
+  logoutSpotify() {
+    this.spotifyAuthService.logout();
+    this.isDrop = false;
   }
 
   openModal() {
@@ -134,8 +142,11 @@ export class NavbarComponent {
   }
 
   getTheInitials() {
-    const initials = this.profile.first_name[0] + this.profile.last_name[0]
-    return initials
+    if (this.profile) {
+      const initials = this.profile.first_name[0] + this.profile.last_name[0]
+      return initials
+    }
+    return ''
   }
 }
 
