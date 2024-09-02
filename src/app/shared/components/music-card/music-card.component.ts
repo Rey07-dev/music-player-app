@@ -1,7 +1,6 @@
 import { SpotifyPlayerService } from './../../../core/models/services/spotify/spotify-player.service';
 import { Component, Input } from "@angular/core";
 import { IAlbumItem } from "../../../core/models/interfaces/spotify";
-import { Store } from "@ngrx/store";
 import { Router } from "@angular/router";
 
 @Component({
@@ -20,7 +19,9 @@ export class MusicCardComponent {
 
   openAlbum(album: IAlbumItem) {
     this.spotifyPlayerService.play(album.uri);
-    this.route.navigate(["/album/", album.id]);
-    localStorage.setItem("album", JSON.stringify(album));
+    if (localStorage.getItem("device_id")) {
+      this.route.navigate(["/album/", album.id]);
+      localStorage.setItem("album", JSON.stringify(album));
+    }
   }
 }
