@@ -3,7 +3,10 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "../../../../../environments/environment";
 import { playerControl } from "../../../constants/slide";
-import { CurrentTrackPlaying, PlayingSongState } from "../../interfaces/spotify";
+import {
+  CurrentTrackPlaying,
+  PlayingSongState,
+} from "../../interfaces/spotify";
 
 declare global {
   interface Window {
@@ -74,38 +77,36 @@ export class SpotifyPlayerService {
     }
   }
 
-  getStoredData(keyName: string) {
-    return localStorage.getItem(keyName)
-      ? JSON.parse(localStorage.getItem(keyName)!)
-      : null;
-  }
-
   play(uri: string, playlists?: string[]) {
     if (!this.player) {
-      this.toastService.showToast("Player not initialized", "error");
+      this.toastService.showToast("Player not initialized", "info",'top-right');
       console.error("Player not initialized");
       return;
     }
-    const deviceId = this.device_id
+    const deviceId = this.device_id;
     const url = `${environment.playerURL}${playerControl.play}?device_id=${deviceId}`;
-    const currentTrack: PlayingSongState = this.toastService.getStoredData('player_state');
-    const currentTime = this.toastService.getStoredData('currentTime')
+    const currentTrack: PlayingSongState =
+      this.toastService.getStoredData("player_state");
+    const currentTime = this.toastService.getStoredData("currentTime");
 
-    const playData = currentTrack.track_window.current_track.album.uri === uri
-    ? {
-        uris: [currentTrack.track_window.current_track.uri],
-        offset: { position: 0 },
-        position_ms: currentTime ?? 0,
-      }
-    : {
-        context_uri: uri,
-        offset: { position: 0 },
-      };
+    const playData =
+      currentTrack && currentTrack.track_window.current_track.album.uri === uri
+        ? {
+            uris: [currentTrack.track_window.current_track.uri],
+            offset: { position: 0 },
+            position_ms: currentTime ?? 0,
+          }
+        : {
+            context_uri: uri,
+            offset: { position: 0 },
+          };
 
     this.http.put(url, playData).subscribe({
       error: (err) => {
-        if (err.status !== 200) {
-          this.toastService.showToast(err.error.error.message, "error");
+        if (err.status <= 400) {
+          this.toastService.showToast(err.error.error.message, "info",'top-right');
+        } else if (err.status === 403) {
+          this.toastService.showToast("You need premium account to play", "error",'top-right');
         }
         console.error(err);
       },
@@ -133,7 +134,7 @@ export class SpotifyPlayerService {
     this.http.post(url, {}).subscribe({
       error: (err) => {
         if (err.status !== 200) {
-          this.toastService.showToast(err.error.error.message, "error");
+          this.toastService.showToast(err.error.error.message, "info");
         }
         console.error(err);
       },
@@ -147,7 +148,7 @@ export class SpotifyPlayerService {
     this.http.post(url, {}).subscribe({
       error: (err) => {
         if (err.status !== 200) {
-          this.toastService.showToast(err.error.error.message, "error");
+          this.toastService.showToast(err.error.error.message, "error",'top-right');
         }
         console.error(err);
       },
@@ -155,16 +156,27 @@ export class SpotifyPlayerService {
   }
 
   getCurrentlyPlayingTrack() {
-    return this.http.get<CurrentTrackPlaying>(`${environment.playerURL}${playerControl.currentlyPlaying}`, {})
+    return this.http.get<CurrentTrackPlaying>(
+      `${environment.playerURL}${playerControl.currentlyPlaying}`,
+      {}
+    );
   }
 
   seekToPosition(positionMs: number): void {
-    this.http.put(`${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`, null, {})
-      .subscribe(
-        error => {
-          this.toastService.showToast('Seek failed', 'error');
-          console.error('Seek failed', error)
-        }
-      );
+    this.http
+      .put(
+        `${environment.playerURL}${playerControl.seek}?position_ms=${positionMs}`,
+        null,
+        {}
+      )
+      .subscribe((error) => {
+        this.toastService.showToast("Seek failed", "error",'top-right');
+        console.error("Seek failed", error);
+      });
+  }
+
+  getTrackPreview(trackId: string) {
+    const url = `${environment.previewSpotify}/tracks/${trackId}`;
+    return this.http.get(url, {});
   }
 }
