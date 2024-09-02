@@ -1,4 +1,4 @@
-import { SpotifyAuthService, SpotifyToken } from "../models/services/spotify/spotify-auth.service";
+import { SpotifyAuthService } from "../models/services/spotify/spotify-auth.service";
 import {
   HttpEvent,
   HttpRequest,
@@ -15,7 +15,7 @@ export function spotifyPlayerInterceptor(
   next: HttpHandlerFn
 ): Observable<HttpEvent<unknown>> {
 
-  if (req.url.startsWith(environment.playerURL)) {
+  if (req.url.startsWith(environment.playerURL) || req.url.startsWith(environment.previewSpotify)) {
     const token = localStorage.getItem("spotify_token")!;
     const spotifyAuthService = inject(SpotifyAuthService);
     const clientId = environment.clientId;
