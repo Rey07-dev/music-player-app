@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ToastService } from '../../../core/models/services/toast/toast.service';
 
 @Component({
   selector: 'app-toast',
@@ -6,15 +8,27 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./toast.component.css']
 })
 export class ToastComponent implements OnInit {
-  @Input({required: true}) message: string = '';
-  @Input({required: true}) type: 'success' | 'error' | 'info' = 'info';
-  @Input() duration: number = 3000;
-  @Input() position: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' = 'top-right';
-
+  message: string = '';
+  type: 'success' | 'error' | 'info' = 'info';
+  position: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' = 'top-right';
+  duration: number = 5000;
   isVisible: boolean = false;
+  private toastSubscription!: Subscription;
+
+  constructor(private toastService: ToastService) {}
+
 
   ngOnInit(): void {
-    this.showToast();
+     this.toastSubscription = this.toastService.toastState$.subscribe((toast) => {
+      this.message = toast.message;
+      this.type = toast.type;
+      this.position = toast.position;
+      this.showToast();
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.toastSubscription.unsubscribe();
   }
 
   showToast(): void {
