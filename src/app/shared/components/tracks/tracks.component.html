@@ -1,0 +1,34 @@
+<div class="track-template" *ngIf="track">
+  <div class="album-info">
+    <img src="{{ track.album.images[0].url }}" alt="{{ track.album.name }} Album Cover" class="album-cover" />
+    <!-- <div class="album-details">
+      <h2 class="album-name">{{ track.album.name }}</h2>
+      <p class="release-date">Released on: {{ track.album.release_date }}</p>
+      <p class="total-tracks">Total Tracks: {{ track.album.total_tracks }}</p>
+      <a href="{{ track.album.external_urls.spotify }}" target="_blank" class="spotify-link">View Album on Spotify</a>
+    </div> -->
+  </div>
+
+  <div class="track">
+    <div class="track-info">
+      <h3 class="track-name">{{ track.name }}</h3>
+      <p class="duration">Duration: {{ track.duration_ms | duration }}</p>
+      <p class="popularity">Popularity: {{ track.popularity }}</p>
+      <!-- <a href="{{ track.external_urls.spotify }}" target="_blank" class="spotify-link">Play on Spotify</a> -->
+      <audio controls class="preview-audio">
+        <source src="{{ track.preview_url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="artist-info">
+      <p>Artists:</p>
+      <span *ngFor="let artist of track.artists">
+          <a href="{{ artist.external_urls.spotify }}" target="_blank">{{ artist.name }}</a>
+      </span>
+    </div>
+    <div class="message">
+      <p>Get a <a href="">Premium account</a> to listen to the full version of this track</p>
+    </div>
+  </div>
+</div>
