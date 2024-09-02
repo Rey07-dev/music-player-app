@@ -25,6 +25,7 @@ import { SignupComponent } from "./components/auth/signup/signup.component";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { DurationPipe } from "../core/models/pipes/duration.pipe";
+import { TracksComponent } from './components/tracks/tracks.component';
 
 
 
@@ -44,7 +45,8 @@ import { DurationPipe } from "../core/models/pipes/duration.pipe";
     SpotifyLoginComponent,
     LoginComponent,
     SignupComponent,
-    DurationPipe
+    DurationPipe,
+    TracksComponent
   ],
   imports: [
     CommonModule,
