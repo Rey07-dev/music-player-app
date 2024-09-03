@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../core/models/services/spotify/spotify.service';
-import { Playlist, Track, TrackItem } from '../../core/models/interfaces/playlist';
+import { Playlist, TrackItem } from '../../core/models/interfaces/playlist';
 
 @Component({
   selector: 'app-playlists',

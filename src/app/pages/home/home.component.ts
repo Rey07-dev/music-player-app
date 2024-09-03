@@ -1,10 +1,10 @@
 import { Component } from "@angular/core";
-import { SpotifyPlayerService } from "../../core/models/services/spotify/spotify-player.service";
 import { SpotifyService } from "../../core/models/services/spotify/spotify.service";
 import { IAlbumItem } from "../../core/models/interfaces/spotify";
 import { SpotifyGenreData, SpotifyPlaylist } from "../../core/models/interfaces/genre";
 import { Router } from "@angular/router";
 import { ToastService } from "../../core/models/services/toast/toast.service";
+import { PlaybackService } from "../../core/models/services/play/playback.service";
 
 @Component({
   selector: "app-home",
@@ -16,7 +16,7 @@ export class HomeComponent {
   genreData!: SpotifyGenreData;
 
   constructor(
-    private spotifyPlayerService: SpotifyPlayerService,
+    private playbackService: PlaybackService,
     private spotifyService: SpotifyService,
     private route: Router,
     private toastService: ToastService
@@ -56,8 +56,7 @@ export class HomeComponent {
   }
 
   playPlaylist(playlist: SpotifyPlaylist) {
-    localStorage.setItem("album", JSON.stringify(playlist));
-    this.spotifyPlayerService.play(playlist.uri);
+    this.playbackService.playPlaylist(playlist)
   }
 
   goToGenres() {

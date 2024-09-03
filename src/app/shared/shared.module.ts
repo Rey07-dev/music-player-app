@@ -7,7 +7,6 @@ import { ThemeToggleComponent } from "./components/theme-toggle/theme-toggle.com
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MusicCardComponent } from "./components/music-card/music-card.component";
-import { CardComponent } from "./components/card/card.component";
 import { MusicMenuComponent } from "./components/music-menu/music-menu.component";
 import { ControlIconComponent } from "./components/control-icon/control-icon.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -36,7 +35,6 @@ import { TracksComponent } from './components/tracks/tracks.component';
     PlayControlsComponent,
     ThemeToggleComponent,
     MusicCardComponent,
-    CardComponent,
     MusicMenuComponent,
     ControlIconComponent,
     HomeCarouselComponent,
@@ -69,7 +67,6 @@ import { TracksComponent } from './components/tracks/tracks.component';
     PlayControlsComponent,
     ThemeToggleComponent,
     MusicCardComponent,
-    CardComponent,
     MusicMenuComponent,
     ControlIconComponent,
     HomeCarouselComponent,
