@@ -10,14 +10,13 @@ import { MatButtonModule } from "@angular/material/button";
 import { themeReducer } from "./store/theme/theme.reducer";
 import { SharedModule } from "./shared/shared.module";
 import {
-  HttpClientModule,
   provideHttpClient,
   withInterceptors,
+  withInterceptorsFromDi,
 } from "@angular/common/http";
 import { AlbumsComponent } from "./pages/albums/albums.component";
 import { PlaylistsComponent } from "./pages/playlists/playlists.component";
 import { ArtistsComponent } from "./pages/artists/artists.component";
-import { TrendingComponent } from "./pages/trending/trending.component";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { EffectsModule } from "@ngrx/effects";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
@@ -46,7 +45,6 @@ const reducers = {
     AlbumsComponent,
     PlaylistsComponent,
     ArtistsComponent,
-    TrendingComponent,
     GenreComponent,
     ToastComponent
   ],
@@ -57,7 +55,6 @@ const reducers = {
     BrowserAnimationsModule,
     CommonModule,
     RouterOutlet,
-    HttpClientModule,
     AsyncPipe,
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot(),
@@ -75,7 +72,8 @@ const reducers = {
         authInterceptor,
         spotifyAuthInterceptor,
         spotifyPlayerInterceptor,
-      ])
+      ]),
+      withInterceptorsFromDi()
     ),
   ],
   bootstrap: [AppComponent],
