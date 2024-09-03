@@ -109,6 +109,7 @@ export class SpotifyAuthService {
     localStorage.removeItem('spotify_token_expiration');
     localStorage.removeItem('spotify_scope');
     localStorage.removeItem('spotify_token_type');
+    localStorage.removeItem('device_id');
     this.router.navigate(['/spotify-login']);
   }
 }

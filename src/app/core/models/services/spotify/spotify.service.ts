@@ -5,6 +5,7 @@ import { SpotifyAlbums } from '../../interfaces/spotify';
 import { ArtistsResponse } from '../../interfaces/user/artist';
 import { SpotifyGenreData } from '../../interfaces/genre';
 import { Playlist } from '../../interfaces/playlist';
+import { ITrack } from '../../interfaces/tracks';
 
 @Injectable({
   providedIn: 'root'
@@ -58,13 +59,8 @@ export class SpotifyService {
     // return this.http.get(url, { headers: this.headers });
     return this.http.get<SpotifyGenreData>(this.genre);
   }
-  getTrack() {
-    // id: string | string[], market?: string
-    // const url = `${this.trackApiUrl}/?ids=${id}`;
-    // return this.http.get<SpotifyAlbums>(url, { headers: this.headers });
-    return this.http.get(this.tracks);
+  getTrack(id: string | string[], market?: string) {
+    const url = `${this.trackApiUrl}/?ids=${id}`;
+    return this.http.get<ITrack>(url, { headers: this.headers });
   }
-
-
-
 }

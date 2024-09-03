@@ -9,10 +9,12 @@ import { AuthGuard } from './core/models/guards/auth.guard';
 import { TracksInAlbumComponent } from './shared/components/tracks-in-album/tracks-in-album.component';
 import { GenreComponent } from './pages/genre/genre.component';
 import { PlaylistsComponent } from './pages/playlists/playlists.component';
+import { TracksComponent } from './shared/components/tracks/tracks.component';
 
 export const AppRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthGuard] },
   { path: 'albums', component: AlbumsComponent, canActivate: [AuthGuard] },
+  { path: 'track/:id', component: TracksComponent, canActivate: [AuthGuard] },
   { path: 'album/:id', component: TracksInAlbumComponent, canActivate: [AuthGuard] },
   { path: 'artist/:id', component: ArtistsComponent, canActivate: [AuthGuard] },
   { path: 'trending', component: TrendingComponent, canActivate: [AuthGuard] },

@@ -1,5 +1,5 @@
-<div class="card" (click)="openAlbum(musicData)" routerLinkActive="/albums">
-  <div class="music-card">
+<div class="card" *ngIf="musicData" routerLinkActive="/albums">
+  <div (click)="openAlbum(musicData)" onkeypress="" class="music-card">
     <img
       [src]="musicData.images[0].url || placeholder"
       alt=" cover"

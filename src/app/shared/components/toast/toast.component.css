@@ -16,7 +16,8 @@
 }
 
 .toast.info {
-  background-color: #2196F3;
+  background-color: yellow;
+  color: #000;
 }
 
 .toast.top-left {

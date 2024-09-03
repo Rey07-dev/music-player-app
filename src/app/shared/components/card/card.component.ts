@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { PlaybackService } from '../../../core/models/services/play/playback.service';
 import { IAlbumItem } from '../../../core/models/interfaces/spotify';
+import { PlaybackService } from '../../../core/models/services/play/playback.service';
 
 @Component({
   selector: 'app-card',

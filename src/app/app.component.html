@@ -12,8 +12,4 @@
     <app-play-controls aria-label="player controls" />
   </div>
 </div>
-<app-toast *ngIf="toastState$ | async as toast"
-  [message]="toast.message"
-  [type]="toast.type"
-  [position]="toast.position">
-</app-toast>
+<app-toast />
