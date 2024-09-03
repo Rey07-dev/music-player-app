@@ -1,6 +1,5 @@
-// src/app/store/spotify.reducer.ts
 import { createReducer, on } from '@ngrx/store';
-import { authenticate, authenticateSuccess, authenticateFailure } from './spotify.actions';
+import { authenticateSuccess, authenticateFailure } from './spotify.actions';
 
 export interface SpotifyState {
   token: string | null;

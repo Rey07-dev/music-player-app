@@ -1,8 +1,7 @@
 import { ActivatedRoute } from "@angular/router";
 import { SpotifyService } from "./../../../core/models/services/spotify/spotify.service";
 import { Component } from "@angular/core";
-import { SimplifiedTrackObject } from "../../../core/models/interfaces/search";
-import { ITrack, ITrackInfo } from "../../../core/models/interfaces/tracks";
+import { ITrackInfo } from "../../../core/models/interfaces/tracks";
 
 @Component({
   selector: "app-tracks",
@@ -29,12 +28,5 @@ export class TracksComponent {
         },
       });
     })
-
-    // this.spotifyService.getTrack().subscribe({
-    //   next: (data) => {
-    //     this.track = data.tracks[0];
-    //     console.log("data", data);
-    //   },
-    // });
   }
 }

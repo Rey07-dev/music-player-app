@@ -1,4 +1,3 @@
-import { ToastService } from "./../../../core/models/services/toast/toast.service";
 import { Component, ElementRef, ViewChild } from "@angular/core";
 import { SpotifyPlayerService } from "../../../core/models/services/spotify/spotify-player.service";
 import { PlayingSongState } from "../../../core/models/interfaces/spotify";

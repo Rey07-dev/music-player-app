@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Slide } from "../../../core/models/interfaces/types";
 import { slides } from "../../../core/constants/slide";
 
 @Component({

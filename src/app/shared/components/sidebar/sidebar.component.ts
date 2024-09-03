@@ -1,5 +1,5 @@
 import { MusicList } from '../../../core/models/interfaces/music/types';
-import { musicList, libraryList } from './../../../core/constants/musicContants';
+import { musicList, libraryList } from '../../../core/constants/musicConstants';
 import { Component } from '@angular/core';
 
 
