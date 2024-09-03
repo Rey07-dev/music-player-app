@@ -1,7 +1,7 @@
-import { SpotifyPlayerService } from './../../core/models/services/spotify/spotify-player.service';
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../core/models/services/spotify/spotify.service';
 import { SpotifyGenreData, SpotifyPlaylist } from '../../core/models/interfaces/genre';
+import { PlaybackService } from '../../core/models/services/play/playback.service';
 
 @Component({
   selector: 'app-genre',
@@ -12,7 +12,7 @@ export class GenreComponent {
   genreData!: SpotifyGenreData;
   placeholder = 'astro.png';
 
-  constructor(private spotifyService: SpotifyService, private spotifyPlayerService: SpotifyPlayerService) { }
+  constructor(private spotifyService: SpotifyService, private playbackService: PlaybackService) { }
 
   ngOnInit(): void {
     this.spotifyService.getGenre().subscribe({
@@ -25,7 +25,6 @@ export class GenreComponent {
     })
   }
   playPlaylist(playlist: SpotifyPlaylist) {
-    localStorage.setItem('album', JSON.stringify(playlist))
-    this.spotifyPlayerService.play(playlist.uri);
+    this.playbackService.playPlaylist(playlist)
   }
 }

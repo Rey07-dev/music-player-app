@@ -1,12 +1,6 @@
 <div class="track-template" *ngIf="track">
   <div class="album-info">
     <img src="{{ track.album.images[0].url }}" alt="{{ track.album.name }} Album Cover" class="album-cover" />
-    <!-- <div class="album-details">
-      <h2 class="album-name">{{ track.album.name }}</h2>
-      <p class="release-date">Released on: {{ track.album.release_date }}</p>
-      <p class="total-tracks">Total Tracks: {{ track.album.total_tracks }}</p>
-      <a href="{{ track.album.external_urls.spotify }}" target="_blank" class="spotify-link">View Album on Spotify</a>
-    </div> -->
   </div>
 
   <div class="track">
