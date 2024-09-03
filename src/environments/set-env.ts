@@ -21,6 +21,7 @@ const setEnv = () => {
     script_for_player: '${process.env["script_for_player"]}',
     searchURL: '${process.env["searchURL"]}',
     defaultArtistId: '${process.env["defaultArtistId"]}',
+    previewSpotify: '${process.env["previewSpotify"]}',
   };`;
 
   const envConfigFileDev = `export const environment = {
@@ -37,6 +38,7 @@ const setEnv = () => {
     script_for_player: '${process.env["script_for_player"]}',
     searchURL: '${process.env["searchURL"]}',
     defaultArtistId: '${process.env["defaultArtistId"]}',
+    previewSpotify: '${process.env["previewSpotify"]}',
   };`;
 
   writeFile(targetPathProd, envConfigFileProd, () => {
