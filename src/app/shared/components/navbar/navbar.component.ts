@@ -108,7 +108,9 @@ export class NavbarComponent {
   playTrack(track: any) {
     if (track.type == "track") {
       this.spotifyPlayerService.play(track.album.uri);
-      this.route.navigate([`/track/${track.id}`]);
+      if (localStorage.getItem('device_id') === null) {
+        this.route.navigate([`/track/${track.id}`]);
+      }
     } else if (track.type == "album") {
       this.spotifyPlayerService.play(track.uri);
       this.route.navigate([`/album/${track.id}`]);
